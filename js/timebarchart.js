@@ -73,7 +73,7 @@ citisent.TimeBarChart = function() {
 
                 var xScale = d3.time.scale()
                     .domain(d3.extent(data, function(d) { return d.date; }))
-                    .range([0, width - barWidth]);
+                    .range([barWidth / 2, width - barWidth / 2]);
 
                 var yScale = d3.scale.linear()
                     .domain([0, d3.max(data, function(d) { return d3.max([d.pos, d.neg]) + d.neu; })])
@@ -84,22 +84,25 @@ citisent.TimeBarChart = function() {
                     .enter()
                     .append('g')
                     .classed('bar-item', true)
-                    .attr('transform', function(d) { return chart.t(xScale(d.date), height / 2); });
+                    .attr('transform', function(d) { return chart.t(xScale(d.date) - barWidth / 2, height / 2); });
 
                 barItems.append('rect')
                     .classed('bc-bar-pos', true)
+                    .attr('x', 1)
                     .attr('y', function(d) { return -yScale(d.pos) - yScale(d.neu / 2); })
                     .attr('width', barWidth - 2)
                     .attr('height', function(d) { return yScale(d.pos); });
 
                 barItems.append('rect')
                     .classed('bc-bar-neu', true)
+                    .attr('x', 1)
                     .attr('y', function(d) { return -yScale(d.neu / 2); })
                     .attr('width', barWidth - 2)
                     .attr('height', function(d) { return yScale(d.neu); });
 
                 barItems.append('rect')
                     .classed('bc-bar-neg', true)
+                    .attr('x', 1)
                     .attr('y', function(d) { return yScale(d.neu / 2); })
                     .attr('width', barWidth - 2)
                     .attr('height', function(d) { return yScale(d.neg) + yScale(d.neu / 2); });
