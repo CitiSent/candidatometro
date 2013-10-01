@@ -1,0 +1,29 @@
+
+/* Time Bar Chart */
+.bc-bg {
+    fill: #babdb6;
+}
+
+.bc-bar-pos {
+    fill: #0000a4;
+}
+
+.bc-bar-neu {
+    fill: #005500;
+}
+
+.bc-bar-neg {
+    fill: #a40000;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+    fill: black;
+}
