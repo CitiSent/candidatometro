@@ -3,7 +3,7 @@ layout: base
 title: Visualizaciones
 ---
 
-<div class="container">
+<div class="container container-responsive organic">
 
     <h1>Visualizaciones</h1>
 

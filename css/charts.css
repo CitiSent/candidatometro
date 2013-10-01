@@ -2,18 +2,22 @@
 /* Time Bar Chart */
 .bc-bg {
     fill: #babdb6;
+    fill-opacity: 0.2;
 }
 
 .bc-bar-pos {
-    fill: #0000a4;
+    fill: #53777A;
+    fill-opacity: 0.9;
 }
 
 .bc-bar-neu {
-    fill: #005500;
+    fill: #ECD078;
+    fill-opacity: 0.9;
 }
 
 .bc-bar-neg {
-    fill: #a40000;
+    fill: #C02942;
+    fill-opacity: 0.9;
 }
 
 .axis path,
