@@ -1,5 +1,5 @@
 ---
-layout: demo
+layout: base
 title: Visualizaciones
 ---
 
