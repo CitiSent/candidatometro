@@ -28,7 +28,7 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse">
-          <span class="sr-only">Controlar navigation</span>
+          <span class="sr-only">Controlar navegación</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -44,7 +44,7 @@
               Visualizaciones<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li>
-                  <a href="#" title="Agenda"><strong>Énfasis programático</strong><br><small>¿de qué hablan los candidatos?</small></a>
+                  <a href="agenda.html" title="Agenda"><strong>Énfasis programático</strong><br><small>¿de qué hablan los candidatos?</small></a>
                 </li>
                 <li>
                   <a href="#" title="Percepción"><strong>Desarrollo programático</strong><br><small>¿cómo evoluciona el discurso de los candidatos?</small></a>
@@ -72,11 +72,12 @@
       <div class='col-md-6'>
         <h1 class="huge thin title">Candidatómetro</h1>
         <p class='big thin'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac dolor non sapien facilisis sodales et molestie quam. Sed facilisis ut augue a dictum. Duis vitae tincidunt nulla, quis egestas nunc. Fusce sit amet interdum tellus. Duis nec mi varius, eleifend arcu nec, mattis nulla. Cras eu mollis erat, in gravida arcu. Proin eu scelerisque mi. </p>
-        <ol class='air-top'>
-          <li class='big thin'><a href="#">¿de qué hablan los candidatos?</a></li>
-          <li class='big thin'><a href="#">¿cómo evoluciona el discurso de los candidatos?</a></li>
-          <li class='big thin'><a href="#">¿cómo percibe la gente a los candidatos y cuánto habla de ellos?</a></li>
-        </ol>
+        
+        <ul class='air-top icons-ul preguntas'>
+          <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a href="agenda.html">¿de qué hablan los candidatos?</a></li>
+          <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a href="#">¿cómo evoluciona el discurso de los candidatos?</a></li>
+          <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a href="#">¿cómo percibe la gente a los candidatos y cuánto habla de ellos?</a></li>
+        </ul>
       </div>
 
       <div class='tabla-de-candidatos'>
@@ -139,6 +140,27 @@
       </div>
     </div>
 
+    <div class='row social'>
+      <div class='col-sm-3 twitter col-sm-offset-3'>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="citisent" data-lang="es" data-size="large" data-hashtags="candidatometro">Twittear</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </div>
+      <div class='col-sm-3 google'>
+        <!-- Inserta esta etiqueta donde quieras que aparezca Botón Compartir. -->
+        <div class="g-plus" data-action="share" data-annotation="bubble" data-height="24"></div>
+
+        <!-- Inserta esta etiqueta después de la última etiqueta de compartir. -->
+        <script type="text/javascript">
+          window.___gcfg = {lang: 'es'};
+
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+      </div>
+    </div>
 
     <!-- footer -->
     <div class="row">
