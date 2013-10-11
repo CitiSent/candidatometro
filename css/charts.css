@@ -1,33 +1,7 @@
 
 /* Time Bar Chart */
 .bc-bg {
-    fill: #babdb6;
+    fill: #a40000;
     fill-opacity: 0.2;
 }
 
-.bc-bar-pos {
-    fill: #53777A;
-    fill-opacity: 0.9;
-}
-
-.bc-bar-neu {
-    fill: #ECD078;
-    fill-opacity: 0.9;
-}
-
-.bc-bar-neg {
-    fill: #C02942;
-    fill-opacity: 0.9;
-}
-
-.axis path,
-.axis line {
-    fill: none;
-    stroke: black;
-    shape-rendering: crispEdges;
-}
-.axis text {
-    font-family: sans-serif;
-    font-size: 11px;
-    fill: black;
-}
