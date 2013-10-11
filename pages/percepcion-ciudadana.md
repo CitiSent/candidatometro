@@ -84,11 +84,11 @@ title: Percepción Ciudadana
         ];
 
 
-        var rowCandidato = d3.select('#chart').selectAll('div, .candidato, .row')
+        var rowCandidato = d3.select('#chart').selectAll('div.row')
             .data(data)
             .enter()
             .append('div')
-            .attr('class', 'candidato row');
+            .attr('class', 'row');
 
         // Avatar
         var divAvatar = rowCandidato.append('div')
