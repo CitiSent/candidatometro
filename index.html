@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<html lang='es'>
 
 <head>
   <meta charset="utf-8">
@@ -12,8 +12,8 @@
 
   <!-- Scripts -->
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/dropdown.js"></script>
-	<!-- Standard Favicon -->
+  <script type="text/javascript" src="js/dropdown.js"></script>
+  <!-- Standard Favicon -->
   <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico" />
   <!-- For iPhone 4 Retina display: -->
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/favicon-114.png">
@@ -23,17 +23,18 @@
   <link rel="apple-touch-icon-precomposed" href="img/icons/favicon-57.png">
 </head>
 
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse">
-          <span class="sr-only">Controlar navigation</span>
+          <span class="sr-only">Controlar navegación</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="/" class="navbar-brand cf"><span class="logo">Candidatómetro</span></a>
+        <a href="/" class="navbar-brand cf"><span class="logo"><img src="img/icons/favicon.png">Candidatómetro</span></a>
       </div>
 
       <!-- acá todo lo colapsable -->
@@ -41,81 +42,122 @@
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            Visualizaciones<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="#" title="Agenda"><strong>Énfasis programático</strong><br><small>¿de qué hablan los candidatos?</small></a>
-              </li>
-              <li>
-                <a href="#" title="Percepción"><strong>Desarrollo programático</strong><br><small>¿cómo evoluciona el discurso de los candidatos?</small></a>
-              </li>
-              <li>
-                <a href="#" title="Solicitud de Cuenta"><strong>Percepción Ciudadana</strong><br><small>candidad y calidad de las menciones</small></a>
-              </li>
-            </ul>
-          </li> 
-        </ul>
-        <ul class="nav navbar-nav pull-right">
-          <li>
-            <a href="#" title="Metodología">Metodología</a>
-          </li>
-        </ul>
-      </div>
+              Estudios<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="agenda.html" title="Agenda"><strong>Énfasis programático</strong><br><small>¿de qué hablan los candidatos?</small></a>
+                </li>
+                <li>
+                  <a href="#" title="Percepción"><strong>Desarrollo programático</strong><br><small>¿cómo evoluciona el discurso de los candidatos?</small></a>
+                </li>
+                <li>
+                  <a href="#" title="Solicitud de Cuenta"><strong>Percepción Ciudadana</strong><br><small>¿cómo percibe la gente a los candidatos y cuánto habla de ellos?</small></a>
+                </li>
+              </ul>
+            </li> 
+          </ul>
+          <ul class="nav navbar-nav pull-right">
+            <li>
+              <a href="#" title="Metodología">Metodología</a>
+            </li>
+          </ul>
+        </div>
     </div>
   </nav><!-- Fin Barra de Navegacion -->  
-  </body>
 
+<!---------------------------------------- contenido principal -->
   <div class="container container-responsive organic">
-    <!-- contenido principal -->
-    <div class='row marketing'>
-      <div class='col-md-12'>
-      <h1 class="huge thin blue">Candidatómetro</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac dolor non sapien facilisis sodales et molestie quam. Sed facilisis ut augue a dictum. Duis vitae tincidunt nulla, quis egestas nunc. Fusce sit amet interdum tellus. Duis nec mi varius, eleifend arcu nec, mattis nulla. Cras eu mollis erat, in gravida arcu. Proin eu scelerisque mi. </p>
+    <div class='row'>
+      <div class='col-md-6'>
+        <h1 class="huge thin title">Candidatómetro</h1>
+        <p class='big thin'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac dolor non sapien facilisis sodales et molestie quam. Sed facilisis ut augue a dictum. Duis vitae tincidunt nulla, quis egestas nunc. Fusce sit amet interdum tellus. Duis nec mi varius, eleifend arcu nec, mattis nulla. Cras eu mollis erat, in gravida arcu. Proin eu scelerisque mi. </p>
+        
+        <ul class='air-top icons-ul preguntas'>
+          <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='btn btn-black'href="agenda.html">¿de qué hablan los candidatos?</a></li>
+          <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='btn btn-black'href="#">¿cómo evoluciona el discurso de los candidatos?</a></li>
+          <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='btn btn-black'href="#">¿cómo percibe la gente a los candidatos y cuánto habla de ellos?</a></li>
+        </ul>
+      </div>
+
+      <div class='tabla-de-candidatos'>
+        <div class='col-md-6 air-top'>
+          
+          <hr>
+
+          <div class="row">
+            <div class='col-sm-4 tcenter candidato'>
+              <img class='img-circle' width='100' src='img/fot_evelyn_matthei.jpg'><br>
+              <h6 class='bold uc'>Evelyn Matthei Fornet</h6>
+            </div>
+            <div class='col-sm-4 tcenter candidato'>
+              <img class='img-circle' width='100' src='img/fot_michelle_bachelet.jpg'><br>
+              <h6 class='bold uc'>Michelle Bachelet Jeria</h6>
+            </div>
+            <div class='col-sm-4 tcenter candidato'>
+              <img class='img-circle' width='100' src='img/fot_marco_enriquez-ominami.jpg'><br>
+              <h6 class='bold uc'>Marco Enríquez-Ominami Gumucio</h6>
+            </div>
+          </div>
+          
+          <hr>
+          
+          <div class="row">
+            <div class='col-sm-4 tcenter candidato'>
+              <img class='img-circle' width='100' src='img/fot_alfredo_sfeir.jpg'><br>
+              <h6 class='bold uc'>Alfredo Sfeir Younis</h6>
+            </div>
+            <div class='col-sm-4 tcenter candidato'>
+              <img class='img-circle' width='100' src='img/fot_roxana_miranda.jpg'><br>
+              <h6 class='bold uc'>Roxana Miranda Meneses</h6>
+            </div>
+            <div class='col-sm-4 tcenter candidato'>
+              <img class='img-circle' width='100' src='img/fot_marcel_claude.jpg'><br>
+              <h6 class='bold uc'>Marcel Claude Reyes</h6>
+            </div>
+          </div>
+          
+          <hr>
+          
+          <div class="row">
+            <div class='col-sm-4 tcenter candidato'>
+              <img class='img-circle' width='100' src='img/fot_ricardo_israel.jpg'><br>
+              <h6 class='bold uc'>Ricardo Israel Zipper</h6>
+            </div>
+            <div class='col-sm-4 tcenter candidato'>
+              <img class='img-circle' width='100' src='img/fot_tomas_jocelyn-holt.jpg'><br>
+              <h6 class='bold uc'>Tomás Jocelyn-Holt Letelier</h6>
+            </div>
+            <div class='col-sm-4 tcenter candidato'>
+              <img class='img-circle' width='100' src='img/fot_franco_parisi.jpg'><br>
+              <h6 class='bold uc'>Franco Aldo Parisi Fernández</h6>
+            </div>
+          </div>
+
+          <hr>
+
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-4 tcenter">
-        <img class='img-circle' width='150' src='img/fot_evelyn_matthei.jpg'><br>
-        <h6 class='bold uc'>Evelyn Matthei Fornet</h6>
+    <div class='row social'>
+      <div class='col-sm-3 twitter col-sm-offset-3'>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="citisent" data-lang="es" data-size="large" data-hashtags="candidatometro">Twittear</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       </div>
-      <div class="col-md-4 tcenter">
-        <img class='img-circle' width='150' src='img/fot_michelle_bachelet.jpg'><br>
-        <h6 class='bold uc'>Michelle Bachelet Jeria</h6>
-      </div>
-      <div class="col-md-4 tcenter">
-        <img class='img-circle' width='150' src='img/fot_marco_enriquez-ominami.jpg'><br>
-        <h6 class='bold uc'>Marco Enríquez-Ominami Gumucio</h6>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-md-4 tcenter">
-        <img class='img-circle' width='150' src='img/fot_alfredo_sfeir.jpg'><br>
-        <h6 class='bold uc'>Alfredo Sfeir Younis</h6>
-      </div>
-      <div class="col-md-4 tcenter">
-        <img class='img-circle' width='150' src='img/fot_roxana_miranda.jpg'><br>
-        <h6 class='bold uc'>Roxana Miranda Meneses</h6>
-      </div>
-      <div class="col-md-4 tcenter">
-        <img class='img-circle' width='150' src='img/fot_marcel_claude.jpg'><br>
-        <h6 class='bold uc'>Marcel Claude Reyes</h6>
-      </div>
-    </div>
-  <hr>
-    <div class="row">
-      <div class="col-md-4 tcenter">
-        <img class='img-circle' width='150' src='img/fot_ricardo_israel.jpg'><br>
-        <h6 class='bold uc'>Ricardo Israel Zipper</h6>
-      </div>
-      <div class="col-md-4 tcenter">
-        <img class='img-circle' width='150' src='img/fot_tomas_jocelyn-holt.jpg'><br>
-        <h6 class='bold uc'>Tomás Jocelyn-Holt Letelier</h6>
-      </div>
-      <div class="col-md-4 tcenter">
-        <img class='img-circle' width='150' src='img/fot_franco_parisi.jpg'><br>
-        <h6 class='bold uc'>Franco Aldo Parisi Fernández</h6>
+      <div class='col-sm-3 google'>
+        <!-- Inserta esta etiqueta donde quieras que aparezca Botón Compartir. -->
+        <div class="g-plus" data-action="share" data-annotation="bubble" data-height="24"></div>
+
+        <!-- Inserta esta etiqueta después de la última etiqueta de compartir. -->
+        <script type="text/javascript">
+          window.___gcfg = {lang: 'es'};
+
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
       </div>
     </div>
 
@@ -130,4 +172,5 @@
       </div>
     </div>
   </div>
+</body>
 </html>
