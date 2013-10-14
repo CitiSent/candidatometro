@@ -4,39 +4,132 @@ var Candidatometro = Candidatometro || {};
 Candidatometro.BarChart = function() {
     'use strict';
 
+    // Initial Layout
+    var margin = {top: 10, right: 10, bottom: 10, left: 10},
+        height = 80;
+
+    var timeDomain = null;
+    var postDomain = null;
+
     var selection;
 
     function chart(_selection) {
         selection = _selection;
-        selection.each(function(datum) {
-
-            var data = datum.data;
+        selection.each(function() {
 
             var div = d3.select(this),
                 svg = div.append('svg');
 
-            var divW = chart.int(div.style('width')),
-                divH = chart.int(div.style('height'));
+            var divW = chart.int(div.style('width')) - 30;
 
             svg
                 .attr('width', divW)
-                .attr('height', divH);
+                .attr('height', height);
 
-            console.log(data);
+            svg.append('g')
+                .attr('class', 'bc-chart')
+                .attr('transform', chart.svgt([margin.left, margin.top]))
+                .append('rect')
+                .attr('class', 'bc-bg')
+                .attr('width', divW - margin.left - margin.right)
+                .attr('height', height - margin.top - margin.bottom);
+
+        });
+
+        chart.update();
+    }
+
+    chart.update = function() {
+        selection.each(function(datum) {
+
+            var data = _.pluck(datum.data.entries(), 'value');
+
+            var div = d3.select(this),
+                width = chart.int(div.style('width')) - margin.left - margin.top,
+                height = chart.int(div.style('height')) - margin.top - margin.bottom,
+                svg = div.select('svg'),
+                gchart = svg.select('g.bc-chart');
+
+            // Adjust the Layout
+            svg
+                .attr('width', width + margin.left + margin.right)
+                .attr('height', height + margin.top + margin.bottom);
+
+            gchart.select('rect.bc-bg')
+                .attr('width', width)
+                .attr('height', height);
+
+            var barW = width / chart.timeDomain().length;
+
+            var tScale = d3.time.scale()
+                .domain(chart.timeDomain())
+                .range(d3.range(0, chart.timeDomain().length));
+
+            var dExtent = d3.extent(data, function(d) { return d3.max([d.pos + d.neu / 2, d.neg + d.neu / 2]); }),
+                pExtent = chart.postDomain() ? chart.postDomain() : dExtent;
+
+            var yScale = d3.scale.linear()
+                .domain(pExtent)
+                .range([4, height / 2]);
+
+            // Data Items
+            var gItem = gchart.selectAll('g.bc-item')
+                .data(data)
+                .enter()
+                .append('g')
+                .attr('class', 'bc-item')
+                .attr('transform', function(d) {
+                    return chart.svgt([barW * tScale(d.date), height / 2]);
+                });
+
+            // Positive Bars
+            gItem.append('rect')
+                .attr('y', function(d) { return -yScale(d.pos + d.neu / 2); })
+                .attr('width', barW)
+                .attr('height', function(d) { return yScale(d.pos + d.neu / 2); })
+                .attr('class', 'bc-pos');
+
+            // Negative Bars
+            gItem.append('rect')
+                .attr('width', barW)
+                .attr('height', function(d) { return yScale(d.neg + d.neu / 2); })
+                .attr('class', 'bc-neg');
+
+            // Neutral Bars
+            gItem.append('rect')
+                .attr('y', function(d) { return -yScale(d.neu / 2); })
+                .attr('width', barW)
+                .attr('height', function(d) { return yScale(d.neu); })
+                .attr('class', 'bc-neu');
 
 
         });
-    }
+    };
+
+    // Accessors
+    chart.timeDomain = function(value) {
+        if (!arguments.length) { return timeDomain; }
+        timeDomain = value;
+        return chart;
+    };
+
+    chart.postDomain = function(value) {
+        if (!arguments.length) { return postDomain; }
+        postDomain = value;
+        return chart;
+    };
 
     // Utils
+    chart.int = function(value) { return parseInt(value, 10); };
+    chart.svgt = function(value) { return 'translate(' + value + ')'; };
 
-    chart.int = function(value) {
-        return parseInt(value, 10);
-    };
 
     _.extend(chart, Backbone.Events);
     return chart;
 };
+
+
+
 
 Candidatometro.Dataset = function() {
     'use strict';
@@ -57,7 +150,7 @@ Candidatometro.Dataset = function() {
                 // Add the parent values
                 parent.values = d3.map();
                 parent.data.forEach(function(d) {
-                    parent.values.set(d.t, {neg: d.n, neu: d.m, pos: d.p});
+                    parent.values.set(d.t, {neg: d.n, neu: d.m, pos: d.p, date: new Date(d.t)});
                 });
 
                 // Add the children values
@@ -69,7 +162,8 @@ Candidatometro.Dataset = function() {
                             parent.values.set(ck, {
                                 neg: pv.neg + cv.neg,
                                 neu: pv.neu + cv.neu,
-                                pos: pv.pos + cv.pos
+                                pos: pv.pos + cv.pos,
+                                date: pv.date
                             });
                         });
                     });

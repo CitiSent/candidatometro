@@ -1,22 +1,43 @@
 ---
-layout: base
+layout: standard
 title: Percepción Ciudadana
 ---
 
-<style>
-.barchart {
-    height: 100px;
-}
-</style>
 
-<h1 class='thin orange'>{{ page.title }}</h1>
+<div class='row'>
+    <div class='col-sm-7'>
+        <h1 class='thin orange'>{{ page.title }}</h1>
+    </div>
+    <div class='col-sm-5 tright'>
+        <a class='next-question' href='{{ site.baseurl }}/de-que-hablan'>
+            <span class='question'>¿de qué hablan los candidatos?</span> <i class='icon-arrow-right'></i>
+        </a>
+    </div>
+</div>
+
 <div class='row'>
     <div class='col-md-12 air-top'>
-        <div class='tabla-de-agendas' id='chart'>
-            <!-- Charts Here -->
+        <div class='tabla-de-agendas' id='charts'>
+
         </div>
     </div>
 </div>
+
+<div class='row'>
+    <div class='col-sm-12 tright'>
+        <a class='next-question' href='{{ site.baseurl }}/de-que-hablan'>
+            <span class='question'>¿de qué hablan los candidatos?</span> <i class='icon-arrow-right'></i>
+        </a>
+    </div>
+</div>
+
+<hr id='metodo'>
+<h2 class='air-top orange thin'>Metodología</h2>
+<div class='row'>
+    <div class='col-sm-6'></div>
+    <div class='col-sm-6'></div>
+</div>
+
 
 <!-- Libraries -->
 <script src="{{ site.baseurl }}/js/lib/d3.v3.min.js" charset="utf-8"></script>
@@ -32,63 +53,39 @@ title: Percepción Ciudadana
         .json(jsonUrl);
 
 
-
     var a = {};
     _.extend(a, Backbone.Events);
 
     a.listenTo(dset, 'dataset:ready', function() {
 
-        var barchart = Candidatometro.BarChart();
+        var from = new Date('2013-10-01'),
+            to = new Date('2013-12-01');
 
         var data = [
-            {
-                name: 'Michelle Bachelet Jeria',
-                img: '{{ site.baseurl }}/img/fot_michelle_bachelet.jpg',
-                data: dset.items().get('Michelle Bachelet Jeria')
-            },
-            {
-                name: 'Evelyn Matthei Fornet',
-                img: '{{ site.baseurl }}/img/fot_evelyn_matthei.jpg',
-                data: dset.items().get('Evelyn Matthei Fornet')
-            },
-            {
-                name: 'Evelyn Matthei Fornet',
-                img: '{{ site.baseurl }}/img/fot_evelyn_matthei.jpg',
-                data: dset.items().get('Evelyn Matthei Fornet')
-            },
-            {
-                name: 'Evelyn Matthei Fornet',
-                img: '{{ site.baseurl }}/img/fot_evelyn_matthei.jpg',
-                data: dset.items().get('Evelyn Matthei Fornet')
-            },
-            {
-                name: 'Evelyn Matthei Fornet',
-                img: '{{ site.baseurl }}/img/fot_evelyn_matthei.jpg',
-                data: dset.items().get('Evelyn Matthei Fornet')
-            },
-            {
-                name: 'Evelyn Matthei Fornet',
-                img: '{{ site.baseurl }}/img/fot_evelyn_matthei.jpg',
-                data: dset.items().get('Evelyn Matthei Fornet')
-            },
-            {
-                name: 'Evelyn Matthei Fornet',
-                img: '{{ site.baseurl }}/img/fot_evelyn_matthei.jpg',
-                data: dset.items().get('Evelyn Matthei Fornet')
-            },
-            {
-                name: 'Evelyn Matthei Fornet',
-                img: '{{ site.baseurl }}/img/fot_evelyn_matthei.jpg',
-                data: dset.items().get('Evelyn Matthei Fornet')
-            }
+            {name: 'Evelyn Matthei Fornet',          img: 'fot_evelyn_matthei.jpg'},
+            {name: 'Michelle Bachelet Jeria',        img: 'fot_michelle_bachelet.jpg'},
+            {name: 'Marco Enríquez-Ominami Gumucio', img: 'fot_marco_enriquez-ominami.jpg'},
+            {name: 'Alfredo Sfeir Younis',           img: 'fot_alfredo_sfeir.jpg'},
+            {name: 'Roxana Miranda Meneses',         img: 'fot_roxana_miranda.jpg'},
+            {name: 'Marcel Claude Reyes',            img: 'fot_marcel_claude.jpg'},
+            {name: 'Ricardo Israel Zipper',          img: 'fot_ricardo_israel.jpg'},
+            {name: 'Tomás Jocelyn-Holt Letelier',    img: 'fot_tomas_jocelyn-holt.jpg'},
+            {name: 'Franco Parisi Fernández',        img: 'fot_franco_parisi.jpg'}
         ];
 
 
-        var rowCandidato = d3.select('#chart').selectAll('div, .candidato, .row')
+        data.forEach(function(d) {
+            d.data = dset.items().get(d.name);
+        });
+
+        var barchart = Candidatometro.BarChart()
+            .timeDomain(d3.time.days(from, to));
+
+        var rowCandidato = d3.select('#charts').selectAll('div.row.candidato')
             .data(data)
             .enter()
             .append('div')
-            .attr('class', 'candidato row');
+            .attr('class', 'row candidato');
 
         // Avatar
         var divAvatar = rowCandidato.append('div')
@@ -96,27 +93,24 @@ title: Percepción Ciudadana
 
         divAvatar
             .append('img')
-            .attr('class', 'img-circle img-responsive')
-            .attr('src', function(d) { return d.img; });
+            .attr('class', 'img-circle')
+            .attr('src', function(d) { return '{{ site.baseurl }}/img/' + d.img; });
 
         divAvatar.append('h6')
             .attr('class', 'bold uc')
-            .text(function(d) { return d.name; });
+            .text(function(d) {
+                var name = d.name.split(' ');
+                return name[0] + ' ' + name[1];
+            });
 
         var divGraph = rowCandidato.append('div')
             .attr('class', 'col-sm-10 graph')
+            .append('div')
+            .attr('class', 'chart')
             .call(barchart);
 
 
-        // rowCandidato.append('div')
-        //     .attr('class', 'col-sm-10 graph');
 
-        // d3.select('#chart').selectAll('div.candidato')
-        //     .data(data)
-        //     .enter()
-        //     .append('div')
-        //     .classed('candidato', true)
-        //     .call(chart);
 
     });
 
