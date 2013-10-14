@@ -6,12 +6,12 @@ title: Candidatómetro
 <div class='row'>
   <div class='col-md-6'>
     <h1 class='huge thin title'>{{ page.title }}</h1>
-    <p class='big thin'>PLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac dolor non sapien facilisis sodales et molestie quam. Sed facilisis ut augue a dictum. Duis vitae tincidunt nulla, quis egestas nunc. Fusce sit amet interdum tellus. Duis nec mi varius, eleifend arcu nec, mattis nulla. Cras eu mollis erat, in gravida arcu. Proin eu scelerisque mi. </p>
-    
+    <p class='big thin'>Estamos observando a los candidatos presidenciales, <em>lo que dicen</em> y <em>qué dicen de ellos</em> en Twitter.</p>
+    <p class='big thin'>Este candidatómetro está hecho en su totalidad con <a href='http://www.citisent.com'>CitiSent</a> y sus herramientas de análisis. Queremos usar las candidaturas como un ejemplo de cómo configurar estudios exponiendo su metodología en cada caso.</p>
+    <p class='big thin'>Las preguntas que tenemos son estas:</p>
     <ul class='air-top icons-ul preguntas'>
-      <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='btn btn-black'href="de-que-hablan">¿de qué hablan los candidatos?</a></li>
-
-       <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='btn btn-black'href="de-que-hablan-old">¿de qué hablan los candidatos? (versión antigua)</a></li>
+      <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}que-opina-la-gente">¿qué opina la gente de los candidatos?</a></li>
+      <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}de-que-hablan">¿de qué hablan los candidatos?</a></li>
     </ul>
 
   </div>
@@ -76,6 +76,16 @@ title: Candidatómetro
   </div>
 </div>
 
+<hr id='metodo'>
+<h2 class='air-top orange thin'>Metodología</h2>
+
+<div class='row'>
+  <div class='col-sm-6'>
+    <p>Las visualizaciones aquí presentadas son producto de una serie de <i class='cs-icon-study'></i> <strong>Estudios</strong> realizados con <strong>CitiSent</strong>. Estos estudios son configurados a partir de una definición de <strong>temas</strong> <i class='cs-icon-topic'></i >, <strong>fuentes</strong> <i class='cs-icon-source'></i> y <strong>lugares</strong><i class='cs-icon-place'></i>.</p>
+  </div>
+  <div class='col-sm-6'>
+  </div>
+</div>
 
 <!-- Libraries -->
 <script src="{{ site.baseurl }}/js/lib/d3.v3.min.js" charset="utf-8"></script>
