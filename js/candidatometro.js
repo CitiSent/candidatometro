@@ -8,7 +8,8 @@ Candidatometro.BarChart = function() {
     var margin = {top: 10, right: 10, bottom: 10, left: 10},
         height = 80;
 
-    var domain;
+    var timeDomain = null;
+    var postDomain = null;
 
     var selection;
 
@@ -41,52 +42,64 @@ Candidatometro.BarChart = function() {
     chart.update = function() {
         selection.each(function(datum) {
 
+            var data = _.pluck(datum.data.entries(), 'value');
+
             var div = d3.select(this),
-                divw = chart.int(div.style('width')) - 30,
+                width = chart.int(div.style('width')) - margin.left - margin.top,
+                height = chart.int(div.style('height')) - margin.top - margin.bottom,
                 svg = div.select('svg'),
                 gchart = svg.select('g.bc-chart');
 
-            console.log(div.style('height'));
-
             // Adjust the Layout
             svg
-                .attr('width', divw)
-                .attr('height', height);
+                .attr('width', width + margin.left + margin.right)
+                .attr('height', height + margin.top + margin.bottom);
 
             gchart.select('rect.bc-bg')
-                .attr('width', divw)
+                .attr('width', width)
                 .attr('height', height);
 
-            var barW = divw / domain.length;
+            var barW = width / chart.timeDomain().length;
 
-            var xScale = d3.scale.linear()
-                .domain(domain)
-                .range([0, divw - barW]);
+            var tScale = d3.time.scale()
+                .domain(chart.timeDomain())
+                .range(d3.range(0, chart.timeDomain().length));
 
-            console.log(datum.data.entries().map(function(d) { return d.value; }));
+            var dExtent = d3.extent(data, function(d) { return d.pos + d.neg + d.neu; }),
+                pExtent = chart.postDomain() ? chart.postDomain() : dExtent;
 
+            var yScale = d3.scale.linear()
+                .domain(pExtent)
+                .range([2, height - 2]);
 
-            gchart.selectAll('rect.item')
-                .data(datum.data.entries())
+            var gItem = gchart.selectAll('g.bc-item')
+                .data(data)
                 .enter()
-                .append('rect')
-                .attr('class', 'item')
-                .attr('x', function(d, i) { return barW * i; })
+                .append('g')
+                .attr('class', 'bc-item')
+                .attr('transform', function(d) {
+                    return chart.svgt([barW * tScale(d.date), 0]);
+                });
+
+            gItem.append('rect')
                 .attr('width', barW)
-                .attr('height', 10)
-                .attr('fill', '#0000a4');
-
-
-
+                .attr('height', function(d) { return yScale(d.pos + d.neg + d.neu); })
+                .attr('fill', '#aaa');
 
 
         });
     };
 
     // Accessors
-    chart.domain = function(value) {
-        if (!arguments.length) { return domain; }
-        domain = value;
+    chart.timeDomain = function(value) {
+        if (!arguments.length) { return timeDomain; }
+        timeDomain = value;
+        return chart;
+    };
+
+    chart.postDomain = function(value) {
+        if (!arguments.length) { return postDomain; }
+        postDomain = value;
         return chart;
     };
 
@@ -98,6 +111,9 @@ Candidatometro.BarChart = function() {
     _.extend(chart, Backbone.Events);
     return chart;
 };
+
+
+
 
 Candidatometro.Dataset = function() {
     'use strict';

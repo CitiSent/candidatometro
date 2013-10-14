@@ -4,9 +4,6 @@ title: Percepción Ciudadana
 ---
 
 <style>
-.barchart {
-    height: 100px;
-}
 </style>
 
 <h1 class='thin orange'>{{ page.title }}</h1>
@@ -38,7 +35,7 @@ title: Percepción Ciudadana
     a.listenTo(dset, 'dataset:ready', function() {
 
         var from = new Date('2013-10-01'),
-            to = new Date('2013-12-31');
+            to = new Date('2013-12-01');
 
         var data = [
             {name: 'Evelyn Matthei Fornet',          img: 'fot_evelyn_matthei.jpg'},
@@ -58,7 +55,7 @@ title: Percepción Ciudadana
         });
 
         var barchart = Candidatometro.BarChart()
-            .domain(d3.time.days(from, to));
+            .timeDomain(d3.time.days(from, to));
 
         var rowCandidato = d3.select('#chart').selectAll('div.row.candidato')
             .data(data)
@@ -83,7 +80,9 @@ title: Percepción Ciudadana
             });
 
         var divGraph = rowCandidato.append('div')
-            .attr('class', 'col-sm-10 graph')
+            .attr('class', 'col-sm-10')
+            .append('div')
+            .attr('class', 'graph')
             .call(barchart);
 
 
