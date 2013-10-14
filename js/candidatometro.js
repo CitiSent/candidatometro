@@ -127,29 +127,24 @@ Candidatometro.BarChart = function() {
                 .attr('width', barW)
                 .classed('bc-phantom', true)
                 .on('mouseover', function(d) {
-                    // Tooltip
+                    // Create the tooltip with its content
                     var tooltip = d3.select('body').append('div')
                         .attr('class', 'bc-tooltip');
-
                     tooltip.append('p')
                         .attr('class', 'bc-tooltip-title')
                         .text(d.date.toLocaleDateString());
-
                 })
                 .on('mousemove', function() {
                     var tooltip = d3.select('body').select('div.bc-tooltip'),
                         tH = chart.int(tooltip.style('height'));
-
+                    // Adjust the position of the tooltip so it follows the pointer
                     tooltip
                         .style('left', (d3.event.pageX + 10) + 'px')
                         .style('top', (d3.event.pageY - tH / 2) + 'px');
-
-                    console.log('H');
                 })
                 .on('mouseout', function() {
                     d3.select('body').select('div.bc-tooltip').remove();
                 });
-
 
             // Time Axis
             // ---------
