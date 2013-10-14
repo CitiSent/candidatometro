@@ -65,26 +65,42 @@ Candidatometro.BarChart = function() {
                 .domain(chart.timeDomain())
                 .range(d3.range(0, chart.timeDomain().length));
 
-            var dExtent = d3.extent(data, function(d) { return d.pos + d.neg + d.neu; }),
+            var dExtent = d3.extent(data, function(d) { return d3.max([d.pos + d.neu / 2, d.neg + d.neu / 2]); }),
                 pExtent = chart.postDomain() ? chart.postDomain() : dExtent;
 
             var yScale = d3.scale.linear()
                 .domain(pExtent)
-                .range([2, height - 2]);
+                .range([4, height / 2]);
 
+            // Data Items
             var gItem = gchart.selectAll('g.bc-item')
                 .data(data)
                 .enter()
                 .append('g')
                 .attr('class', 'bc-item')
                 .attr('transform', function(d) {
-                    return chart.svgt([barW * tScale(d.date), 0]);
+                    return chart.svgt([barW * tScale(d.date), height / 2]);
                 });
 
+            // Positive Bars
+            gItem.append('rect')
+                .attr('y', function(d) { return -yScale(d.pos + d.neu / 2); })
+                .attr('width', barW)
+                .attr('height', function(d) { return yScale(d.pos + d.neu / 2); })
+                .attr('class', 'bc-pos');
+
+            // Negative Bars
             gItem.append('rect')
                 .attr('width', barW)
-                .attr('height', function(d) { return yScale(d.pos + d.neg + d.neu); })
-                .attr('fill', '#aaa');
+                .attr('height', function(d) { return yScale(d.neg + d.neu / 2); })
+                .attr('class', 'bc-neg');
+
+            // Neutral Bars
+            gItem.append('rect')
+                .attr('y', function(d) { return -yScale(d.neu / 2); })
+                .attr('width', barW)
+                .attr('height', function(d) { return yScale(d.neu); })
+                .attr('class', 'bc-neu');
 
 
         });

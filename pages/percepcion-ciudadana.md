@@ -1,17 +1,43 @@
 ---
-layout: base
+layout: standard
 title: Percepción Ciudadana
 ---
 
-<style>
-</style>
 
-<h1 class='thin orange'>{{ page.title }}</h1>
 <div class='row'>
-    <div class='tabla-de-agendas' id='chart'>
-        <!-- Charts Here -->
+    <div class='col-sm-7'>
+        <h1 class='thin orange'>{{ page.title }}</h1>
+    </div>
+    <div class='col-sm-5 tright'>
+        <a class='next-question' href='{{ site.baseurl }}/de-que-hablan'>
+            <span class='question'>¿de qué hablan los candidatos?</span> <i class='icon-arrow-right'></i>
+        </a>
     </div>
 </div>
+
+<div class='row'>
+    <div class='col-md-12 air-top'>
+        <div class='tabla-de-agendas' id='charts'>
+
+        </div>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-sm-12 tright'>
+        <a class='next-question' href='{{ site.baseurl }}/de-que-hablan'>
+            <span class='question'>¿de qué hablan los candidatos?</span> <i class='icon-arrow-right'></i>
+        </a>
+    </div>
+</div>
+
+<hr id='metodo'>
+<h2 class='air-top orange thin'>Metodología</h2>
+<div class='row'>
+    <div class='col-sm-6'></div>
+    <div class='col-sm-6'></div>
+</div>
+
 
 <!-- Libraries -->
 <script src="{{ site.baseurl }}/js/lib/d3.v3.min.js" charset="utf-8"></script>
@@ -25,8 +51,6 @@ title: Percepción Ciudadana
 
     var dset = Candidatometro.Dataset()
         .json(jsonUrl);
-
-
 
 
     var a = {};
@@ -57,7 +81,7 @@ title: Percepción Ciudadana
         var barchart = Candidatometro.BarChart()
             .timeDomain(d3.time.days(from, to));
 
-        var rowCandidato = d3.select('#chart').selectAll('div.row.candidato')
+        var rowCandidato = d3.select('#charts').selectAll('div.row.candidato')
             .data(data)
             .enter()
             .append('div')
@@ -69,7 +93,7 @@ title: Percepción Ciudadana
 
         divAvatar
             .append('img')
-            .attr('class', 'img-circle img-responsive')
+            .attr('class', 'img-circle')
             .attr('src', function(d) { return '{{ site.baseurl }}/img/' + d.img; });
 
         divAvatar.append('h6')
@@ -80,9 +104,9 @@ title: Percepción Ciudadana
             });
 
         var divGraph = rowCandidato.append('div')
-            .attr('class', 'col-sm-10')
+            .attr('class', 'col-sm-10 graph')
             .append('div')
-            .attr('class', 'graph')
+            .attr('class', 'chart')
             .call(barchart);
 
 

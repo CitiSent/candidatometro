@@ -1,7 +1,32 @@
 
 /* Time Bar Chart */
 .bc-bg {
-    fill: #a40000;
+    fill: #eeeeec;
     fill-opacity: 0.2;
+}
+
+.bc-pos {
+    fill: #00aa00;
+    stroke: #fff;
+    stroke-opacity: 0.8;
+}
+
+.bc-neu {
+    fill: #aaa;
+    stroke: #fff;
+    stroke-opacity: 0.8;
+}
+
+.bc-neg {
+    fill: #aa0000;
+    stroke: #fff;
+    stroke-opacity: 0.8;
+}
+
+.bc-grid {
+    fill: #babdb6;
+    fill-opacity: 0.0;
+    stroke: #fff;
+    stroke-opacity: 0.8;
 }
 
