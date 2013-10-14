@@ -10,8 +10,8 @@ title: Candidatómetro
     <p class='big thin'>Este candidatómetro está hecho en su totalidad con <a href='http://www.citisent.com'>CitiSent</a> y sus herramientas de análisis. Queremos usar las candidaturas como un ejemplo de cómo configurar estudios exponiendo su metodología en cada caso.</p>
     <p class='big thin'>Las preguntas que tenemos son estas:</p>
     <ul class='air-top icons-ul preguntas'>
-      <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}que-opina-la-gente">¿qué opina la gente de los candidatos?</a></li>
-      <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}de-que-hablan">¿de qué hablan los candidatos?</a></li>
+      <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}/que-opina-la-gente">¿qué opina la gente de los candidatos?</a></li>
+      <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}/de-que-hablan">¿de qué hablan los candidatos?</a></li>
     </ul>
 
   </div>
