@@ -2,14 +2,16 @@
 layout: standard
 title: ¿de qué hablan los candidatos?
 ---
-
-<h1 class='thin orange'>{{ page.title }}</h1>
-<div class='row '>
-<div class='tright'>
-    <a class='btn btn-xs btn-black'>¿cómo evoluciona el discurso de los candidatos? <i class='icon-arrow-right'></i></a>
+<div class='row'>
+  <div class='col-sm-6'>
+    <h1 class='thin orange'>{{ page.title }}</h1>
+  </div>
+  <div class='col-sm-6 tright'>
+    <a class='next-question' href='{{ site.baseurl }}/que-opina-la-gente'>
+      <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='icon-arrow-right'></i>
+    </a>
+  </div>
 </div>
-</div>
-
 <div class='row'>
     <div class='col-md-12 air-top'>
         <div class='tabla-comparativa'>
@@ -77,11 +79,89 @@ title: ¿de qué hablan los candidatos?
       </div><!-- /. tabla de agendas -->
   </div>
 </div>
-
-<div class='row air-top air-bottom'>
-<div class='tright'>
-    <a class='btn btn-xs btn-black'>¿cómo evoluciona el discurso de los candidatos? <i class='icon-arrow-right'></i></a>
+<div class='row'>
+  <div class='col-sm-12 tright'>
+    <a class='next-question' href='{{ site.baseurl }}/que-opina-la-gente'>
+      <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='icon-arrow-right'></i>
+    </a>
+  </div>
 </div>
+<hr id='metodo'>
+<h2 class='air-top orange thin'>Metodología</h2>
+<div class='row'>
+  <div class='col-sm-6'>
+    <p>Este estudio considera la definición previa de una <strong>agenda temática</strong> determinada a partir de las propuestas públicas de los candidatos en la Web. Esta agenda se define como árbol de palabras, con 8 categorías principales:</p>
+    <ul class='icons-ul'>
+      <li><i class='cs-icon-topic'></i> <strong>Educación</strong>
+        <ul>
+          <li>Institucionalidad en Educación</li>
+          <li>Provisión de Educación</li>
+          <li>Financiamiento en Educación</li>
+        </ul>
+      </li>
+      <li><i class='cs-icon-topic'></i> <strong>Salud</strong>
+        <ul>
+          <li>Institucionalidad en Salud</li>
+          <li>Provisión de Salud</li>
+          <li>Accesibilidad en Salud</li>
+        </ul>
+      </li>
+      <li><i class='cs-icon-topic'></i> <strong>Economía</strong>
+        <ul>
+          <li>Sistema Previsional</li>
+          <li>Política Económica</li>
+          <li>Distribución Económica</li>
+        </ul>
+      </li>
+      <li><i class='cs-icon-topic'></i> <strong>Gobernabilidad y Estado</strong>
+        <ul>
+          <li>Participación y Justicia</li>
+          <li>Desarrollo Regional</li>
+          <li>Constitución</li>
+        </ul>
+      </li>
+      <li><i class='cs-icon-topic'></i> <strong>Energía y Medio Ambiente</strong>
+        <ul>
+          <li>Infraestructura Energética</li>
+          <li>Generación y Consumo de Energía</li>
+          <li>Institucionalidad en Energía y Medio Ambiente</li>
+        </ul>
+      </li>
+      <li><i class='cs-icon-topic'></i> <strong>Seguridad</strong>
+        <ul>
+          <li>Acceso a la Seguridad</li>
+          <li>Provisión de Seguridad</li>
+          <li>Institucionalidad en Seguridad</li>
+        </ul>
+      </li>
+      <li><i class='cs-icon-topic'></i> <strong>Transporte</strong>
+        <ul>
+          <li>Accesibilidad al Transporte</li>
+          <li>Infraestructura y Servicio de Transporte</li>
+          <li>Institucionalidad en Transporte</li>
+        </ul>
+      </li>
+      <li><i class='cs-icon-topic'></i> <strong>Defensa y Política Exterior</strong>
+        <ul>
+          <li>Financiamiento en Defensa</li>
+          <li>Soberanía</li>
+          <li>Tratados Internacionales</li>
+          <li>Institucionalidad en Defensa y Política Exterior</li>
+        </ul>
+      </li>
+    </ul>
+    <p>Esta agenda consta de <strong>290</strong> tópicos <i class='cs-icon-topic'></i>que son consultados permanentemente por CitiSent.</p>
+  </div>
+  <div class='col-sm-6'>
+    <p>Queremos enfrentar esta agenda al discurso de cada candidato y su coalición para poder comparar. Para esto definimos 9 grupos de fuentes <i class='cs-icon-source'></i>, 1 para cada candidato. Para esto importamos los usuarios de Twitter que declaran apoyar a los candidatos, los miembros de sus listas y coaliciones políticas</p>
+    <p>De este modo, definimos 9 estudios longitudinales que corren en paralelo, cada uno compuesto de:</p>
+    <ol>
+      <li><i class='cs-icon-topic'></i> La agenda temática (idéntica para cada estudio)</li>
+      <li><i class='cs-icon-source'></i> La lista del candidato y sus partidarios</li>
+      <li><i class='cs-icon-place'></i> Sin especificaciones geográficas (trae todo)</li>
+    </ol>
+    <p>Entonces, lo presentado aquí corresponde a los temas de la agenda (290 tópicos independientes) que son mencionados por el candidato o por miembros de su lista o partidarios. </p>
+  </div>
 </div>
 
 
