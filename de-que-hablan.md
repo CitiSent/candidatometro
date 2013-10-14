@@ -7,7 +7,7 @@ title: ¿de qué hablan los candidatos?
     <h1 class='thin orange'>{{ page.title }}</h1>
   </div>
   <div class='col-sm-6 tright'>
-    <a class='next-question' href='que-opina-la-gente'>
+    <a class='next-question' href='{{ site.baseurl }}/que-opina-la-gente'>
       <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='icon-arrow-right'></i>
     </a>
   </div>
@@ -81,16 +81,17 @@ title: ¿de qué hablan los candidatos?
 </div>
 <div class='row'>
   <div class='col-sm-12 tright'>
-    <a class='next-question' href='que-opina-la-gente'>
+    <a class='next-question' href='{{ site.baseurl }}/que-opina-la-gente'>
       <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='icon-arrow-right'></i>
     </a>
   </div>
 </div>
-<h2 class='thin orange'>Metodología</h2>
+<hr id='metodo'>
+<h2 class='air-top orange thin'>Metodología</h2>
 <div class='row'>
   <div class='col-sm-6'>
     <p>Este estudio considera la definición previa de una <strong>agenda temática</strong> determinada a partir de las propuestas públicas de los candidatos en la Web. Esta agenda se define como árbol de palabras, con 8 categorías principales:</p>
-    <ol>
+    <ul class='icons-ul'>
       <li><i class='cs-icon-topic'></i> <strong>Educación</strong>
         <ul>
           <li>Institucionalidad en Educación</li>
@@ -148,7 +149,7 @@ title: ¿de qué hablan los candidatos?
           <li>Institucionalidad en Defensa y Política Exterior</li>
         </ul>
       </li>
-    </ol>
+    </ul>
     <p>Esta agenda consta de <strong>290</strong> tópicos <i class='cs-icon-topic'></i>que son consultados permanentemente por CitiSent.</p>
   </div>
   <div class='col-sm-6'>
