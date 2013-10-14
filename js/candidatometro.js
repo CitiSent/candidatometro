@@ -130,9 +130,22 @@ Candidatometro.BarChart = function() {
                     // Create the tooltip with its content
                     var tooltip = d3.select('body').append('div')
                         .attr('class', 'bc-tooltip');
+                    // Title
                     tooltip.append('p')
                         .attr('class', 'bc-tooltip-title')
                         .text(d.date.toDateString());
+                    // Info
+                    var pInfo = tooltip.append('p')
+                        .attr('class', 'bc-tooltip-info');
+
+                    pInfo.append('span').text(d.pos).attr('class', 'bc-pos');
+                    pInfo.append('span').text(' + ');
+                    pInfo.append('span').text(d.neu).attr('class', 'bc-neu');
+                    pInfo.append('span').text(' + ');
+                    pInfo.append('span').text(d.neg).attr('class', 'bc-neg');
+                    pInfo.append('span').text(' = ');
+                    pInfo.append('span').text(d.pos + d.neu + d.neg);
+
                 })
                 .on('mousemove', function() {
                     var tooltip = d3.select('body').select('div.bc-tooltip'),
