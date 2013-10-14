@@ -5,7 +5,7 @@ Candidatometro.BarChart = function() {
     'use strict';
 
     // Initial Layout
-    var margin = {top: 10, right: 10, bottom: 10, left: 10},
+    var margin = {top: 2, right: 10, bottom: 18, left: 10},
         height = 80;
 
     var timeDomain = null;
@@ -28,11 +28,11 @@ Candidatometro.BarChart = function() {
 
             svg.append('g')
                 .attr('class', 'bc-chart')
-                .attr('transform', chart.svgt([margin.left, margin.top]))
-                .append('rect')
-                .attr('class', 'bc-bg')
-                .attr('width', divW - margin.left - margin.right)
-                .attr('height', height - margin.top - margin.bottom);
+                .attr('transform', chart.svgt([margin.left, margin.top]));
+
+            svg.append('g')
+                .attr('class', 'bc-xaxis')
+                .attr('transform', chart.svgt([margin.left, height + margin.top]));
 
         });
 
@@ -48,23 +48,29 @@ Candidatometro.BarChart = function() {
                 width = chart.int(div.style('width')) - margin.left - margin.top,
                 height = chart.int(div.style('height')) - margin.top - margin.bottom,
                 svg = div.select('svg'),
-                gchart = svg.select('g.bc-chart');
+                gchart = svg.select('g.bc-chart'),
+                gxaxis = svg.select('g.bc-xaxis');
 
             // Adjust the Layout
+            // -----------------
             svg
                 .attr('width', width + margin.left + margin.right)
                 .attr('height', height + margin.top + margin.bottom);
 
-            gchart.select('rect.bc-bg')
-                .attr('width', width)
-                .attr('height', height);
+            gxaxis
+                .attr('transform', chart.svgt([margin.left, height + margin.top]));
 
-            var barW = width / chart.timeDomain().length;
+            // Scales
+            // ------
 
-            var tScale = d3.time.scale()
-                .domain(chart.timeDomain())
-                .range(d3.range(0, chart.timeDomain().length));
+            var barW = chart.int(width / chart.timeDomain().length);
 
+            // X Scale
+            var xScale = d3.time.scale.utc()
+                .domain(d3.extent(chart.timeDomain()))
+                .rangeRound([barW / 2, width - barW / 2]);
+
+            // Y Extent and Scale
             var dExtent = d3.extent(data, function(d) { return d3.max([d.pos + d.neu / 2, d.neg + d.neu / 2]); }),
                 pExtent = chart.postDomain() ? chart.postDomain() : dExtent;
 
@@ -73,13 +79,15 @@ Candidatometro.BarChart = function() {
                 .range([4, height / 2]);
 
             // Data Items
+            // ----------
+
             var gItem = gchart.selectAll('g.bc-item')
                 .data(data)
                 .enter()
                 .append('g')
                 .attr('class', 'bc-item')
                 .attr('transform', function(d) {
-                    return chart.svgt([barW * tScale(d.date), height / 2]);
+                    return chart.svgt([xScale(d.date) - barW / 2, height / 2]);
                 });
 
             // Positive Bars
@@ -91,17 +99,27 @@ Candidatometro.BarChart = function() {
 
             // Negative Bars
             gItem.append('rect')
+                .attr('y', 0)
                 .attr('width', barW)
                 .attr('height', function(d) { return yScale(d.neg + d.neu / 2); })
                 .attr('class', 'bc-neg');
 
-            // Neutral Bars
+            // Neutral bars
             gItem.append('rect')
                 .attr('y', function(d) { return -yScale(d.neu / 2); })
                 .attr('width', barW)
                 .attr('height', function(d) { return yScale(d.neu); })
                 .attr('class', 'bc-neu');
 
+
+            // Time Axis
+            // ---------
+
+            var xAxis = d3.svg.axis()
+                .scale(xScale)
+                .orient('bottom');
+
+            gxaxis.call(xAxis);
 
         });
     };
