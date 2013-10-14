@@ -1,39 +1,37 @@
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse">
-          <span class="sr-only">Controlar navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="/" class="navbar-brand cf"><span class="logo">Candidatómetro</span></a>
-      </div>
-
-      <!-- acá todo lo colapsable -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse in">
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            Visualizaciones<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="#" title="Agenda"><strong>Énfasis programático</strong><br><small>¿de qué hablan los candidatos?</small></a>
-              </li>
-              <li>
-                <a href="#" title="Percepción"><strong>Desarrollo programático</strong><br><small>¿cómo evoluciona el discurso de los candidatos?</small></a>
-              </li>
-              <li>
-                <a href="#" title="Solicitud de Cuenta"><strong>Percepción Ciudadana</strong><br><small>candidad y calidad de las menciones</small></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav pull-right">
-          <li>
-            <a href="#" title="Metodología">Metodología</a>
-          </li>
-        </ul>
-      </div>
+<nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
+  <div class='container'>
+    <div class='navbar-header'>
+      <button type='button' class='navbar-toggle' data-toggle='collapse'>
+        <span class='sr-only'>Controlar Navegación</span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+      </button>
+      <a href='/' class='navbar-brand cf'><span class='logo'><img src="{{ site.baseurl }}/img/icons/favicon.png">Candidatómetro</span></a>
     </div>
-  </nav><!-- Fin Barra de Navegacion -->
+
+    <!-- acá todo lo colapsable -->
+    <div class='collapse navbar-collapse navbar-ex1-collapse in'>
+      <ul class='nav navbar-nav'>
+        <li class='dropdown'>
+          <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+          Visualizaciones<b class='caret'></b></a>
+          <ul class='dropdown-menu'>
+            <li>
+              <a href='{{ site.baseurl }}' title='Agenda'><strong>¿qué opinan de los candidatos?</strong><br><small>percepción ciudadana</small></a>
+            </li>
+            <li>
+              <a href='{{ site.baseurl }}' title='Percepción'><strong>¿de qué hablan los candidatos?</strong><br><small>comparación de discurso en relación a la agenda</small></a>
+            </li>
+
+          </ul>
+        </li>
+      </ul>
+      <ul class='nav navbar-nav pull-right'>
+        <li>
+          <a href='#metodo' title='Metodología' >Metodología</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
