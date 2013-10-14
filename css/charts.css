@@ -6,18 +6,21 @@
 }
 
 .bc-pos {
+    color: #00aa00;
     fill: #00aa00;
     stroke: #fff;
     stroke-opacity: 0.8;
 }
 
 .bc-neu {
+    color: #aaa;
     fill: #aaa;
     stroke: #fff;
     stroke-opacity: 0.8;
 }
 
 .bc-neg {
+    color: #aa0000;
     fill: #aa0000;
     stroke: #fff;
     stroke-opacity: 0.8;
@@ -52,10 +55,12 @@
 .bc-tooltip {
   position: absolute;
   text-align: center;
-  width: 80px;
-  height: 40px;
+  width: 140px;
+  height: 54px;
+  padding: 4px;
   font: 10px sans-serif;
-  background: #ddd;
+  background: #eee;
+  border: solid 1px #aaa;
   pointer-events: none;
 }
 
@@ -64,4 +69,9 @@
     font: 12px sans-serif;
 }
 
+.bc-tooltip-info {
+    line-height: 0.1;
+    font-weight: bold;
+    font: 11px sans-serif;
+}
 

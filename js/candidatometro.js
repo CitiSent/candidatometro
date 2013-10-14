@@ -66,7 +66,7 @@ Candidatometro.BarChart = function() {
             var barW = chart.int(width / chart.timeDomain().length);
 
             // X Scale
-            var xScale = d3.time.scale.utc()
+            var xScale = d3.time.scale()
                 .domain(d3.extent(chart.timeDomain()))
                 .rangeRound([barW / 2, width - barW / 2]);
 
@@ -130,9 +130,22 @@ Candidatometro.BarChart = function() {
                     // Create the tooltip with its content
                     var tooltip = d3.select('body').append('div')
                         .attr('class', 'bc-tooltip');
+                    // Title
                     tooltip.append('p')
                         .attr('class', 'bc-tooltip-title')
-                        .text(d.date.toLocaleDateString());
+                        .text(d.date.toDateString());
+                    // Info
+                    var pInfo = tooltip.append('p')
+                        .attr('class', 'bc-tooltip-info');
+
+                    pInfo.append('span').text(d.pos).attr('class', 'bc-pos');
+                    pInfo.append('span').text(' + ');
+                    pInfo.append('span').text(d.neu).attr('class', 'bc-neu');
+                    pInfo.append('span').text(' + ');
+                    pInfo.append('span').text(d.neg).attr('class', 'bc-neg');
+                    pInfo.append('span').text(' = ');
+                    pInfo.append('span').text(d.pos + d.neu + d.neg);
+
                 })
                 .on('mousemove', function() {
                     var tooltip = d3.select('body').select('div.bc-tooltip'),
@@ -203,7 +216,8 @@ Candidatometro.Dataset = function() {
                 // Add the parent values
                 parent.values = d3.map();
                 parent.data.forEach(function(d) {
-                    parent.values.set(d.t, {neg: d.n, neu: d.m, pos: d.p, date: new Date(d.t)});
+                    var _d = d.t.split('-').map(function(u) { return +u; });
+                    parent.values.set(d.t, {neg: d.n, neu: d.m, pos: d.p, date: new Date(_d[0], _d[1] - 1, _d[2])});
                 });
 
                 // Add the children values
