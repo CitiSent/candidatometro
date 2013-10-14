@@ -81,6 +81,7 @@ Candidatometro.BarChart = function() {
             // Data Items
             // ----------
 
+            // Bar Groups
             var gItem = gchart.selectAll('g.bc-item')
                 .data(data)
                 .enter()
@@ -88,6 +89,14 @@ Candidatometro.BarChart = function() {
                 .attr('class', 'bc-item')
                 .attr('transform', function(d) {
                     return chart.svgt([xScale(d.date) - barW / 2, height / 2]);
+                })
+                .on('mouseover', function(d) {
+                    d3.select(this).append('text')
+                        .attr('class', 'bc-info')
+                        .attr('x', 10)
+                        .attr('y', 0)
+                        .text(d.date);
+
                 });
 
             // Positive Bars
@@ -104,12 +113,42 @@ Candidatometro.BarChart = function() {
                 .attr('height', function(d) { return yScale(d.neg + d.neu / 2); })
                 .attr('class', 'bc-neg');
 
-            // Neutral bars
+            // Neutral Bars
             gItem.append('rect')
                 .attr('y', function(d) { return -yScale(d.neu / 2); })
                 .attr('width', barW)
                 .attr('height', function(d) { return yScale(d.neu); })
                 .attr('class', 'bc-neu');
+
+            // Phantom Bars for the Tooltip
+            gItem.append('rect')
+                .attr('y', -height / 2)
+                .attr('height', height)
+                .attr('width', barW)
+                .classed('bc-phantom', true)
+                .on('mouseover', function(d) {
+                    // Tooltip
+                    var tooltip = d3.select('body').append('div')
+                        .attr('class', 'bc-tooltip');
+
+                    tooltip.append('p')
+                        .attr('class', 'bc-tooltip-title')
+                        .text(d.date.toLocaleDateString());
+
+                })
+                .on('mousemove', function() {
+                    var tooltip = d3.select('body').select('div.bc-tooltip'),
+                        tH = chart.int(tooltip.style('height'));
+
+                    tooltip
+                        .style('left', (d3.event.pageX + 10) + 'px')
+                        .style('top', (d3.event.pageY - tH / 2) + 'px');
+
+                    console.log('H');
+                })
+                .on('mouseout', function() {
+                    d3.select('body').select('div.bc-tooltip').remove();
+                });
 
 
             // Time Axis
@@ -140,6 +179,7 @@ Candidatometro.BarChart = function() {
     // Utils
     chart.int = function(value) { return parseInt(value, 10); };
     chart.svgt = function(value) { return 'translate(' + value + ')'; };
+    chart.svgs = function(value) { return 'scale(' + value + ')'; };
 
 
     _.extend(chart, Backbone.Events);
