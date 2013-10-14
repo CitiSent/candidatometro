@@ -66,7 +66,7 @@ Candidatometro.BarChart = function() {
             var barW = chart.int(width / chart.timeDomain().length);
 
             // X Scale
-            var xScale = d3.time.scale.utc()
+            var xScale = d3.time.scale()
                 .domain(d3.extent(chart.timeDomain()))
                 .rangeRound([barW / 2, width - barW / 2]);
 
@@ -132,7 +132,7 @@ Candidatometro.BarChart = function() {
                         .attr('class', 'bc-tooltip');
                     tooltip.append('p')
                         .attr('class', 'bc-tooltip-title')
-                        .text(d.date.toLocaleDateString());
+                        .text(d.date.toDateString());
                 })
                 .on('mousemove', function() {
                     var tooltip = d3.select('body').select('div.bc-tooltip'),
@@ -203,7 +203,8 @@ Candidatometro.Dataset = function() {
                 // Add the parent values
                 parent.values = d3.map();
                 parent.data.forEach(function(d) {
-                    parent.values.set(d.t, {neg: d.n, neu: d.m, pos: d.p, date: new Date(d.t)});
+                    var _d = d.t.split('-').map(function(u) { return +u; });
+                    parent.values.set(d.t, {neg: d.n, neu: d.m, pos: d.p, date: new Date(_d[0], _d[1] - 1, _d[2])});
                 });
 
                 // Add the children values
