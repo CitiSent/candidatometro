@@ -30,3 +30,16 @@
     stroke-opacity: 0.8;
 }
 
+/* Time Axis */
+.bc-xaxis path,
+.bc-xaxis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.bc-xaxis text {
+    fill: #000;
+    font-family: sans-serif;
+    font-size: 11px;
+}
