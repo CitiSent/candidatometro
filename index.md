@@ -13,7 +13,7 @@ title: Candidatómetro
       <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}/que-opina-la-gente">¿qué opina la gente de los candidatos?</a></li>
       <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}/de-que-hablan">¿de qué hablan los candidatos?</a></li>
     </ul>
-
+    <p class='big thin'>Te invitamos a conocer  Citisent en <a href='http://www.citisent.com' >www.citisent.com</a></p>
   </div>
 
   <div class='tabla-de-candidatos'>
@@ -77,7 +77,7 @@ title: Candidatómetro
 </div>
 
 <hr id='metodo'>
-<h2 class='air-top orange thin'>Metodología</h2>
+<h2 class='air-top orange thin'>Metodología General</h2>
 
 <div class='row'>
   <div class='col-sm-6'>
@@ -86,19 +86,19 @@ title: Candidatómetro
     <div class='row'>
       <div class='components'>
         <div class='col-sm-3 tcenter'>
-          <div class='well'><strong>temas</strong> <i class='cs-icon-topic'></i ></div>
+          <div class='well'><i class='cs-icon-topic'></i><br><strong>temas</strong></div>
         </div>
         <div class='col-sm-1 tcenter'>
           <i class='icon-plus'></i>
         </div>
         <div class='col-sm-3 tcenter'>
-          <div class='well'><strong>fuentes</strong> <i class='cs-icon-source'></i></div>
+          <div class='well'><i class='cs-icon-source'></i><br><strong>fuentes</strong></div>
         </div>
         <div class='col-sm-1 tcenter'>
           <i class='icon-plus'></i>
         </div>
         <div class='col-sm-3 tcenter'>
-          <div class='well'><strong>lugares</strong><i class='cs-icon-place'></i></div>
+          <div class='well'><i class='cs-icon-place'></i><br><strong>lugares</strong></div>
         </div>
       </div>
     </div>
@@ -107,6 +107,7 @@ title: Candidatómetro
   </div>
   <div class='col-sm-6'>
     <p>Los resultados gráficos reflejados en las preguntas del presente candidatómetro corresponden a visualizaciones realizadas a partir de 1 o más estudios. En cada caso exponemos las metodología utilizada a fin de explicitar el razonamiento detrás de cada formulación.</p>
+    <p>Como ya está dicho, cada estudio puede estar compuesto puede estar compuesto de temas, fuentes y/o lugares. Todos los elementos recolectados bajo estos criterios son procesados definiendo su <strong>polaridad</strong>, esto es un proceso de clasificación de los <em>twits</em> en base a su contenido positivo, negativo o neutral.</p>
   </div>
 </div>
 
