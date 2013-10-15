@@ -73,7 +73,6 @@ title: Percepción Ciudadana
             {name: 'franco parisi',          img: 'fot_franco_parisi.jpg'}
         ];
 
-
         data.forEach(function(d) {
             d.data = dset.items().get(d.name);
         });
