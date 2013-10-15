@@ -4,39 +4,198 @@ var Candidatometro = Candidatometro || {};
 Candidatometro.BarChart = function() {
     'use strict';
 
+    // Initial Layout
+    var margin = {top: 2, right: 10, bottom: 18, left: 10},
+        height = 80;
+
+    var timeDomain = null;
+    var postDomain = null;
+
     var selection;
 
     function chart(_selection) {
         selection = _selection;
-        selection.each(function(datum) {
-
-            var data = datum.data;
+        selection.each(function() {
 
             var div = d3.select(this),
                 svg = div.append('svg');
 
-            var divW = chart.int(div.style('width')),
-                divH = chart.int(div.style('height'));
+            var divW = chart.int(div.style('width')) - 30;
 
             svg
                 .attr('width', divW)
-                .attr('height', divH);
+                .attr('height', height);
 
-            console.log(data);
+            svg.append('g')
+                .attr('class', 'bc-chart')
+                .attr('transform', chart.svgt([margin.left, margin.top]));
 
+            svg.append('g')
+                .attr('class', 'bc-xaxis')
+                .attr('transform', chart.svgt([margin.left, height + margin.top]));
 
         });
+
+        chart.update();
     }
 
-    // Utils
+    chart.update = function() {
+        selection.each(function(datum) {
 
-    chart.int = function(value) {
-        return parseInt(value, 10);
+            var data = _.pluck(datum.data.entries(), 'value');
+
+            var div = d3.select(this),
+                width = chart.int(div.style('width')) - margin.left - margin.top,
+                height = chart.int(div.style('height')) - margin.top - margin.bottom,
+                svg = div.select('svg'),
+                gchart = svg.select('g.bc-chart'),
+                gxaxis = svg.select('g.bc-xaxis');
+
+            // Adjust the Layout
+            // -----------------
+            svg
+                .attr('width', width + margin.left + margin.right)
+                .attr('height', height + margin.top + margin.bottom);
+
+            gxaxis
+                .attr('transform', chart.svgt([margin.left, height + margin.top]));
+
+            // Scales
+            // ------
+
+            var barW = chart.int(width / chart.timeDomain().length);
+
+            // X Scale
+            var xScale = d3.time.scale()
+                .domain(d3.extent(chart.timeDomain()))
+                .rangeRound([barW / 2, width - barW / 2]);
+
+            // Y Extent and Scale
+            var dExtent = d3.extent(data, function(d) { return d3.max([d.pos + d.neu / 2, d.neg + d.neu / 2]); }),
+                pExtent = chart.postDomain() ? chart.postDomain() : dExtent;
+
+            var yScale = d3.scale.linear()
+                .domain(pExtent)
+                .range([4, height / 2]);
+
+            // Data Items
+            // ----------
+
+            // Bar Groups
+            var gItem = gchart.selectAll('g.bc-item')
+                .data(data)
+                .enter()
+                .append('g')
+                .attr('class', 'bc-item')
+                .attr('transform', function(d) {
+                    return chart.svgt([xScale(d.date) - barW / 2, height / 2]);
+                })
+                .on('mouseover', function(d) {
+                    d3.select(this).append('text')
+                        .attr('class', 'bc-info')
+                        .attr('x', 10)
+                        .attr('y', 0)
+                        .text(d.date);
+
+                });
+
+            // Positive Bars
+            gItem.append('rect')
+                .attr('y', function(d) { return -yScale(d.pos + d.neu / 2); })
+                .attr('width', barW)
+                .attr('height', function(d) { return yScale(d.pos + d.neu / 2); })
+                .attr('class', 'bc-pos');
+
+            // Negative Bars
+            gItem.append('rect')
+                .attr('y', 0)
+                .attr('width', barW)
+                .attr('height', function(d) { return yScale(d.neg + d.neu / 2); })
+                .attr('class', 'bc-neg');
+
+            // Neutral Bars
+            gItem.append('rect')
+                .attr('y', function(d) { return -yScale(d.neu / 2); })
+                .attr('width', barW)
+                .attr('height', function(d) { return yScale(d.neu); })
+                .attr('class', 'bc-neu');
+
+            // Phantom Bars for the Tooltip
+            gItem.append('rect')
+                .attr('y', -height / 2)
+                .attr('height', height)
+                .attr('width', barW)
+                .classed('bc-phantom', true)
+                .on('mouseover', function(d) {
+                    // Create the tooltip with its content
+                    var tooltip = d3.select('body').append('div')
+                        .attr('class', 'bc-tooltip');
+                    // Title
+                    tooltip.append('p')
+                        .attr('class', 'bc-tooltip-title')
+                        .text(d.date.toDateString());
+                    // Info
+                    var pInfo = tooltip.append('p')
+                        .attr('class', 'bc-tooltip-info');
+
+                    pInfo.append('span').text(d.pos).attr('class', 'bc-pos');
+                    pInfo.append('span').text(' + ');
+                    pInfo.append('span').text(d.neu).attr('class', 'bc-neu');
+                    pInfo.append('span').text(' + ');
+                    pInfo.append('span').text(d.neg).attr('class', 'bc-neg');
+                    pInfo.append('span').text(' = ');
+                    pInfo.append('span').text(d.pos + d.neu + d.neg);
+
+                })
+                .on('mousemove', function() {
+                    var tooltip = d3.select('body').select('div.bc-tooltip'),
+                        tH = chart.int(tooltip.style('height'));
+                    // Adjust the position of the tooltip so it follows the pointer
+                    tooltip
+                        .style('left', (d3.event.pageX + 10) + 'px')
+                        .style('top', (d3.event.pageY - tH / 2) + 'px');
+                })
+                .on('mouseout', function() {
+                    d3.select('body').select('div.bc-tooltip').remove();
+                });
+
+            // Time Axis
+            // ---------
+
+            var xAxis = d3.svg.axis()
+                .scale(xScale)
+                .orient('bottom');
+
+            gxaxis.call(xAxis);
+
+        });
     };
+
+    // Accessors
+    chart.timeDomain = function(value) {
+        if (!arguments.length) { return timeDomain; }
+        timeDomain = value;
+        return chart;
+    };
+
+    chart.postDomain = function(value) {
+        if (!arguments.length) { return postDomain; }
+        postDomain = value;
+        return chart;
+    };
+
+    // Utils
+    chart.int = function(value) { return parseInt(value, 10); };
+    chart.svgt = function(value) { return 'translate(' + value + ')'; };
+    chart.svgs = function(value) { return 'scale(' + value + ')'; };
+
 
     _.extend(chart, Backbone.Events);
     return chart;
 };
+
+
+
 
 Candidatometro.Dataset = function() {
     'use strict';
@@ -57,7 +216,8 @@ Candidatometro.Dataset = function() {
                 // Add the parent values
                 parent.values = d3.map();
                 parent.data.forEach(function(d) {
-                    parent.values.set(d.t, {neg: d.n, neu: d.m, pos: d.p});
+                    var _d = d.t.split('-').map(function(u) { return +u; });
+                    parent.values.set(d.t, {neg: d.n, neu: d.m, pos: d.p, date: new Date(_d[0], _d[1] - 1, _d[2])});
                 });
 
                 // Add the children values
@@ -69,7 +229,8 @@ Candidatometro.Dataset = function() {
                             parent.values.set(ck, {
                                 neg: pv.neg + cv.neg,
                                 neu: pv.neu + cv.neu,
-                                pos: pv.pos + cv.pos
+                                pos: pv.pos + cv.pos,
+                                date: pv.date
                             });
                         });
                     });

@@ -1,33 +1,77 @@
 
 /* Time Bar Chart */
 .bc-bg {
-    fill: #babdb6;
+    fill: #eeeeec;
     fill-opacity: 0.2;
 }
 
-.bc-bar-pos {
-    fill: #53777A;
-    fill-opacity: 0.9;
+.bc-pos {
+    color: #00aa00;
+    fill: #00aa00;
+    stroke: #fff;
+    stroke-opacity: 0.8;
 }
 
-.bc-bar-neu {
-    fill: #ECD078;
-    fill-opacity: 0.9;
+.bc-neu {
+    color: #aaa;
+    fill: #aaa;
+    stroke: #fff;
+    stroke-opacity: 0.8;
 }
 
-.bc-bar-neg {
-    fill: #C02942;
-    fill-opacity: 0.9;
+.bc-neg {
+    color: #aa0000;
+    fill: #aa0000;
+    stroke: #fff;
+    stroke-opacity: 0.8;
 }
 
-.axis path,
-.axis line {
+.bc-grid {
+    fill: #babdb6;
+    fill-opacity: 0.0;
+    stroke: #fff;
+    stroke-opacity: 0.8;
+}
+
+/* Time Axis */
+.bc-xaxis path,
+.bc-xaxis line {
     fill: none;
-    stroke: black;
+    stroke: #666;
     shape-rendering: crispEdges;
 }
-.axis text {
+
+.bc-xaxis text {
+    fill: #666;
     font-family: sans-serif;
     font-size: 11px;
-    fill: black;
 }
+
+.bc-phantom {
+    fill-opacity: 0.0;
+    stroke-opacity: 0.0;
+}
+
+.bc-tooltip {
+  position: absolute;
+  text-align: center;
+  width: 140px;
+  height: 54px;
+  padding: 4px;
+  font: 10px sans-serif;
+  background: #eee;
+  border: solid 1px #aaa;
+  pointer-events: none;
+}
+
+.bc-tooltip-title {
+    font-weight: bold;
+    font: 12px sans-serif;
+}
+
+.bc-tooltip-info {
+    line-height: 0.1;
+    font-weight: bold;
+    font: 11px sans-serif;
+}
+
