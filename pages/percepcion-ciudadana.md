@@ -106,9 +106,6 @@ title: Percepción Ciudadana
             .attr('class', 'chart')
             .call(barchart);
 
-
-
-
     });
 
 </script>
