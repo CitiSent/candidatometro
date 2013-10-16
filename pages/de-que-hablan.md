@@ -3,8 +3,38 @@ layout: standard
 title: ¿de qué hablan los candidatos?
 ---
 
-<div id="chart">
-    <div class="col-md-3"></div>
+<div class='row'>
+    <div class='col-sm-6'>
+        <h1 class='thin orange'>{{ page.title }}</h1>
+    </div>
+    <div class='col-sm-6 tright'>
+        <a class='next-question' href='{{ site.baseurl }}/que-opina-la-gente'>
+            <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='icon-arrow-right'></i>
+        </a>
+    </div>
+</div>
+
+
+<div class='row row-topics'>
+    <div class='tabla-comparativa' id='chart'>
+
+        <div class='col-md-3'>
+            <div class='labels'>
+                <div class='topic-label'></div>
+                <div class='topic-label'>Educación</div>
+                <div class='topic-label'>Salud</div>
+                <div class='topic-label'>Economía</div>
+                <div class='topic-label'>Gobernabilidad y Estado</div>
+                <div class='topic-label'>Energía y Medio Ambiente</div>
+                <div class='topic-label'>Seguridad</div>
+                <div class='topic-label'>Transporte</div>
+                <div class='topic-label'>Defensa y Política Exterior</div>
+            </div>
+        </div>
+
+        <!-- Vertical Graphics Here -->
+
+    </div>
 </div>
 
 <!-- Libraries -->
@@ -28,11 +58,21 @@ title: ¿de qué hablan los candidatos?
 
     data.forEach(function(d) {
         d.url = '{{ site.baseurl }}/data/agenda/' + d.url;
-        d.img = '{{ site.baseurl }}/img/' + d.img;
     });
 
+    var mdset = Candidatometro.MultiDataset().data(data);
 
-    var bubbleChart = new Candidatometro.BubbleChart();
+    var bubbleChart = new Candidatometro.BubbleChart()
+        .mdataset(mdset);
+
+    // <div class='col-md-1'>
+    //   <div class='avatar'>
+    //     <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_evelyn_matthei.jpg'>
+    //     <h6 class='bold uc'>Evelyn Matthei</h6>
+    //   </div>
+    //   <div class='graph-vertical'>
+    //   </div>
+    // </div>
 
     var colCandidato = d3.select('#chart').selectAll('div.col-md-1')
         .data(data)
@@ -40,15 +80,20 @@ title: ¿de qué hablan los candidatos?
         .append('div')
         .attr('class', 'col-md-1');
 
-    colCandidato.call(bubbleChart);
+    var divAvatar = colCandidato.append('div')
+        .attr('class', 'avatar');
 
+    var divChart = colCandidato.append('div')
+        .attr('class', 'graph-vertical');
 
+    divAvatar.append('img')
+        .attr('class', 'img-circle img-responsive')
+        .attr('src', function(d) { return '{{ site.baseurl }}/img/' + d.img; });
 
+    divAvatar.append('h6')
+        .attr('class', 'bold uc')
+        .text(function(d) { return d.name; });
 
-
-
-
-
-    colCandidato.text(function(d) { return d.name; });
+    divChart.call(bubbleChart);
 
 </script>
