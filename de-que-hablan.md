@@ -16,7 +16,7 @@ title: ¿De qué hablan los candidatos?
 
   <div class='tabla-comparativa'>
 
-    <div class='col-md-3'>
+    <div class='col-md-2'>
       <div class='labels'>
         <div class='topic-label'></div>
         <div class='topic-label'>Educación</div>
@@ -97,6 +97,14 @@ title: ¿De qué hablan los candidatos?
       <div class='avatar'>
         <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_franco_parisi.jpg'>
         <h6 class='bold uc'>Franco Parisi</h6>
+      </div>
+      <div class='graph-vertical'>
+      </div>
+    </div>
+    <div class='col-md-1'>
+      <div class='avatar'>
+        <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_la_calle.jpg'>
+        <h6 class='bold uc'>La calle</h6>
       </div>
       <div class='graph-vertical'>
       </div>
