@@ -6,22 +6,22 @@
 }
 
 .bc-pos {
-    color: #00aa00;
-    fill: #00aa00;
+    color: #2BB6F1; /* #00aa00; */
+    fill: #2BB6F1;  /* #00aa00; */
     stroke: #fff;
     stroke-opacity: 0.8;
 }
 
 .bc-neu {
-    color: #aaa;
-    fill: #aaa;
+    color: #493A35; /* #aaa; */
+    fill: #493A35;  /* #aaa; */
     stroke: #fff;
     stroke-opacity: 0.8;
 }
 
 .bc-neg {
-    color: #aa0000;
-    fill: #aa0000;
+    color: #F85C24; /* #aa0000; */
+    fill: #F85C24;  /* #aa0000; */
     stroke: #fff;
     stroke-opacity: 0.8;
 }
