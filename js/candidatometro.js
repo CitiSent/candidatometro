@@ -1,6 +1,36 @@
 
 var Candidatometro = Candidatometro || {};
 
+
+Candidatometro.BubbleChart = function() {
+    'use strict';
+
+    var selection;
+
+    function chart(_selection) {
+        selection = _selection;
+        selection.each(function(datum) {
+
+
+        });
+    }
+
+    chart.update = function() {
+        selection.each(function() {
+
+
+        });
+    };
+
+    chart.json = function(jsonUrl) {
+
+    };
+
+
+    _.extend(chart, Backbone.Events);
+    return chart;
+};
+
 Candidatometro.BarChart = function() {
     'use strict';
 

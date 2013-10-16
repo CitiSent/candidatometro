@@ -15,22 +15,37 @@ title: ¿de qué hablan los candidatos?
 <script>
 
     var data = [
-        {name: 'Evelyn Matthei',         url: 'agenda/agenda_matthei.json', img: 'fot_evelyn_matthei.jpg'},
-        {name: 'Michelle Bachelet',      url: 'agenda/agenda_bachelet.json', img: 'fot_michelle_bachelet.jpg'},
-        {name: 'Marco Enríquez-Ominami', url: 'agenda/agenda_enriquez_ominami.json', img: 'fot_marco_enriquez-ominami.jpg'},
-        {name: 'Alfredo Sfeir',          url: 'agenda/agenda_sfeir.json', img: 'fot_alfredo_sfeir.jpg'},
-        {name: 'Roxana Miranda',         url: 'agenda/agenda_miranda.json', img: 'fot_roxana_miranda.jpg'},
-        {name: 'Marcel Claude',          url: 'agenda/agenda_claude.json', img: 'fot_marcel_claude.jpg'},
-        {name: 'Ricardo Israel',         url: 'agenda/agenda_israel.json', img: 'fot_ricardo_israel.jpg'},
-        {name: 'Tomás Jocelyn-Holt',     url: 'agenda/agenda_jocelyn_holt.json', img: 'fot_tomas_jocelyn-holt.jpg'},
-        {name: 'franco parisi',          url: 'agenda/agenda_parisi.json', img: 'fot_franco_parisi.jpg'}
+        {name: 'Evelyn Matthei',         url: 'agenda_matthei.json',          img: 'fot_evelyn_matthei.jpg'},
+        {name: 'Michelle Bachelet',      url: 'agenda_bachelet.json',         img: 'fot_michelle_bachelet.jpg'},
+        {name: 'Marco Enríquez-Ominami', url: 'agenda_enriquez_ominami.json', img: 'fot_marco_enriquez-ominami.jpg'},
+        {name: 'Alfredo Sfeir',          url: 'agenda_sfeir.json',            img: 'fot_alfredo_sfeir.jpg'},
+        {name: 'Roxana Miranda',         url: 'agenda_miranda.json',          img: 'fot_roxana_miranda.jpg'},
+        {name: 'Marcel Claude',          url: 'agenda_claude.json',           img: 'fot_marcel_claude.jpg'},
+        {name: 'Ricardo Israel',         url: 'agenda_israel.json',           img: 'fot_ricardo_israel.jpg'},
+        {name: 'Tomás Jocelyn-Holt',     url: 'agenda_jocelyn_holt.json',     img: 'fot_tomas_jocelyn-holt.jpg'},
+        {name: 'franco parisi',          url: 'agenda_parisi.json',           img: 'fot_franco_parisi.jpg'}
     ];
+
+    data.forEach(function(d) {
+        d.url = '{{ site.baseurl }}/data/agenda/' + d.url;
+        d.img = '{{ site.baseurl }}/img/' + d.img;
+    });
+
+
+    var bubbleChart = new Candidatometro.BubbleChart();
 
     var colCandidato = d3.select('#chart').selectAll('div.col-md-1')
         .data(data)
         .enter()
         .append('div')
         .attr('class', 'col-md-1');
+
+    colCandidato.call(bubbleChart);
+
+
+
+
+
 
 
 
