@@ -12,73 +12,99 @@ title: ¿de qué hablan los candidatos?
     </a>
   </div>
 </div>
-<div class='row'>
-    <div class='col-md-12 air-top'>
-        <div class='tabla-comparativa'>
-            <div class='row'>
-                <div class='col-sm-3'>
-                </div>
-                <div class='col-sm-1 avatar'>
-                    <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_evelyn_matthei.jpg'>
-                    <h6 class='bold uc'>Evelyn Matthei</h6>
-                </div>
-                <div class='col-sm-1 avatar'>
-                    <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_michelle_bachelet.jpg'>
-                    <h6 class='bold uc'>Michelle Bachelet</h6>
-                </div>
-                <div class='col-sm-1 avatar'>
-                  <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_marco_enriquez-ominami.jpg'>
-                  <h6 class='bold uc n3l'>Marco Enríquez-Ominami</h6>
-              </div>
-              <div class='col-sm-1 avatar'>
-                  <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_alfredo_sfeir.jpg'>
-                  <h6 class='bold uc'>Alfredo Sfeir</h6>
-              </div>
-              <div class='col-sm-1 avatar'>
-                  <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_roxana_miranda.jpg'>
-                  <h6 class='bold uc'>Roxana Miranda</h6>
-              </div>
-              <div class='col-sm-1 avatar'>
-                  <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_marcel_claude.jpg'>
-                  <h6 class='bold uc'>Marcel Claude</h6>
-              </div>
-              <div class='col-sm-1 avatar'>
-                  <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_ricardo_israel.jpg'>
-                  <h6 class='bold uc'>Ricardo Israel</h6>
-              </div>
-              <div class='col-sm-1 avatar'>
-                  <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_tomas_jocelyn-holt.jpg'>
-                  <h6 class='bold uc'>Tomás Jocelyn-Holt</h6>
-              </div>
-              <div class='col-sm-1 avatar'>
-                  <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_franco_parisi.jpg'>
-                  <h6 class='bold uc'>Franco Parisi</h6>
-              </div>
-          </div>
-          <div class='row'>
-            <div class='col-sm-3'>
-              <div class='topic-row'>Educación</div>
-              <div class='topic-row'>Salud</div>
-              <div class='topic-row'>Economía</div>
-              <div class='topic-row'>Gobernabilidad y Estado</div>
-              <div class='topic-row'>Energía y Medio Ambiente</div>
-              <div class='topic-row'>Seguridad</div>
-              <div class='topic-row'>Transporte</div>
-              <div class='topic-row'>Defensa y Política Exterior</div>
-            </div>
-            <div class='col-sm-1 graph'> </div>
-            <div class='col-sm-1 graph'> </div>
-            <div class='col-sm-1 graph'> </div>
-            <div class='col-sm-1 graph'> </div>
-            <div class='col-sm-1 graph'> </div>
-            <div class='col-sm-1 graph'> </div>
-            <div class='col-sm-1 graph'> </div>
-            <div class='col-sm-1 graph'> </div>
-            <div class='col-sm-1 graph'> </div>
-          </div>
-      </div><!-- /. tabla de agendas -->
+<div class='row row-topics'>
+
+  <div class='tabla-comparativa'>
+
+    <div class='col-md-3'>
+      <div class='labels'>
+        <div class='topic-label'></div>
+        <div class='topic-label'>Educación</div>
+        <div class='topic-label'>Salud</div>
+        <div class='topic-label'>Economía</div>
+        <div class='topic-label'>Gobernabilidad y Estado</div>
+        <div class='topic-label'>Energía y Medio Ambiente</div>
+        <div class='topic-label'>Seguridad</div>
+        <div class='topic-label'>Transporte</div>
+        <div class='topic-label'>Defensa y Política Exterior</div>
+      </div>
+    </div>
+    <div class='col-md-1'>
+      <div class='avatar'>
+        <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_evelyn_matthei.jpg'>
+        <h6 class='bold uc'>Evelyn Matthei</h6>
+      </div>
+      <div class='graph-vertical'>
+      </div>
+    </div>
+    <div class='col-md-1'>
+      <div class='avatar'>
+        <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_michelle_bachelet.jpg'>
+        <h6 class='bold uc'>Michelle Bachelet</h6>
+      </div>
+      <div class='graph-vertical'>
+      </div>
+    </div>
+    <div class='col-md-1'>
+      <div class='avatar'>
+        <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_marco_enriquez-ominami.jpg'>
+        <h6 class='bold uc n3l'>Marco Enríquez-Ominami</h6>
+      </div>
+      <div class='graph-vertical'>
+      </div>
+    </div>
+    <div class='col-md-1'>
+      <div class='avatar'>
+        <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_alfredo_sfeir.jpg'>
+        <h6 class='bold uc'>Alfredo Sfeir</h6>
+      </div>
+      <div class='graph-vertical'>
+      </div>
+    </div>
+    <div class='col-md-1'>
+      <div class='avatar'>
+        <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_roxana_miranda.jpg'>
+        <h6 class='bold uc'>Roxana Miranda</h6>
+      </div>
+      <div class='graph-vertical'>
+      </div>
+    </div>
+    <div class='col-md-1'>
+      <div class='avatar'>
+        <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_marcel_claude.jpg'>
+        <h6 class='bold uc'>Marcel Claude</h6>
+      </div>
+      <div class='graph-vertical'>
+      </div>
+    </div>
+    <div class='col-md-1'>
+      <div class='avatar'>
+        <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_ricardo_israel.jpg'>
+        <h6 class='bold uc'>Ricardo Israel</h6>
+      </div>
+      <div class='graph-vertical'>
+      </div>
+    </div>
+    <div class='col-md-1'>
+      <div class='avatar'>
+        <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_tomas_jocelyn-holt.jpg'>
+        <h6 class='bold uc'>Tomás Jocelyn-Holt</h6>
+      </div>
+      <div class='graph-vertical'>
+      </div>
+    </div>
+    <div class='col-md-1'>
+      <div class='avatar'>
+        <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_franco_parisi.jpg'>
+        <h6 class='bold uc'>Franco Parisi</h6>
+      </div>
+      <div class='graph-vertical'>
+      </div>
+    </div>
+
   </div>
 </div>
+
 <div class='row'>
   <div class='col-sm-12 tright'>
     <a class='next-question' href='{{ site.baseurl }}/que-opina-la-gente'>
@@ -150,17 +176,17 @@ title: ¿de qué hablan los candidatos?
         </ul>
       </li>
     </ul>
-    <p>Esta agenda consta de <strong>290</strong> tópicos <i class='cs-icon-topic'></i>que son consultados permanentemente por CitiSent.</p>
   </div>
   <div class='col-sm-6'>
-    <p>Queremos enfrentar esta agenda al discurso de cada candidato y su coalición para poder comparar. Para esto definimos 9 grupos de fuentes <i class='cs-icon-source'></i>, 1 para cada candidato. Para esto importamos los usuarios de Twitter que declaran apoyar a los candidatos, los miembros de sus listas y coaliciones políticas</p>
+    <p>Esta agenda consta de <strong>290</strong> tópicos <i class='cs-icon-topic'></i>que son consultados permanentemente por CitiSent.</p>
+    <p>Queremos enfrentar esta agenda (variable independiente) al discurso de cada candidato y su coalición (variable dependiente) para poder comparar. Para esto definimos 9 grupos de fuentes <i class='cs-icon-source'></i>, 1 para cada candidato. Para esto importamos los usuarios de Twitter que declaran apoyar a los candidatos, los miembros de sus listas y de sus coaliciones políticas.</p>
     <p>De este modo, definimos 9 estudios longitudinales que corren en paralelo, cada uno compuesto de:</p>
     <ol>
       <li><i class='cs-icon-topic'></i> La agenda temática (idéntica para cada estudio)</li>
       <li><i class='cs-icon-source'></i> La lista del candidato y sus partidarios</li>
-      <li><i class='cs-icon-place'></i> Sin especificaciones geográficas (trae todo)</li>
+      <li><em>No definimos variables geográficas <i class='cs-icon-place'></i> (trae todo)</em></li>
     </ol>
-    <p>Entonces, lo presentado aquí corresponde a los temas de la agenda (290 tópicos independientes) que son mencionados por el candidato o por miembros de su lista o partidarios. </p>
+    <p>Entonces, lo presentado aquí corresponde un resumen de <strong>9 estudios</strong> <i class='cs-icon-study'></i>, 1 por cada candidato manteniendo la agenda y diferenciando las fuentes.</p>
   </div>
 </div>
 
