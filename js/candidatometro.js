@@ -1,6 +1,94 @@
 
 var Candidatometro = Candidatometro || {};
 
+
+Candidatometro.BubbleChart = function() {
+    'use strict';
+
+    var data = d3.map();
+    var mdataset;
+
+    var selection;
+
+    function chart(_selection) {
+        selection = _selection;
+        selection.each(function() {
+            // Structure
+        });
+    }
+
+    chart.update = function() {
+        selection.each(function(datum) {
+
+            var div = d3.select(this),
+                width = chart.int(div.style('width')),
+                height = 100;
+
+            // Get the Data
+            var topics = data.get(datum.name);
+
+            var divt = div.selectAll('div')
+                .data(topics)
+                .enter()
+                .append('div')
+                .attr('class', 'topic-label');
+
+
+            var svgt = divt.append('svg')
+                .attr('width', width)
+                .attr('height', height);
+
+            var rScale = d3.scale.sqrt()
+                .domain(d3.extent(topics, function(d) { return d.total; }))
+                .range([2, d3.min([width, height]) / 2 - 2]);
+
+            svgt.append('circle')
+                .attr('cx', width / 2)
+                .attr('cy', height / 2)
+                .attr('r', function(d) { return rScale(d.total); })
+                .attr('fill', '#a40000');
+
+
+
+
+
+        });
+    };
+
+    chart.int = function(value) { return parseInt(value, 10); };
+
+    chart.mdataset = function(_dataset) {
+        mdataset = _dataset;
+        chart.listenTo(mdataset, 'multidataset:ready', chart.parseData);
+        return chart;
+    };
+
+    chart.parseData = function() {
+        mdataset.keys().forEach(function(key) {
+            var topics = mdataset.get(key).items();
+            var _data = [];
+            topics.forEach(function(_key, _value) {
+                var topic = {name: _key, pos: 0, neg: 0, neu: 0, total: 0};
+                _value.forEach(function(dkey, dvalue) {
+                    topic.pos += dvalue.pos;
+                    topic.neg += dvalue.neg;
+                    topic.neu += dvalue.neu;
+                });
+                topic.total = topic.pos + topic.neg + topic.neu;
+                _data.push(topic);
+            });
+            data.set(key, _data);
+        });
+        chart.trigger('data:ready');
+    };
+
+    _.extend(chart, Backbone.Events);
+    chart.on('data:ready', chart.update);
+
+    return chart;
+};
+
+
 Candidatometro.BarChart = function() {
     'use strict';
 
@@ -195,7 +283,47 @@ Candidatometro.BarChart = function() {
 };
 
 
+Candidatometro.MultiDataset = function() {
+    'use strict';
 
+    var data;
+    var numItems = 0;
+    var dataset = d3.map();
+
+    function dset() { }
+
+    dset.data = function(_data) {
+        data = _data;
+        data.forEach(function(d) {
+            var _dataset = Candidatometro.Dataset().json(d.url);
+            dataset.set(d.name, _dataset);
+            dset.listenTo(_dataset, 'dataset:ready', dset.waitData);
+        });
+        return dset;
+    };
+
+    dset.waitData = function() {
+        numItems += 1;
+        if (numItems === data.length) {
+            dset.trigger('multidataset:ready');
+        }
+    };
+
+    dset.get = function(key) {
+        return dataset.get(key);
+    };
+
+    dset.keys = function() {
+        return dataset.keys();
+    };
+
+    dset.map = function() {
+        return dataset;
+    };
+
+    _.extend(dset, Backbone.Events);
+    return dset;
+};
 
 Candidatometro.Dataset = function() {
     'use strict';
