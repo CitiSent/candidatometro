@@ -17,7 +17,7 @@ title: ¿De qué hablan los candidatos?
   <div class='tabla-comparativa'>
 
     <div class='col-md-2'>
-      <div class='hidden-xs labels'>
+      <div class='hidden-xs hidden-sm labels'>
         <div class='topic-label'>Educación</div>
         <div class='topic-label'>Salud</div>
         <div class='topic-label'>Economía</div>
@@ -35,28 +35,28 @@ title: ¿De qué hablan los candidatos?
       </div>
       <div class='graph'>
         <div class='graph-cell'>
-          <div class='visible-xs'>Educación</div>
+          <div class='visible-xs visible-sm topic-label'>Educación</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Salud</div>
+          <div class='visible-xs visible-sm topic-label'>Salud</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Economía</div>
+          <div class='visible-xs visible-sm topic-label'>Economía</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Gobernabilidad y Estado</div>
+          <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Energía y Medio Ambiente</div>
+          <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Seguridad</div>
+          <div class='visible-xs visible-sm topic-label'>Seguridad</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Transporte</div>
+          <div class='visible-xs visible-sm topic-label'>Transporte</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Defensa y Política Exterior</div>
+          <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
         </div>
       </div>
     </div>
@@ -67,28 +67,28 @@ title: ¿De qué hablan los candidatos?
       </div>
       <div class='graph'>
         <div class='graph-cell'>
-          <div class='visible-xs'>Educación</div>
+          <div class='visible-xs visible-sm topic-label'>Educación</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Salud</div>
+          <div class='visible-xs visible-sm topic-label'>Salud</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Economía</div>
+          <div class='visible-xs visible-sm topic-label'>Economía</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Gobernabilidad y Estado</div>
+          <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Energía y Medio Ambiente</div>
+          <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Seguridad</div>
+          <div class='visible-xs visible-sm topic-label'>Seguridad</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Transporte</div>
+          <div class='visible-xs visible-sm topic-label'>Transporte</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Defensa y Política Exterior</div>
+          <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
         </div>
       </div>
     </div>
@@ -99,28 +99,28 @@ title: ¿De qué hablan los candidatos?
       </div>
       <div class='graph'>
         <div class='graph-cell'>
-          <div class='visible-xs'>Educación</div>
+          <div class='visible-xs visible-sm topic-label'>Educación</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Salud</div>
+          <div class='visible-xs visible-sm topic-label'>Salud</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Economía</div>
+          <div class='visible-xs visible-sm topic-label'>Economía</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Gobernabilidad y Estado</div>
+          <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Energía y Medio Ambiente</div>
+          <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Seguridad</div>
+          <div class='visible-xs visible-sm topic-label'>Seguridad</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Transporte</div>
+          <div class='visible-xs visible-sm topic-label'>Transporte</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Defensa y Política Exterior</div>
+          <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
         </div>
       </div>
     </div>
@@ -131,28 +131,28 @@ title: ¿De qué hablan los candidatos?
       </div>
       <div class='graph'>
         <div class='graph-cell'>
-          <div class='visible-xs'>Educación</div>
+          <div class='visible-xs visible-sm topic-label'>Educación</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Salud</div>
+          <div class='visible-xs visible-sm topic-label'>Salud</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Economía</div>
+          <div class='visible-xs visible-sm topic-label'>Economía</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Gobernabilidad y Estado</div>
+          <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Energía y Medio Ambiente</div>
+          <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Seguridad</div>
+          <div class='visible-xs visible-sm topic-label'>Seguridad</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Transporte</div>
+          <div class='visible-xs visible-sm topic-label'>Transporte</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Defensa y Política Exterior</div>
+          <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
         </div>
       </div>
     </div>
@@ -163,28 +163,28 @@ title: ¿De qué hablan los candidatos?
       </div>
       <div class='graph'>
         <div class='graph-cell'>
-          <div class='visible-xs'>Educación</div>
+          <div class='visible-xs visible-sm topic-label'>Educación</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Salud</div>
+          <div class='visible-xs visible-sm topic-label'>Salud</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Economía</div>
+          <div class='visible-xs visible-sm topic-label'>Economía</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Gobernabilidad y Estado</div>
+          <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Energía y Medio Ambiente</div>
+          <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Seguridad</div>
+          <div class='visible-xs visible-sm topic-label'>Seguridad</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Transporte</div>
+          <div class='visible-xs visible-sm topic-label'>Transporte</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Defensa y Política Exterior</div>
+          <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
         </div>
       </div>
     </div>
@@ -195,28 +195,28 @@ title: ¿De qué hablan los candidatos?
       </div>
       <div class='graph'>
         <div class='graph-cell'>
-          <div class='visible-xs'>Educación</div>
+          <div class='visible-xs visible-sm topic-label'>Educación</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Salud</div>
+          <div class='visible-xs visible-sm topic-label'>Salud</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Economía</div>
+          <div class='visible-xs visible-sm topic-label'>Economía</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Gobernabilidad y Estado</div>
+          <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Energía y Medio Ambiente</div>
+          <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Seguridad</div>
+          <div class='visible-xs visible-sm topic-label'>Seguridad</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Transporte</div>
+          <div class='visible-xs visible-sm topic-label'>Transporte</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Defensa y Política Exterior</div>
+          <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
         </div>
       </div>
     </div>
@@ -227,28 +227,28 @@ title: ¿De qué hablan los candidatos?
       </div>
       <div class='graph'>
         <div class='graph-cell'>
-          <div class='visible-xs'>Educación</div>
+          <div class='visible-xs visible-sm topic-label'>Educación</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Salud</div>
+          <div class='visible-xs visible-sm topic-label'>Salud</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Economía</div>
+          <div class='visible-xs visible-sm topic-label'>Economía</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Gobernabilidad y Estado</div>
+          <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Energía y Medio Ambiente</div>
+          <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Seguridad</div>
+          <div class='visible-xs visible-sm topic-label'>Seguridad</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Transporte</div>
+          <div class='visible-xs visible-sm topic-label'>Transporte</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Defensa y Política Exterior</div>
+          <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
         </div>
       </div>
     </div>
@@ -259,28 +259,28 @@ title: ¿De qué hablan los candidatos?
       </div>
       <div class='graph'>
         <div class='graph-cell'>
-          <div class='visible-xs'>Educación</div>
+          <div class='visible-xs visible-sm topic-label'>Educación</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Salud</div>
+          <div class='visible-xs visible-sm topic-label'>Salud</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Economía</div>
+          <div class='visible-xs visible-sm topic-label'>Economía</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Gobernabilidad y Estado</div>
+          <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Energía y Medio Ambiente</div>
+          <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Seguridad</div>
+          <div class='visible-xs visible-sm topic-label'>Seguridad</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Transporte</div>
+          <div class='visible-xs visible-sm topic-label'>Transporte</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Defensa y Política Exterior</div>
+          <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
         </div>
       </div>
     </div>
@@ -291,28 +291,28 @@ title: ¿De qué hablan los candidatos?
       </div>
       <div class='graph'>
         <div class='graph-cell'>
-          <div class='visible-xs'>Educación</div>
+          <div class='visible-xs visible-sm topic-label'>Educación</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Salud</div>
+          <div class='visible-xs visible-sm topic-label'>Salud</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Economía</div>
+          <div class='visible-xs visible-sm topic-label'>Economía</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Gobernabilidad y Estado</div>
+          <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Energía y Medio Ambiente</div>
+          <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Seguridad</div>
+          <div class='visible-xs visible-sm topic-label'>Seguridad</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Transporte</div>
+          <div class='visible-xs visible-sm topic-label'>Transporte</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Defensa y Política Exterior</div>
+          <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
         </div>
       </div>
     </div>
@@ -323,28 +323,28 @@ title: ¿De qué hablan los candidatos?
       </div>
       <div class='graph'>
         <div class='graph-cell'>
-          <div class='visible-xs'>Educación</div>
+          <div class='visible-xs visible-sm topic-label'>Educación</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Salud</div>
+          <div class='visible-xs visible-sm topic-label'>Salud</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Economía</div>
+          <div class='visible-xs visible-sm topic-label'>Economía</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Gobernabilidad y Estado</div>
+          <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Energía y Medio Ambiente</div>
+          <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Seguridad</div>
+          <div class='visible-xs visible-sm topic-label'>Seguridad</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Transporte</div>
+          <div class='visible-xs visible-sm topic-label'>Transporte</div>
         </div>
         <div class='graph-cell'>
-          <div class='visible-xs'>Defensa y Política Exterior</div>
+          <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
         </div>
       </div>
     </div>
