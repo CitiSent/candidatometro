@@ -20,33 +20,42 @@ Candidatometro.BubbleChart = function() {
     chart.update = function() {
         selection.each(function(datum) {
 
-            var div = d3.select(this),
-                width = chart.int(div.style('width')),
-                height = 100;
+            var div = d3.select(this);
 
             // Get the Data
             var topics = data.get(datum.name);
 
-            var divt = div.selectAll('div')
+            var divCell = div.selectAll('div')
                 .data(topics)
                 .enter()
                 .append('div')
-                .attr('class', 'topic-label');
+                .attr('class', 'graph-cell');
 
+            divCell.append('div')
+                .attr('class', 'visible-xs visible-sm topic-label')
+                .text(function(d) { return d.name; });
 
-            var svgt = divt.append('svg')
-                .attr('width', width)
-                .attr('height', height);
+            var divCont = divCell.append('div');
+
+            var width = chart.int(divCont.style('width')),
+                height = width;
+
+            console.log([width, height]);
+
+            var svg = divCont.attr('class', 'svg-container')
+                .append('svg')
+                    .attr('width', width)
+                    .attr('height', height);
 
             var rScale = d3.scale.sqrt()
                 .domain(d3.extent(topics, function(d) { return d.total; }))
                 .range([2, d3.min([width, height]) / 2 - 2]);
 
-            svgt.append('circle')
+            svg.append('circle')
                 .attr('cx', width / 2)
                 .attr('cy', height / 2)
                 .attr('r', function(d) { return rScale(d.total); })
-                .attr('fill', '#a40000');
+                .attr('fill', '#29B0E9');
 
 
         });
