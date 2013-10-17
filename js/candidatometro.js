@@ -38,9 +38,9 @@ Candidatometro.BubbleChart = function() {
             var divCont = divCell.append('div')
                 .attr('class', 'svg-container');
 
-            var width = chart.int(divCont.style('width')),
-                height = chart.int(divCont.style('height')),
-                maxRadius = d3.min([width, height]) / 2 - 2;
+            var height = chart.int(divCont.style('height')),
+                width = height,
+                maxRadius = height / 2 - 1;
 
             var svg = divCont
                 .append('svg')

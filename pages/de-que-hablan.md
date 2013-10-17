@@ -1,6 +1,6 @@
 ---
 layout: standard
-title: ¿de qué hablan los candidatos?
+title: ¿De qué hablan los candidatos?
 ---
 
 <!-- Next Question -->
