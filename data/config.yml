@@ -1,0 +1,36 @@
+#
+---
+
+candidatos:
+
+   -  name: candidatos.json
+      json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=74'
+
+agenda:
+
+   - name: agenda/agenda_bachelet.json
+     json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=65'
+
+   - name: agenda/agenda_matthei.json
+     json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=66'
+
+   - name: agenda/agenda_parisi.json
+     json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=67'
+
+   - name: agenda/agenda_enriquez_ominami.json
+     json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=68'
+
+   - name: agenda/agenda_sfeir.json
+     json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=69'
+
+   - name: agenda/agenda_claude.json
+     json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=70'
+
+   - name: agenda/agenda_miranda.json
+     json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=71'
+
+   - name: agenda/agenda_israel.json
+     json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=72'
+
+   - name: agenda/agenda_jocelyn_holt.json
+     json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=73'
