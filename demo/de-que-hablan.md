@@ -36,27 +36,35 @@ title: ¿De qué hablan los candidatos?
       <div class='graph'>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Educación</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Salud</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Economía</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Seguridad</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Transporte</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
       </div>
     </div>
@@ -68,27 +76,35 @@ title: ¿De qué hablan los candidatos?
       <div class='graph'>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Educación</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Salud</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Economía</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Seguridad</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Transporte</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
       </div>
     </div>
@@ -100,27 +116,35 @@ title: ¿De qué hablan los candidatos?
       <div class='graph'>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Educación</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Salud</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Economía</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Seguridad</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Transporte</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
       </div>
     </div>
@@ -132,27 +156,35 @@ title: ¿De qué hablan los candidatos?
       <div class='graph'>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Educación</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Salud</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Economía</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Seguridad</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Transporte</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
       </div>
     </div>
@@ -164,27 +196,35 @@ title: ¿De qué hablan los candidatos?
       <div class='graph'>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Educación</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Salud</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Economía</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Seguridad</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Transporte</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
       </div>
     </div>
@@ -196,27 +236,35 @@ title: ¿De qué hablan los candidatos?
       <div class='graph'>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Educación</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Salud</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Economía</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Seguridad</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Transporte</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
       </div>
     </div>
@@ -228,27 +276,35 @@ title: ¿De qué hablan los candidatos?
       <div class='graph'>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Educación</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Salud</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Economía</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Seguridad</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Transporte</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
       </div>
     </div>
@@ -260,27 +316,35 @@ title: ¿De qué hablan los candidatos?
       <div class='graph'>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Educación</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Salud</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Economía</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Seguridad</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Transporte</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
       </div>
     </div>
@@ -292,27 +356,35 @@ title: ¿De qué hablan los candidatos?
       <div class='graph'>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Educación</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Salud</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Economía</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Seguridad</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Transporte</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
       </div>
     </div>
@@ -324,27 +396,35 @@ title: ¿De qué hablan los candidatos?
       <div class='graph'>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Educación</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Salud</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Economía</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Seguridad</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Transporte</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
         <div class='graph-cell'>
           <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
+          <div class='svg-container'><img src='{{ site.baseurl }}/img/circle.svg'></div>
         </div>
       </div>
     </div>
@@ -360,7 +440,6 @@ title: ¿De qué hablan los candidatos?
   </div>
 </div>
 
-{% include social.html%}
 {% include metodo-agendas.html%}
 
 
