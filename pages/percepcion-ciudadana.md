@@ -1,8 +1,7 @@
 ---
-layout: standard
+layout: base
 title: Percepción Ciudadana
 ---
-
 
 <div class='row'>
     <div class='col-sm-7'>
@@ -17,8 +16,8 @@ title: Percepción Ciudadana
 
 <div class='row'>
     <div class='col-md-12 air-top'>
-        <div class='tabla-de-agendas' id='charts'>
-
+        <div class='tabla-comparativa' id='charts'>
+            <!-- Charts Here -->
         </div>
     </div>
 </div>
@@ -26,16 +25,9 @@ title: Percepción Ciudadana
 <div class='row'>
     <div class='col-sm-12 tright'>
         <a class='next-question' href='{{ site.baseurl }}/de-que-hablan'>
-            <span class='question'>¿de qué hablan los candidatos?</span> <i class='icon-arrow-right'></i>
+            <span class='question'>¿de qué hablan los?</span> <i class='icon-arrow-right'></i>
         </a>
     </div>
-</div>
-
-<hr id='metodo'>
-<h2 class='air-top orange thin'>Metodología</h2>
-<div class='row'>
-    <div class='col-sm-6'></div>
-    <div class='col-sm-6'></div>
 </div>
 
 
@@ -47,11 +39,10 @@ title: Percepción Ciudadana
 
 <script>
 
-    var jsonUrl = '{{ site.baseurl }}/data/percepcion_ciudadana.json';
+    var jsonUrl = '{{ site.baseurl }}/data/candidatos.json';
 
     var dset = Candidatometro.Dataset()
         .json(jsonUrl);
-
 
     var a = {};
     _.extend(a, Backbone.Events);
@@ -62,17 +53,16 @@ title: Percepción Ciudadana
             to = new Date('2013-12-01');
 
         var data = [
-            {name: 'Evelyn Matthei Fornet',          img: 'fot_evelyn_matthei.jpg'},
-            {name: 'Michelle Bachelet Jeria',        img: 'fot_michelle_bachelet.jpg'},
-            {name: 'Marco Enríquez-Ominami Gumucio', img: 'fot_marco_enriquez-ominami.jpg'},
-            {name: 'Alfredo Sfeir Younis',           img: 'fot_alfredo_sfeir.jpg'},
-            {name: 'Roxana Miranda Meneses',         img: 'fot_roxana_miranda.jpg'},
-            {name: 'Marcel Claude Reyes',            img: 'fot_marcel_claude.jpg'},
-            {name: 'Ricardo Israel Zipper',          img: 'fot_ricardo_israel.jpg'},
-            {name: 'Tomás Jocelyn-Holt Letelier',    img: 'fot_tomas_jocelyn-holt.jpg'},
-            {name: 'Franco Parisi Fernández',        img: 'fot_franco_parisi.jpg'}
+            {name: 'Evelyn Matthei',         img: 'fot_evelyn_matthei.jpg'},
+            {name: 'Michelle Bachelet',      img: 'fot_michelle_bachelet.jpg'},
+            {name: 'Marco Enríquez-Ominami', img: 'fot_marco_enriquez-ominami.jpg'},
+            {name: 'Alfredo Sfeir',          img: 'fot_alfredo_sfeir.jpg'},
+            {name: 'Roxana Miranda',         img: 'fot_roxana_miranda.jpg'},
+            {name: 'Marcel Claude',          img: 'fot_marcel_claude.jpg'},
+            {name: 'Ricardo Israel',         img: 'fot_ricardo_israel.jpg'},
+            {name: 'Tomás Jocelyn-Holt',     img: 'fot_tomas_jocelyn-holt.jpg'},
+            {name: 'franco parisi',          img: 'fot_franco_parisi.jpg'}
         ];
-
 
         data.forEach(function(d) {
             d.data = dset.items().get(d.name);
@@ -85,32 +75,27 @@ title: Percepción Ciudadana
             .data(data)
             .enter()
             .append('div')
-            .attr('class', 'row candidato');
+            .attr('class', 'row row-candidato');
 
         // Avatar
         var divAvatar = rowCandidato.append('div')
-            .attr('class', 'col-sm-2 avatar');
+            .attr('class', 'col-sm-1')
+            .append('div')
+            .attr('class', 'avatar');
 
         divAvatar
             .append('img')
-            .attr('class', 'img-circle')
+            .attr('class', 'img-circle img-responsive')
             .attr('src', function(d) { return '{{ site.baseurl }}/img/' + d.img; });
 
         divAvatar.append('h6')
             .attr('class', 'bold uc')
-            .text(function(d) {
-                var name = d.name.split(' ');
-                return name[0] + ' ' + name[1];
-            });
+            .text(function(d) { return d.name; });
 
+        // Graph
         var divGraph = rowCandidato.append('div')
-            .attr('class', 'col-sm-10 graph')
-            .append('div')
-            .attr('class', 'chart')
+            .attr('class', 'col-sm-11 graph')
             .call(barchart);
-
-
-
 
     });
 
