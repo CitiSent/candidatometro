@@ -265,9 +265,10 @@ Candidatometro.BarChart = function() {
 
             var xAxis = d3.svg.axis()
                 .scale(xScale)
-                .orient('bottom');
+                .orient('bottom')
+                .tickFormat(d3.time.format('%e %b %Y'));
 
-            // Construct the inverted y axis
+            // Invert the yScale to display the axis correctly
             var invYScale = d3.scale.linear()
                 .domain(pExtent)
                 .range([height / 2, 2]);
