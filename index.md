@@ -7,14 +7,13 @@ title: Candidatómetro
   <div class='col-md-6'>
     <h1 class='huge thin title'>{{ page.title }}</h1>
     <p class='big thin'>Estamos observando a los candidatos presidenciales, <em>lo que dicen</em> y <em>qué dicen de ellos</em> en Twitter.</p>
-    <p class='big thin'>Este candidatómetro está construído a partir de la tecnología de <a href='http://www.citisent.com'>CitiSent</a>. Queremos usar las candidaturas como ejemplo de cómo utilizar y configurar estudios exponiendo su metodología en cada caso.</p>
+    <p class='big thin'>Este candidatómetro está construído con la tecnología de <a href='http://www.citisent.com'>CitiSent</a>. Queremos usar las candidaturas como ejemplo de cómo utilizar y configurar estudios exponiendo su metodología en cada caso.</p>
     <p class='big thin'>Las preguntas que queremos responder a partir de los datos son estas:</p>
     <ul class='air-top icons-ul preguntas'>
-      <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}/que-opina-la-gente">¿qué opina la gente de los candidatos?</a></li>
-      <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}/de-que-hablan">¿de qué hablan los candidatos?</a></li>
-      <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}/pages/percepcion-ciudadana">Percepción ciudadana</a></li>
+      <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}/pages/percepcion-ciudadana">¿Cómo son percibidos los candidatos?</a></li>
+      <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}/pages/de-que-hablan">¿De qué hablan los candidatos?</a></li>
     </ul>
-    <p class='big thin'>Te invitamos a conocer  Citisent en <a href='http://www.citisent.com' >www.citisent.com</a></p>
+    <p class='big thin'>Si quieres conocer más de esta herramienta, te invitamos a conocer conocerla en <a href='http://www.citisent.com' >www.citisent.com</a></p>
   </div>
 
   <div class='tabla-de-candidatos'>
@@ -82,7 +81,7 @@ title: Candidatómetro
 
 <div class='row'>
   <div class='col-sm-6'>
-    <p>Las visualizaciones aquí presentadas son producto de una serie de <i class='cs-icon-study'></i> <strong>Estudios</strong> realizados con <strong>CitiSent</strong>. Estos estudios son configurados a partir de una definición básica de:</p> 
+    <p>Las visualizaciones aquí presentadas son producto de una serie de <i class='cs-icon-study'></i> <strong>Estudios</strong> realizados con <strong>CitiSent</strong>. Estos estudios son configurados a partir de una definición de:</p> 
 
     <div class='row'>
       <div class='components'>
