@@ -33,7 +33,7 @@
     stroke-opacity: 0.8;
 }
 
-/* Time Axis */
+/* Axis */
 .bc-xaxis path,
 .bc-xaxis line {
     fill: none;
@@ -66,17 +66,24 @@
 }
 
 .bc-tooltip {
-  position: absolute;
-  text-align: center;
-  width: 140px;
-  height: 54px;
-  padding: 4px;
-  font: 10px sans-serif;
-  background: #eee;
-  border: solid 1px #aaa;
-  pointer-events: none;
+    position: absolute;
+    text-align: center;
+    width: 140px;
+    height: 54px;
+    padding: 4px;
+    font: 10px sans-serif;
+    background: #eee;
+    border: solid 1px #aaa;
+    pointer-events: none;
 }
 
+.bubble {
+    fill: #29B0E9;
+    stroke: #1c7ba3;
+    stroke-width: 0.8pt;
+}
+
+/* Tooltip */
 .bc-tooltip-title {
     font-weight: bold;
     font: 12px sans-serif;
