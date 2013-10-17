@@ -1,5 +1,5 @@
 ---
-layout: standard
+layout: base
 title: ¿De qué hablan los candidatos?
 ---
 
@@ -47,6 +47,7 @@ title: ¿De qué hablan los candidatos?
 </div>
 
 {% include social.html %}
+
 {% include metodo-agendas.html %}
 
 <!-- Libraries -->
