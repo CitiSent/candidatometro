@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Percepción Ciudadana
+title: ¿Cómo son percibidos los candidatos?
 ---
 
 <div class='row'>
