@@ -1,6 +1,6 @@
 ---
 layout: standard
-title: ¿de qué hablan los candidatos?
+title: ¿De qué hablan los candidatos?
 ---
 
 <!-- Next Question -->
@@ -9,7 +9,7 @@ title: ¿de qué hablan los candidatos?
         <h1 class='thin orange'>{{ page.title }}</h1>
     </div>
     <div class='col-sm-6 tright'>
-        <a class='next-question' href='{{ site.baseurl }}/que-opina-la-gente'>
+        <a class='next-question' href='{{ site.baseurl }}/pages/percepcion-ciudadana'>
             <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='icon-arrow-right'></i>
         </a>
     </div>
@@ -38,7 +38,16 @@ title: ¿de qué hablan los candidatos?
     </div>
 </div>
 
+<div class='row'>
+    <div class='col-sm-12 tright'>
+        <a class='next-question' href='{{ site.baseurl }}/pages/percepcion-ciudadana'>
+            <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='icon-arrow-right'></i>
+        </a>
+    </div>
+</div>
 
+{% include social.html %}
+{% include metodo-agendas.html %}
 
 <!-- Libraries -->
 <script src="{{ site.baseurl }}/js/lib/d3.v3.min.js" charset="utf-8"></script>
