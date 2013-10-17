@@ -3,6 +3,7 @@ layout: standard
 title: ¿de qué hablan los candidatos?
 ---
 
+<!-- Next Question -->
 <div class='row'>
     <div class='col-sm-6'>
         <h1 class='thin orange'>{{ page.title }}</h1>
@@ -16,11 +17,11 @@ title: ¿de qué hablan los candidatos?
 
 
 <div class='row row-topics'>
-    <div class='tabla-comparativa' id='chart'>
+    <div class='tabla-comparativa' id='charts'>
 
-        <div class='col-md-3'>
-            <div class='labels'>
-                <div class='topic-label'></div>
+        <!-- Topic Labels on Desktop -->
+        <div class='col-md-2'>
+            <div class='hidden-xs hidden-sm labels'>
                 <div class='topic-label'>Educación</div>
                 <div class='topic-label'>Salud</div>
                 <div class='topic-label'>Economía</div>
@@ -32,10 +33,12 @@ title: ¿de qué hablan los candidatos?
             </div>
         </div>
 
-        <!-- Vertical Graphics Here -->
+        <!-- Vertical Graphs Here -->
 
     </div>
 </div>
+
+
 
 <!-- Libraries -->
 <script src="{{ site.baseurl }}/js/lib/d3.v3.min.js" charset="utf-8"></script>
@@ -70,11 +73,37 @@ title: ¿de qué hablan los candidatos?
     //     <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_evelyn_matthei.jpg'>
     //     <h6 class='bold uc'>Evelyn Matthei</h6>
     //   </div>
-    //   <div class='graph-vertical'>
+    //
+    //   <div class='graph'>
+    //     <div class='graph-cell'>
+    //       <div class='visible-xs visible-sm topic-label'>Educación</div>
+    //     </div>
+    //     <div class='graph-cell'>
+    //       <div class='visible-xs visible-sm topic-label'>Salud</div>
+    //     </div>
+    //     <div class='graph-cell'>
+    //       <div class='visible-xs visible-sm topic-label'>Economía</div>
+    //     </div>
+    //     <div class='graph-cell'>
+    //       <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
+    //     </div>
+    //     <div class='graph-cell'>
+    //       <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
+    //     </div>
+    //     <div class='graph-cell'>
+    //       <div class='visible-xs visible-sm topic-label'>Seguridad</div>
+    //     </div>
+    //     <div class='graph-cell'>
+    //       <div class='visible-xs visible-sm topic-label'>Transporte</div>
+    //     </div>
+    //     <div class='graph-cell'>
+    //       <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
+    //     </div>
     //   </div>
     // </div>
 
-    var colCandidato = d3.select('#chart').selectAll('div.col-md-1')
+
+    var colCandidato = d3.select('#charts').selectAll('div.col-md-1')
         .data(data)
         .enter()
         .append('div')
@@ -84,7 +113,7 @@ title: ¿de qué hablan los candidatos?
         .attr('class', 'avatar');
 
     var divChart = colCandidato.append('div')
-        .attr('class', 'graph-vertical');
+        .attr('class', 'graph');
 
     divAvatar.append('img')
         .attr('class', 'img-circle img-responsive')
