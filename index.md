@@ -7,11 +7,12 @@ title: Candidatómetro
   <div class='col-md-6'>
     <h1 class='huge thin title'>{{ page.title }}</h1>
     <p class='big thin'>Estamos observando a los candidatos presidenciales, <em>lo que dicen</em> y <em>qué dicen de ellos</em> en Twitter.</p>
-    <p class='big thin'>Este candidatómetro está hecho en su totalidad con <a href='http://www.citisent.com'>CitiSent</a> y sus herramientas de análisis. Queremos usar las candidaturas como un ejemplo de cómo configurar estudios exponiendo su metodología en cada caso.</p>
-    <p class='big thin'>Las preguntas que tenemos son estas:</p>
+    <p class='big thin'>Este candidatómetro está construído a partir de la tecnología de <a href='http://www.citisent.com'>CitiSent</a>. Queremos usar las candidaturas como ejemplo de cómo utilizar y configurar estudios exponiendo su metodología en cada caso.</p>
+    <p class='big thin'>Las preguntas que queremos responder a partir de los datos son estas:</p>
     <ul class='air-top icons-ul preguntas'>
       <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}/que-opina-la-gente">¿qué opina la gente de los candidatos?</a></li>
       <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}/de-que-hablan">¿de qué hablan los candidatos?</a></li>
+      <li class='big'><i class="icon-li icon-chevron-sign-right blue"></i><a class='' href="{{ site.baseurl }}/pages/percepcion-ciudadana">Percepción ciudadana</a></li>
     </ul>
     <p class='big thin'>Te invitamos a conocer  Citisent en <a href='http://www.citisent.com' >www.citisent.com</a></p>
   </div>
@@ -89,13 +90,13 @@ title: Candidatómetro
           <div class='well'><i class='cs-icon-topic'></i><br><strong>temas</strong></div>
         </div>
         <div class='col-sm-1 tcenter'>
-          <i class='icon-plus'></i>
+          <span class='operator'><i class='icon-plus'></i></span>
         </div>
         <div class='col-sm-3 tcenter'>
           <div class='well'><i class='cs-icon-source'></i><br><strong>fuentes</strong></div>
         </div>
         <div class='col-sm-1 tcenter'>
-          <i class='icon-plus'></i>
+          <span class='operator'><i class='icon-plus'></i></span>
         </div>
         <div class='col-sm-3 tcenter'>
           <div class='well'><i class='cs-icon-place'></i><br><strong>lugares</strong></div>

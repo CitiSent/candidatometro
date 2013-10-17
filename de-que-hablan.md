@@ -1,6 +1,6 @@
 ---
-layout: standard
-title: ¿de qué hablan los candidatos?
+layout: base
+title: ¿De qué hablan los candidatos?
 ---
 <div class='row'>
   <div class='col-sm-6'>
@@ -16,9 +16,8 @@ title: ¿de qué hablan los candidatos?
 
   <div class='tabla-comparativa'>
 
-    <div class='col-md-3'>
-      <div class='labels'>
-        <div class='topic-label'></div>
+    <div class='col-md-2'>
+      <div class='hidden-xs labels'>
         <div class='topic-label'>Educación</div>
         <div class='topic-label'>Salud</div>
         <div class='topic-label'>Economía</div>
@@ -34,7 +33,31 @@ title: ¿de qué hablan los candidatos?
         <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_evelyn_matthei.jpg'>
         <h6 class='bold uc'>Evelyn Matthei</h6>
       </div>
-      <div class='graph-vertical'>
+      <div class='graph'>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Educación</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Salud</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Economía</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Gobernabilidad y Estado</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Energía y Medio Ambiente</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Seguridad</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Transporte</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Defensa y Política Exterior</div>
+        </div>
       </div>
     </div>
     <div class='col-md-1'>
@@ -42,7 +65,31 @@ title: ¿de qué hablan los candidatos?
         <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_michelle_bachelet.jpg'>
         <h6 class='bold uc'>Michelle Bachelet</h6>
       </div>
-      <div class='graph-vertical'>
+      <div class='graph'>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Educación</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Salud</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Economía</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Gobernabilidad y Estado</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Energía y Medio Ambiente</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Seguridad</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Transporte</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Defensa y Política Exterior</div>
+        </div>
       </div>
     </div>
     <div class='col-md-1'>
@@ -50,7 +97,31 @@ title: ¿de qué hablan los candidatos?
         <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_marco_enriquez-ominami.jpg'>
         <h6 class='bold uc n3l'>Marco Enríquez-Ominami</h6>
       </div>
-      <div class='graph-vertical'>
+      <div class='graph'>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Educación</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Salud</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Economía</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Gobernabilidad y Estado</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Energía y Medio Ambiente</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Seguridad</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Transporte</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Defensa y Política Exterior</div>
+        </div>
       </div>
     </div>
     <div class='col-md-1'>
@@ -58,7 +129,31 @@ title: ¿de qué hablan los candidatos?
         <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_alfredo_sfeir.jpg'>
         <h6 class='bold uc'>Alfredo Sfeir</h6>
       </div>
-      <div class='graph-vertical'>
+      <div class='graph'>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Educación</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Salud</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Economía</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Gobernabilidad y Estado</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Energía y Medio Ambiente</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Seguridad</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Transporte</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Defensa y Política Exterior</div>
+        </div>
       </div>
     </div>
     <div class='col-md-1'>
@@ -66,7 +161,31 @@ title: ¿de qué hablan los candidatos?
         <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_roxana_miranda.jpg'>
         <h6 class='bold uc'>Roxana Miranda</h6>
       </div>
-      <div class='graph-vertical'>
+      <div class='graph'>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Educación</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Salud</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Economía</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Gobernabilidad y Estado</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Energía y Medio Ambiente</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Seguridad</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Transporte</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Defensa y Política Exterior</div>
+        </div>
       </div>
     </div>
     <div class='col-md-1'>
@@ -74,7 +193,31 @@ title: ¿de qué hablan los candidatos?
         <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_marcel_claude.jpg'>
         <h6 class='bold uc'>Marcel Claude</h6>
       </div>
-      <div class='graph-vertical'>
+      <div class='graph'>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Educación</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Salud</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Economía</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Gobernabilidad y Estado</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Energía y Medio Ambiente</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Seguridad</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Transporte</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Defensa y Política Exterior</div>
+        </div>
       </div>
     </div>
     <div class='col-md-1'>
@@ -82,7 +225,31 @@ title: ¿de qué hablan los candidatos?
         <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_ricardo_israel.jpg'>
         <h6 class='bold uc'>Ricardo Israel</h6>
       </div>
-      <div class='graph-vertical'>
+      <div class='graph'>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Educación</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Salud</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Economía</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Gobernabilidad y Estado</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Energía y Medio Ambiente</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Seguridad</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Transporte</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Defensa y Política Exterior</div>
+        </div>
       </div>
     </div>
     <div class='col-md-1'>
@@ -90,7 +257,31 @@ title: ¿de qué hablan los candidatos?
         <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_tomas_jocelyn-holt.jpg'>
         <h6 class='bold uc'>Tomás Jocelyn-Holt</h6>
       </div>
-      <div class='graph-vertical'>
+      <div class='graph'>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Educación</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Salud</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Economía</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Gobernabilidad y Estado</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Energía y Medio Ambiente</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Seguridad</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Transporte</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Defensa y Política Exterior</div>
+        </div>
       </div>
     </div>
     <div class='col-md-1'>
@@ -98,7 +289,63 @@ title: ¿de qué hablan los candidatos?
         <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_franco_parisi.jpg'>
         <h6 class='bold uc'>Franco Parisi</h6>
       </div>
-      <div class='graph-vertical'>
+      <div class='graph'>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Educación</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Salud</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Economía</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Gobernabilidad y Estado</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Energía y Medio Ambiente</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Seguridad</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Transporte</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Defensa y Política Exterior</div>
+        </div>
+      </div>
+    </div>
+    <div class='col-md-1'>
+      <div class='avatar'>
+        <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_la_calle.jpg'>
+        <h6 class='bold uc'>La calle</h6>
+      </div>
+      <div class='graph'>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Educación</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Salud</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Economía</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Gobernabilidad y Estado</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Energía y Medio Ambiente</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Seguridad</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Transporte</div>
+        </div>
+        <div class='graph-cell'>
+          <div class='visible-xs'>Defensa y Política Exterior</div>
+        </div>
       </div>
     </div>
 
@@ -112,82 +359,8 @@ title: ¿de qué hablan los candidatos?
     </a>
   </div>
 </div>
-<hr id='metodo'>
-<h2 class='air-top orange thin'>Metodología</h2>
-<div class='row'>
-  <div class='col-sm-6'>
-    <p>Este estudio considera la definición previa de una <strong>agenda temática</strong> determinada a partir de las propuestas públicas de los candidatos en la Web. Esta agenda se define como árbol de palabras, con 8 categorías principales:</p>
-    <ul class='icons-ul'>
-      <li><i class='cs-icon-topic'></i> <strong>Educación</strong>
-        <ul>
-          <li>Institucionalidad en Educación</li>
-          <li>Provisión de Educación</li>
-          <li>Financiamiento en Educación</li>
-        </ul>
-      </li>
-      <li><i class='cs-icon-topic'></i> <strong>Salud</strong>
-        <ul>
-          <li>Institucionalidad en Salud</li>
-          <li>Provisión de Salud</li>
-          <li>Accesibilidad en Salud</li>
-        </ul>
-      </li>
-      <li><i class='cs-icon-topic'></i> <strong>Economía</strong>
-        <ul>
-          <li>Sistema Previsional</li>
-          <li>Política Económica</li>
-          <li>Distribución Económica</li>
-        </ul>
-      </li>
-      <li><i class='cs-icon-topic'></i> <strong>Gobernabilidad y Estado</strong>
-        <ul>
-          <li>Participación y Justicia</li>
-          <li>Desarrollo Regional</li>
-          <li>Constitución</li>
-        </ul>
-      </li>
-      <li><i class='cs-icon-topic'></i> <strong>Energía y Medio Ambiente</strong>
-        <ul>
-          <li>Infraestructura Energética</li>
-          <li>Generación y Consumo de Energía</li>
-          <li>Institucionalidad en Energía y Medio Ambiente</li>
-        </ul>
-      </li>
-      <li><i class='cs-icon-topic'></i> <strong>Seguridad</strong>
-        <ul>
-          <li>Acceso a la Seguridad</li>
-          <li>Provisión de Seguridad</li>
-          <li>Institucionalidad en Seguridad</li>
-        </ul>
-      </li>
-      <li><i class='cs-icon-topic'></i> <strong>Transporte</strong>
-        <ul>
-          <li>Accesibilidad al Transporte</li>
-          <li>Infraestructura y Servicio de Transporte</li>
-          <li>Institucionalidad en Transporte</li>
-        </ul>
-      </li>
-      <li><i class='cs-icon-topic'></i> <strong>Defensa y Política Exterior</strong>
-        <ul>
-          <li>Financiamiento en Defensa</li>
-          <li>Soberanía</li>
-          <li>Tratados Internacionales</li>
-          <li>Institucionalidad en Defensa y Política Exterior</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-  <div class='col-sm-6'>
-    <p>Esta agenda consta de <strong>290</strong> tópicos <i class='cs-icon-topic'></i>que son consultados permanentemente por CitiSent.</p>
-    <p>Queremos enfrentar esta agenda (variable independiente) al discurso de cada candidato y su coalición (variable dependiente) para poder comparar. Para esto definimos 9 grupos de fuentes <i class='cs-icon-source'></i>, 1 para cada candidato. Para esto importamos los usuarios de Twitter que declaran apoyar a los candidatos, los miembros de sus listas y de sus coaliciones políticas.</p>
-    <p>De este modo, definimos 9 estudios longitudinales que corren en paralelo, cada uno compuesto de:</p>
-    <ol>
-      <li><i class='cs-icon-topic'></i> La agenda temática (idéntica para cada estudio)</li>
-      <li><i class='cs-icon-source'></i> La lista del candidato y sus partidarios</li>
-      <li><em>No definimos variables geográficas <i class='cs-icon-place'></i> (trae todo)</em></li>
-    </ol>
-    <p>Entonces, lo presentado aquí corresponde un resumen de <strong>9 estudios</strong> <i class='cs-icon-study'></i>, 1 por cada candidato manteniendo la agenda y diferenciando las fuentes.</p>
-  </div>
-</div>
+
+{% include social.html%}
+{% include metodo-agendas.html%}
 
 

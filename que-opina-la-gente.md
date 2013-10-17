@@ -1,6 +1,6 @@
 ---
-layout: standard
-title: ¿qué opina la gente de los candidatos?
+layout: base
+title: ¿Qué opina la gente de los candidatos?
 ---
 
 <div class='row'>
@@ -109,6 +109,8 @@ title: ¿qué opina la gente de los candidatos?
     </a>
   </div>
 </div>
+
+{% include social.html%}
 
 <hr id='metodo'>
 <h2 class='air-top orange thin'>Metodología</h2>

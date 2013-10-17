@@ -49,9 +49,6 @@ Candidatometro.BubbleChart = function() {
                 .attr('fill', '#a40000');
 
 
-
-
-
         });
     };
 

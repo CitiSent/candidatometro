@@ -1,8 +1,7 @@
 ---
-layout: standard
+layout: base
 title: Percepción Ciudadana
 ---
-
 
 <div class='row'>
     <div class='col-sm-7'>
@@ -17,8 +16,8 @@ title: Percepción Ciudadana
 
 <div class='row'>
     <div class='col-md-12 air-top'>
-        <div class='tabla-de-agendas' id='charts'>
-
+        <div class='tabla-comparativa' id='charts'>
+            <!-- Charts Here -->
         </div>
     </div>
 </div>
@@ -26,16 +25,9 @@ title: Percepción Ciudadana
 <div class='row'>
     <div class='col-sm-12 tright'>
         <a class='next-question' href='{{ site.baseurl }}/de-que-hablan'>
-            <span class='question'>¿de qué hablan los candidatos?</span> <i class='icon-arrow-right'></i>
+            <span class='question'>¿de qué hablan los?</span> <i class='icon-arrow-right'></i>
         </a>
     </div>
-</div>
-
-<hr id='metodo'>
-<h2 class='air-top orange thin'>Metodología</h2>
-<div class='row'>
-    <div class='col-sm-6'></div>
-    <div class='col-sm-6'></div>
 </div>
 
 
@@ -51,7 +43,6 @@ title: Percepción Ciudadana
 
     var dset = Candidatometro.Dataset()
         .json(jsonUrl);
-
 
     var a = {};
     _.extend(a, Backbone.Events);
@@ -84,25 +75,26 @@ title: Percepción Ciudadana
             .data(data)
             .enter()
             .append('div')
-            .attr('class', 'row candidato');
+            .attr('class', 'row row-candidato');
 
         // Avatar
         var divAvatar = rowCandidato.append('div')
-            .attr('class', 'col-sm-2 avatar');
+            .attr('class', 'col-sm-1')
+            .append('div')
+            .attr('class', 'avatar');
 
         divAvatar
             .append('img')
-            .attr('class', 'img-circle')
+            .attr('class', 'img-circle img-responsive')
             .attr('src', function(d) { return '{{ site.baseurl }}/img/' + d.img; });
 
         divAvatar.append('h6')
             .attr('class', 'bold uc')
             .text(function(d) { return d.name; });
 
+        // Graph
         var divGraph = rowCandidato.append('div')
-            .attr('class', 'col-sm-10 graph')
-            .append('div')
-            .attr('class', 'chart')
+            .attr('class', 'col-sm-11 graph')
             .call(barchart);
 
     });
