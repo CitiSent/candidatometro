@@ -98,7 +98,7 @@ Candidatometro.BarChart = function() {
     'use strict';
 
     // Initial Layout
-    var margin = {top: 2, right: 10, bottom: 18, left: 10},
+    var margin = {top: 2, right: 10, bottom: 18, left: 30},
         height = 80;
 
     var timeDomain = null;
@@ -127,6 +127,10 @@ Candidatometro.BarChart = function() {
                 .attr('class', 'bc-xaxis')
                 .attr('transform', chart.svgt([margin.left, height + margin.top]));
 
+            svg.append('g')
+                .attr('class', 'bc-yaxis')
+                .attr('transform', chart.svgt([0, margin.top]));
+
         });
 
         chart.update();
@@ -142,7 +146,8 @@ Candidatometro.BarChart = function() {
                 height = chart.int(div.style('height')) - margin.top - margin.bottom,
                 svg = div.select('svg'),
                 gchart = svg.select('g.bc-chart'),
-                gxaxis = svg.select('g.bc-xaxis');
+                gxaxis = svg.select('g.bc-xaxis'),
+                gyaxis = svg.select('g.bc-yaxis');
 
             // Adjust the Layout
             // -----------------
@@ -152,6 +157,9 @@ Candidatometro.BarChart = function() {
 
             gxaxis
                 .attr('transform', chart.svgt([margin.left, height + margin.top]));
+
+            gyaxis
+                .attr('transform', chart.svgt([margin.left, margin.top]));
 
             // Scales
             // ------
@@ -169,7 +177,7 @@ Candidatometro.BarChart = function() {
 
             var yScale = d3.scale.linear()
                 .domain(pExtent)
-                .range([4, height / 2]);
+                .range([2, height / 2]);
 
             // Data Items
             // ----------
@@ -252,14 +260,27 @@ Candidatometro.BarChart = function() {
                     d3.select('body').select('div.bc-tooltip').remove();
                 });
 
-            // Time Axis
-            // ---------
+            // Axis
+            // ----
 
             var xAxis = d3.svg.axis()
                 .scale(xScale)
                 .orient('bottom');
 
+            // Construct the inverted y axis
+            var invYScale = d3.scale.linear()
+                .domain(pExtent)
+                .range([height / 2, 2]);
+
+            var yAxis = d3.svg.axis()
+                .scale(invYScale)
+                .ticks(4)
+                .outerTickSize(0)
+                .orient('left');
+
             gxaxis.call(xAxis);
+            gyaxis.call(yAxis);
+
 
         });
     };
