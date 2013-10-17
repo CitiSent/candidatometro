@@ -35,28 +35,27 @@ Candidatometro.BubbleChart = function() {
                 .attr('class', 'visible-xs visible-sm topic-label')
                 .text(function(d) { return d.name; });
 
-            var divCont = divCell.append('div');
+            var divCont = divCell.append('div')
+                .attr('class', 'svg-container');
 
-            var width = chart.int(divCont.style('width')),
-                height = width;
+            var height = chart.int(divCont.style('height')),
+                width = height,
+                maxRadius = height / 2 - 1;
 
-            console.log([width, height]);
-
-            var svg = divCont.attr('class', 'svg-container')
+            var svg = divCont
                 .append('svg')
                     .attr('width', width)
                     .attr('height', height);
 
             var rScale = d3.scale.sqrt()
                 .domain(d3.extent(topics, function(d) { return d.total; }))
-                .range([2, d3.min([width, height]) / 2 - 2]);
+                .range([2, maxRadius]);
 
             svg.append('circle')
                 .attr('cx', width / 2)
                 .attr('cy', height / 2)
                 .attr('r', function(d) { return rScale(d.total); })
                 .attr('fill', '#29B0E9');
-
 
         });
     };
