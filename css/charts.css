@@ -43,7 +43,6 @@
 
 .bc-xaxis text {
     fill: #666;
-    font-family: sans-serif;
     font-size: 11px;
 }
 
@@ -56,8 +55,8 @@
 
 .bc-yaxis text {
     fill: #666;
-    font-family: sans-serif;
-    font-size: 8px;
+    font-family: SourceSansProRegular;
+    font-size: 9px;
 }
 
 .bc-phantom {
@@ -71,7 +70,7 @@
     width: 140px;
     height: 54px;
     padding: 4px;
-    font: 10px sans-serif;
+    font-size: 10px;
     background: #eee;
     border: solid 1px #aaa;
     pointer-events: none;
@@ -86,24 +85,14 @@
 /* Tooltip */
 .bc-tooltip-title {
     font-weight: bold;
-    font: 12px sans-serif;
+    font-size: 12px;
 }
 
 .bc-tooltip-info {
     line-height: 0.1;
     font-weight: bold;
-    font: 11px sans-serif;
-}
-
-/* Totals */
-
-.tc-info {
-    background: #eee;
-    padding: 4px;
-    font-family: sans-serif;
     font-size: 11px;
 }
-
 
 
 
