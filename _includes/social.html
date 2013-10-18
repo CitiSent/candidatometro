@@ -1,9 +1,9 @@
 <div class='row social'>
-  <div class='col-sm-3 twitter col-sm-offset-3'>
+  <div class='col-sm-4 twitter'>
     <a href="https://twitter.com/share" class="twitter-share-button" data-via="CitiSent" data-lang="es" data-size="large" data-hashtags="candidatometro">Twittear</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </div>
-  <div class='col-sm-3 google'>
+  <div class='col-sm-4 google'>
     <!-- Inserta esta etiqueta donde quieras que aparezca Botón Compartir. -->
     <div class="g-plus" data-action="share" data-annotation="bubble" data-height="24"></div>
 
@@ -17,5 +17,16 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
       })();
     </script>
+  </div>
+  <div class='col-sm-4 facebook'>
+    <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=203046023085239";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
   </div>
 </div>
