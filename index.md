@@ -1,5 +1,5 @@
 ---
-layout: standard
+layout: base
 title: Candidatómetro
 ---
 
@@ -18,7 +18,7 @@ title: Candidatómetro
 
   <div class='tabla-de-candidatos'>
     <div class='col-md-6 air-top'>
-      
+
       <hr>
 
       <div class="row">
@@ -35,9 +35,9 @@ title: Candidatómetro
           <h6 class='bold uc'>Marco Enríquez-Ominami Gumucio</h6>
         </div>
       </div>
-      
+
       <hr>
-      
+
       <div class="row">
         <div class='col-sm-4 tcenter candidato'>
           <img class='img-circle' width='100' src='{{ site.baseurl }}/img/fot_alfredo_sfeir.jpg'><br>
@@ -52,9 +52,9 @@ title: Candidatómetro
           <h6 class='bold uc'>Marcel Claude Reyes</h6>
         </div>
       </div>
-      
+
       <hr>
-      
+
       <div class="row">
         <div class='col-sm-4 tcenter candidato'>
           <img class='img-circle' width='100' src='{{ site.baseurl }}/img/fot_ricardo_israel.jpg'><br>
@@ -81,7 +81,7 @@ title: Candidatómetro
 
 <div class='row'>
   <div class='col-sm-6'>
-    <p>Las visualizaciones aquí presentadas son producto de una serie de <i class='cs-icon-study'></i> <strong>Estudios</strong> realizados con <strong>CitiSent</strong>. Estos estudios son configurados a partir de una definición de:</p> 
+    <p>Las visualizaciones aquí presentadas son producto de una serie de <i class='cs-icon-study'></i> <strong>Estudios</strong> realizados con <strong>CitiSent</strong>. Estos estudios son configurados a partir de una definición de:</p>
 
     <div class='row'>
       <div class='components'>
