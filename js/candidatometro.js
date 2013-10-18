@@ -55,7 +55,7 @@ Candidatometro.BubbleChart = function() {
                 .attr('cx', width / 2)
                 .attr('cy', height / 2)
                 .attr('r', function(d) { return rScale(d.total); })
-                .attr('fill', '#29B0E9');
+                .attr('class', 'bubble');
 
         });
     };
