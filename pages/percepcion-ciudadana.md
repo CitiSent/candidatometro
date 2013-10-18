@@ -73,6 +73,8 @@ title: ¿Cómo son percibidos los candidatos?
         var barchart = Candidatometro.BarChart()
             .timeDomain(d3.time.days(from, to));
 
+        var totals = Candidatometro.Totals();
+
         var rowCandidato = d3.select('#charts').selectAll('div.row.candidato')
             .data(data)
             .enter()
@@ -96,8 +98,13 @@ title: ¿Cómo son percibidos los candidatos?
 
         // Graph
         var divGraph = rowCandidato.append('div')
-            .attr('class', 'col-sm-11 graph')
+            .attr('class', 'col-sm-9 graph')
             .call(barchart);
+
+        var divTotals = rowCandidato.append('div')
+            .attr('class', 'col-sm-2 tc-info');
+
+        divTotals.call(totals);
 
     });
 
