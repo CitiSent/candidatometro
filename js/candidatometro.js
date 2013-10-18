@@ -2,6 +2,58 @@
 var Candidatometro = Candidatometro || {};
 
 
+// Charts
+// ------
+
+Candidatometro.Totals = function() {
+    'use strict';
+
+    var selection;
+
+    function chart(_selection) {
+        selection = _selection;
+        selection.each(function() {
+            var div = d3.select(this);
+            div.append('p').attr('class', 'tc-tot');
+            div.append('p').attr('class', 'tc-pos');
+            div.append('p').attr('class', 'tc-neu');
+            div.append('p').attr('class', 'tc-neg');
+        });
+
+        chart.update();
+    }
+
+    chart.update = function() {
+        selection.each(function(datum) {
+
+            var div = d3.select(this),
+                ptot = div.select('p.tc-tot'),
+                ppos = div.select('p.tc-pos'),
+                pneu = div.select('p.tc-neu'),
+                pneg = div.select('p.tc-neg');
+
+            var data = datum.data.values();
+
+            var pos = d3.sum(data, function(d) { return d.pos; }),
+                neu = d3.sum(data, function(d) { return d.neu; }),
+                neg = d3.sum(data, function(d) { return d.neg; }),
+                tot = pos + neg + neu;
+
+            ptot.text('TOTAL: ' + tot);
+            ppos.text('pos: ' + pos);
+            pneu.text('neu: ' + neu);
+            pneg.text('neg: ' + neg);
+
+        });
+    };
+
+
+    _.extend(chart, Backbone.Events);
+    return chart;
+
+};
+
+
 Candidatometro.BubbleChart = function() {
     'use strict';
 
@@ -197,7 +249,6 @@ Candidatometro.BarChart = function() {
                         .attr('x', 10)
                         .attr('y', 0)
                         .text(d.date);
-
                 });
 
             // Positive Bars
@@ -269,9 +320,10 @@ Candidatometro.BarChart = function() {
                 .tickFormat(d3.time.format('%e %b %Y'));
 
             // Invert the yScale to display the axis correctly
+            var yScaleRange = yScale.range();
             var invYScale = d3.scale.linear()
                 .domain(pExtent)
-                .range([height / 2, 2]);
+                .range([yScaleRange[1], yScaleRange[0]]);
 
             var yAxis = d3.svg.axis()
                 .scale(invYScale)
@@ -279,10 +331,9 @@ Candidatometro.BarChart = function() {
                 .outerTickSize(0)
                 .orient('left');
 
+            // Bind the axis to their groups
             gxaxis.call(xAxis);
             gyaxis.call(yAxis);
-
-
         });
     };
 
@@ -304,11 +355,12 @@ Candidatometro.BarChart = function() {
     chart.svgt = function(value) { return 'translate(' + value + ')'; };
     chart.svgs = function(value) { return 'scale(' + value + ')'; };
 
-
     _.extend(chart, Backbone.Events);
     return chart;
 };
 
+// Datasets
+// --------
 
 Candidatometro.MultiDataset = function() {
     'use strict';
