@@ -35,5 +35,5 @@ agenda:
    - name: agenda/agenda_jocelyn_holt.json
      json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=73'
 
-   # - name: agenda/ciudadania.json
-   #   json: ''
+   - name: agenda/ciudadania.json
+     json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=75'

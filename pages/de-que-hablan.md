@@ -66,7 +66,8 @@ title: ¿De qué hablan los candidatos?
         {name: 'Marcel Claude',          url: 'agenda_claude.json',           img: 'fot_marcel_claude.jpg'},
         {name: 'Ricardo Israel',         url: 'agenda_israel.json',           img: 'fot_ricardo_israel.jpg'},
         {name: 'Tomás Jocelyn-Holt',     url: 'agenda_jocelyn_holt.json',     img: 'fot_tomas_jocelyn-holt.jpg'},
-        {name: 'franco parisi',          url: 'agenda_parisi.json',           img: 'fot_franco_parisi.jpg'}
+        {name: 'franco parisi',          url: 'agenda_parisi.json',           img: 'fot_franco_parisi.jpg'},
+        {name: 'Ciudadanía',             url: 'ciudadania.json',              img: 'fot_la_calle.jpg'}
     ];
 
     data.forEach(function(d) {
@@ -77,41 +78,6 @@ title: ¿De qué hablan los candidatos?
 
     var bubbleChart = new Candidatometro.BubbleChart()
         .mdataset(mdset);
-
-    // <div class='col-md-1'>
-    //   <div class='avatar'>
-    //     <img class='img-circle img-responsive' src='{{ site.baseurl }}/img/fot_evelyn_matthei.jpg'>
-    //     <h6 class='bold uc'>Evelyn Matthei</h6>
-    //   </div>
-    //
-    //   <div class='graph'>
-    //     <div class='graph-cell'>
-    //       <div class='visible-xs visible-sm topic-label'>Educación</div>
-    //     </div>
-    //     <div class='graph-cell'>
-    //       <div class='visible-xs visible-sm topic-label'>Salud</div>
-    //     </div>
-    //     <div class='graph-cell'>
-    //       <div class='visible-xs visible-sm topic-label'>Economía</div>
-    //     </div>
-    //     <div class='graph-cell'>
-    //       <div class='visible-xs visible-sm topic-label'>Gobernabilidad y Estado</div>
-    //     </div>
-    //     <div class='graph-cell'>
-    //       <div class='visible-xs visible-sm topic-label'>Energía y Medio Ambiente</div>
-    //     </div>
-    //     <div class='graph-cell'>
-    //       <div class='visible-xs visible-sm topic-label'>Seguridad</div>
-    //     </div>
-    //     <div class='graph-cell'>
-    //       <div class='visible-xs visible-sm topic-label'>Transporte</div>
-    //     </div>
-    //     <div class='graph-cell'>
-    //       <div class='visible-xs visible-sm topic-label'>Defensa y Política Exterior</div>
-    //     </div>
-    //   </div>
-    // </div>
-
 
     var colCandidato = d3.select('#charts').selectAll('div.col-md-1')
         .data(data)
