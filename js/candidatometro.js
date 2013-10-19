@@ -14,10 +14,7 @@ Candidatometro.Totals = function() {
         selection = _selection;
         selection.each(function() {
             var div = d3.select(this);
-            div.append('p').attr('class', 'tc-tot');
-            div.append('p').attr('class', 'tc-pos');
-            div.append('p').attr('class', 'tc-neu');
-            div.append('p').attr('class', 'tc-neg');
+            div.append('h6').attr('class', 'tc-tot');
         });
 
         chart.update();
@@ -27,26 +24,64 @@ Candidatometro.Totals = function() {
         selection.each(function(datum) {
 
             var div = d3.select(this),
-                ptot = div.select('p.tc-tot'),
-                ppos = div.select('p.tc-pos'),
-                pneu = div.select('p.tc-neu'),
-                pneg = div.select('p.tc-neg');
+                values = datum.data.values(),
+                barHeight = 15;
 
-            var data = datum.data.values();
+            var data = [
+                {name: 'Positivo', cls: 'bc-pos', count: d3.sum(values, function(d) { return d.pos; })},
+                {name: 'Neutro',   cls: 'bc-neu', count: d3.sum(values, function(d) { return d.neu; })},
+                {name: 'Negativo', cls: 'bc-neg', count: d3.sum(values, function(d) { return d.neg; })}
+            ];
 
-            var pos = d3.sum(data, function(d) { return d.pos; }),
-                neu = d3.sum(data, function(d) { return d.neu; }),
-                neg = d3.sum(data, function(d) { return d.neg; }),
-                tot = pos + neg + neu;
+            var totalPosts = d3.sum(data, function(d) { return d.count; }),
+                totalText = _.template('<%= total %> POSTS', {total: totalPosts.toLocaleString()});
 
-            ptot.text('TOTAL: ' + tot);
-            ppos.text('pos: ' + pos);
-            pneu.text('neu: ' + neu);
-            pneg.text('neg: ' + neg);
+            data.forEach(function(d) {
+                d.perc = 100 * d.count / totalPosts;
+            });
+
+            // Totals
+            div.select('h6.tc-tot').text(totalText);
+
+            var pRow = div.selectAll('div')
+                .data(data)
+                .enter()
+                .append('div')
+                .attr('class', 'row');
+
+            pRow.append('div')
+                .attr('class', 'col-md-4')
+                .append('p')
+                .text(function(d) { return d.name; });
+
+            var divSVG = pRow.append('div')
+                .attr('class', 'col-md-7');
+
+            var svgWidth = chart.int(divSVG.style('width'));
+
+            var pSVG = divSVG.append('svg')
+                .attr('width', svgWidth)
+                .attr('height', barHeight);
+
+            var bScale = d3.scale.linear()
+                .domain([0, 100])
+                .range([0, svgWidth - 20]);
+
+            pSVG.append('rect')
+                .attr('width', function(d) { return bScale(d.perc); })
+                .attr('height', barHeight)
+                .attr('class', function(d) { return d.cls; });
+
+            pSVG.append('text')
+                .attr('x', function(d) { return bScale(d.perc) + 2; })
+                .attr('y', barHeight - 2)
+                .text(function(d) { return d.perc.toFixed(1) + '%'; })
+                .attr('fill', '#555');
 
         });
     };
 
+    chart.int = function(value) { return parseInt(value, 10); };
 
     _.extend(chart, Backbone.Events);
     return chart;

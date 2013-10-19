@@ -1,5 +1,17 @@
+/* Totals */
+
+.tc-info {
+    background: #eee;
+    padding: 10px;
+    text-align: right;
+}
+
+h6.tc-tot {
+    font-size: 14px;
+}
 
 /* Time Bar Chart */
+
 .bc-bg {
     fill: #eeeeec;
     fill-opacity: 0.2;
