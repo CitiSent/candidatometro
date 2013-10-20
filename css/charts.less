@@ -1,0 +1,125 @@
+
+/* Time Bar Chart */
+
+@cyan: #2BB6F1;
+
+.bc-bg {
+    fill: #eeeeec;
+    fill-opacity: 0.2;
+}
+
+.bc-pos {
+    color: @cyan;
+    fill: @cyan;
+    stroke: #fff;
+    stroke-opacity: 0.8;
+}
+
+.bc-neu {
+    color: #493A35;
+    fill: #493A35;
+    stroke: #fff;
+    stroke-opacity: 0.8;
+}
+
+.bc-neg {
+    color: @orange;
+    fill: @orange;
+    stroke: #fff;
+    stroke-opacity: 0.8;
+}
+
+.bc-grid {
+    fill: #babdb6;
+    fill-opacity: 0.0;
+    stroke: #fff;
+    stroke-opacity: 0.8;
+}
+
+/* Axis */
+
+.bc-xaxis path,
+.bc-xaxis line {
+    fill: none;
+    stroke: #666;
+    shape-rendering: crispEdges;
+}
+
+.bc-xaxis text {
+    fill: #666;
+    font-size: 11px;
+}
+
+.bc-yaxis path,
+.bc-yaxis line {
+    fill: none;
+    stroke: #666;
+    shape-rendering: crispEdges;
+}
+
+.bc-yaxis text {
+    fill: #666;
+    font-family: SourceSansProRegular;
+    font-size: 9px;
+}
+
+.bc-phantom {
+    fill-opacity: 0.0;
+    stroke-opacity: 0.0;
+}
+
+.bc-tooltip {
+    position: absolute;
+    text-align: center;
+    width: 140px;
+    height: 54px;
+    padding: 4px;
+    font-size: 10px;
+    background: #FFF;
+    border: solid 3px rgba(0, 0, 0, .15);
+    pointer-events: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+/* Totals */
+
+.tc-info {
+    padding: 0 0 0 10px;
+    font-size: 11px;
+    background-color: transparent;
+
+    p{
+        margin: 0;
+        &.tc-tot{font-family: SourceSansProBold;}
+        &.tc-pos{color: @blue}
+        &.tc-neu{color: #493A35}
+        &.tc-neg{color: @orange}
+    }
+}
+
+
+.bubble {
+    fill: @cyan;
+    stroke:darken(@cyan, 18);
+    stroke-width: 0.8pt;
+}
+
+/* Tooltip */
+
+.bc-tooltip-title {
+    font-family: SourceSansProSemibold;
+    font-size: 12px;
+}
+
+.bc-tooltip-info {
+    line-height: 0.1;
+    font-family: SourceSansProRegular;
+    font-size: 11px;
+}
+
+
+
+
