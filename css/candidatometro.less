@@ -96,12 +96,22 @@
 
 
 // Candidatómetro
-@import 'charts.less';
 
 .logo{
 	img{
 		height:26px;
   		margin:-9px 5px 0 0;
+	}
+}
+
+.cs-logo{
+	font-family: SourceSansProBold;
+	color: @black;
+	img{
+		display: inline-block;;
+		.size(28px, 28px);
+		margin-top: -5px;
+		margin-right: 5px;
 	}
 }
 
@@ -173,6 +183,10 @@ h1.title{
 		color: @blue;
 		margin: 0;
 		padding: 4px 0 10px 0;
+
+		&.tc-tot{
+			font-size: 12px;
+		}
 	}
 
 	@row-height: 50px;
@@ -228,6 +242,14 @@ h1.title{
 			}
 		}
 
+		&:last-child{
+			.graph .graph-cell .svg-container svg circle{
+				color: @orange;
+			    fill: @orange;
+			    stroke: darken(@orange, 10);
+			    stroke-opacity: 0.8;
+			}
+		}
 		.graph{
 			margin: 0;
 			padding: 0;
@@ -322,9 +344,10 @@ ul.small{
 }
 
 // Responsive 
-// ----------
+// -------------------------------------------------
 
 // Extra small screen / phone
+
 @media(max-width: @screen-xs-max){
 	.headers{
 		.topico{
@@ -338,9 +361,9 @@ ul.small{
 	}
 
 	.tc-info{
-		padding: 40px 0 0 0;
+		padding: 40px 0 0 15px !important;
 		p{
-			text-align: center;
+			text-align: left;
 		}
 	}
 	h1.huge{
@@ -430,6 +453,9 @@ ul.small{
 		}
 	}
 }
+
+// Visualizaciones 
+@import 'charts.less';
 
 
 // Small screen / tablet
