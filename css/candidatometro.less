@@ -97,6 +97,8 @@
 
 // Candidatómetro
 
+@cyan: #2BB6F1;
+
 .logo{
 	img{
 		height:26px;
@@ -244,10 +246,10 @@ h1.title{
 
 		&:last-child{
 			.graph .graph-cell .svg-container svg circle{
-				color: @orange;
-			    fill: @orange;
-			    stroke: darken(@orange, 10);
-			    stroke-opacity: 0.8;
+				color: fade(darken(@cyan, 15), 20);
+			    fill: fade(darken(@cyan, 15), 20);
+			    stroke: darken(@cyan, 30);
+			    stroke-opacity: 0.15;
 			}
 		}
 		.graph{
