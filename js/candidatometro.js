@@ -50,12 +50,12 @@ Candidatometro.Totals = function() {
                 .attr('class', 'row');
 
             pRow.append('div')
-                .attr('class', 'col-md-4')
+                .attr('class', 'col-sm-4 tright')
                 .append('p')
                 .text(function(d) { return d.name; });
 
             var divSVG = pRow.append('div')
-                .attr('class', 'col-md-7');
+                .attr('class', 'col-sm-7');
 
             var svgWidth = chart.int(divSVG.style('width'));
 
