@@ -41,7 +41,7 @@ title: ¿Cómo son percibidos los candidatos?
 
 <script>
 
-    var jsonUrl = '{{ site.baseurl }}/data/citisent_json/json_study_74.json',
+    var jsonUrl = '{{ site.baseurl }}/data/citisent_json/json_study_74.json';
 
     var dset = Candidatometro.Dataset()
         .json(jsonUrl);

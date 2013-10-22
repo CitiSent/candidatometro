@@ -101,7 +101,7 @@ title: ¿De qué hablan los candidatos?
         {
             name: 'Tomás Jocelyn-Holt',
             url: '{{ site.baseurl }}/data/citisent_json/json_study_73.json',
-            img: '{{ site.baseurl }}/img/fot_tomas_jocelyn-holt.jpg'},
+            img: '{{ site.baseurl }}/img/fot_tomas_jocelyn-holt.jpg'
         },
         {
             name: 'Ciudadanía',
