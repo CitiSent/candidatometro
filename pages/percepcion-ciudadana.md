@@ -41,7 +41,7 @@ title: ¿Cómo son percibidos los candidatos?
 
 <script>
 
-    var jsonUrl = '{{ site.baseurl }}/data/candidatos.json';
+    var jsonUrl = '{{ site.baseurl }}/data/citisent_json/json_study_74.json',
 
     var dset = Candidatometro.Dataset()
         .json(jsonUrl);
@@ -55,15 +55,16 @@ title: ¿Cómo son percibidos los candidatos?
             to = new Date('2013-12-01');
 
         var data = [
-            {name: 'Evelyn Matthei',         img: 'fot_evelyn_matthei.jpg'},
-            {name: 'Michelle Bachelet',      img: 'fot_michelle_bachelet.jpg'},
-            {name: 'Marco Enríquez-Ominami', img: 'fot_marco_enriquez-ominami.jpg'},
-            {name: 'Alfredo Sfeir',          img: 'fot_alfredo_sfeir.jpg'},
-            {name: 'Roxana Miranda',         img: 'fot_roxana_miranda.jpg'},
-            {name: 'Marcel Claude',          img: 'fot_marcel_claude.jpg'},
-            {name: 'Ricardo Israel',         img: 'fot_ricardo_israel.jpg'},
-            {name: 'Tomás Jocelyn-Holt',     img: 'fot_tomas_jocelyn-holt.jpg'},
-            {name: 'franco parisi',          img: 'fot_franco_parisi.jpg'}
+            { name: 'franco parisi',          img: '{{ site.baseurl }}/img/fot_franco_parisi.jpg' },
+            { name: 'Marcel Claude',          img: '{{ site.baseurl }}/img/fot_marcel_claude.jpg' },
+            { name: 'Ricardo Israel',         img: '{{ site.baseurl }}/img/fot_ricardo_israel.jpg' },
+            { name: 'Marco Enríquez-Ominami', img: '{{ site.baseurl }}/img/fot_marco_enriquez-ominami.jpg' },
+            { name: 'Roxana Miranda',         img: '{{ site.baseurl }}/img/fot_roxana_miranda.jpg' },
+            { name: 'Michelle Bachelet',      img: '{{ site.baseurl }}/img/fot_michelle_bachelet.jpg' },
+            { name: 'Evelyn Matthei',         img: '{{ site.baseurl }}/img/fot_evelyn_matthei.jpg' },
+            { name: 'Alfredo Sfeir',          img: '{{ site.baseurl }}/img/fot_alfredo_sfeir.jpg' },
+            { name: 'Tomás Jocelyn-Holt',     img: '{{ site.baseurl }}/img/fot_tomas_jocelyn-holt.jpg' },
+
         ];
 
         data.forEach(function(d) {
@@ -90,7 +91,7 @@ title: ¿Cómo son percibidos los candidatos?
         divAvatar
             .append('img')
             .attr('class', 'img-circle img-responsive')
-            .attr('src', function(d) { return '{{ site.baseurl }}/img/' + d.img; });
+            .attr('src', function(d) { return d.img; });
 
         divAvatar.append('h6')
             .attr('class', 'bold uc')
