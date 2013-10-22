@@ -58,21 +58,58 @@ title: ¿De qué hablan los candidatos?
 <script>
 
     var data = [
-        {name: 'Evelyn Matthei',         url: 'agenda_matthei.json',          img: 'fot_evelyn_matthei.jpg'},
-        {name: 'Michelle Bachelet',      url: 'agenda_bachelet.json',         img: 'fot_michelle_bachelet.jpg'},
-        {name: 'Marco Enríquez-Ominami', url: 'agenda_enriquez_ominami.json', img: 'fot_marco_enriquez-ominami.jpg'},
-        {name: 'Alfredo Sfeir',          url: 'agenda_sfeir.json',            img: 'fot_alfredo_sfeir.jpg'},
-        {name: 'Roxana Miranda',         url: 'agenda_miranda.json',          img: 'fot_roxana_miranda.jpg'},
-        {name: 'Marcel Claude',          url: 'agenda_claude.json',           img: 'fot_marcel_claude.jpg'},
-        {name: 'Ricardo Israel',         url: 'agenda_israel.json',           img: 'fot_ricardo_israel.jpg'},
-        {name: 'Tomás Jocelyn-Holt',     url: 'agenda_jocelyn_holt.json',     img: 'fot_tomas_jocelyn-holt.jpg'},
-        {name: 'franco parisi',          url: 'agenda_parisi.json',           img: 'fot_franco_parisi.jpg'},
-        {name: 'Ciudadanía',             url: 'ciudadania.json',              img: 'fot_la_calle.jpg'}
+        {
+            name: 'franco parisi',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_67.json',
+            img: '{{ site.baseurl }}/img/fot_franco_parisi.jpg'
+        },
+        {
+            name: 'Marcel Claude',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_70.json',
+            img: '{{ site.baseurl }}/img/fot_marcel_claude.jpg'
+        },
+        {
+            name: 'Ricardo Israel',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_72.json',
+            img: '{{ site.baseurl }}/img/fot_ricardo_israel.jpg'
+        },
+        {
+            name: 'Marco Enríquez-Ominami',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_68.json',
+            img: '{{ site.baseurl }}/img/fot_marco_enriquez-ominami.jpg'
+        },
+        {
+            name: 'Roxana Miranda',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_71.json',
+            img: '{{ site.baseurl }}/img/fot_roxana_miranda.jpg'
+        },
+        {
+            name: 'Michelle Bachelet',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_65.json',
+            img: '{{ site.baseurl }}/img/fot_michelle_bachelet.jpg'
+        },
+        {
+            name: 'Evelyn Matthei',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_66.json',
+            img: '{{ site.baseurl }}/img/fot_evelyn_matthei.jpg'
+        },
+        {
+            name: 'Alfredo Sfeir',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_69.json',
+            img: '{{ site.baseurl }}/img/fot_alfredo_sfeir.jpg'
+        },
+        {
+            name: 'Tomás Jocelyn-Holt',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_73.json',
+            img: '{{ site.baseurl }}/img/fot_tomas_jocelyn-holt.jpg'
+        },
+        {
+            name: 'Ciudadanía',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_75.json',
+            img: '{{ site.baseurl }}/img/fot_la_calle.jpg'
+        }
     ];
 
-    data.forEach(function(d) {
-        d.url = '{{ site.baseurl }}/data/agenda/' + d.url;
-    });
 
     var mdset = Candidatometro.MultiDataset().data(data);
 
@@ -93,7 +130,7 @@ title: ¿De qué hablan los candidatos?
 
     divAvatar.append('img')
         .attr('class', 'img-circle img-responsive')
-        .attr('src', function(d) { return '{{ site.baseurl }}/img/' + d.img; });
+        .attr('src', function(d) { return  d.img; });
 
     divAvatar.append('h6')
         .attr('class', 'bold uc')
