@@ -3,37 +3,37 @@
 
 candidatos:
 
-   -  name: candidatos.json
-      json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=74'
+   - name: citisent_json/json_study_74.json
+     json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=74'
 
 agenda:
 
-   - name: agenda/agenda_bachelet.json
+   - name: citisent_json/json_study_65.json
      json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=65'
 
-   - name: agenda/agenda_matthei.json
+   - name: citisent_json/json_study_66.json
      json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=66'
 
-   - name: agenda/agenda_parisi.json
+   - name: citisent_json/json_study_67.json
      json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=67'
 
-   - name: agenda/agenda_enriquez_ominami.json
+   - name: citisent_json/json_study_68.json
      json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=68'
 
-   - name: agenda/agenda_sfeir.json
+   - name: citisent_json/json_study_69.json
      json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=69'
 
-   - name: agenda/agenda_claude.json
+   - name: citisent_json/json_study_70.json
      json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=70'
 
-   - name: agenda/agenda_miranda.json
+   - name: citisent_json/json_study_71.json
      json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=71'
 
-   - name: agenda/agenda_israel.json
+   - name: citisent_json/json_study_72.json
      json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=72'
 
-   - name: agenda/agenda_jocelyn_holt.json
+   - name: citisent_json/json_study_73.json
      json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=73'
 
-   - name: agenda/ciudadania.json
+   - name: citisent_json/json_study_75.json
      json: 'http://lab.citisent.com/reports/study_to_json_for_datavis?id=75'
