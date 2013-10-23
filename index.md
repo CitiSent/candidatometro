@@ -16,94 +16,52 @@ title: Candidatómetro
     <p class='big thin'>Te invitamos a conocer CitiSent en <a href='http://www.citisent.com' >www.citisent.com</a></p>
   </div>
 
-  <div class='tabla-de-candidatos'>
-    <div class='col-md-6 air-top'>
-    <div id="carousel-example-generic" class="carousel slide">
+ 
+  <div class='col-md-6 air-top'>
+    <div id='carrusel' class='carousel slide'>
       <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <ol class='carousel-indicators'>
+        <li data-target='#carrusel' data-slide-to='0' class='active'></li>
+        <li data-target='#carrusel' data-slide-to='1'></li>
+        <li data-target='#carrusel' data-slide-to='2'></li>
       </ol>
 
       <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="..." alt="...">
-          <div class="carousel-caption">
-            ...
+      <div class='carousel-inner'>
+        <div class='item active'>
+          <img src='{{ site.baseurl }}/img/slide_01.jpg' alt='los candidatos'>
+          <div class='carousel-caption'>
+            <h3>Los candidatos...</h3>
+            <p>Medimos la percepción ciudadana </p>
           </div>
         </div>
-        ...
+        <div class='item'>
+          <img src='{{ site.baseurl }}/img/slide_02.jpg' alt='la percepción ciudadana de los candidatos'>
+          <div class='carousel-caption'>
+            <h3>Los candidatos...</h3>
+            <p>Medimos la percepción ciudadana </p>
+          </div>
+        </div>
+        <div class='item'>
+          <img src='{{ site.baseurl }}/img/slide_03.jpg' alt='análisis de las agendas discursivas'>
+          <div class='carousel-caption'>
+            <h3>Los candidatos...</h3>
+            <p>Medimos la percepción ciudadana </p>
+          </div>
+        </div>
       </div>
 
       <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-        <span class="icon-prev"></span>
+      <a class='left carousel-control' href='#carrusel' data-slide='prev'>
+        <span class='icon-prev'></span>
       </a>
-      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-        <span class="icon-next"></span>
+      <a class='right carousel-control' href='#carrusel' data-slide='next'>
+        <span class='icon-next'></span>
       </a>
     </div>
 
-
-    
-
-      <hr>
-
-      <div class="row">
-        <div class='col-sm-4 tcenter candidato'>
-          <img class='img-circle' width='100' src='{{ site.baseurl }}/img/fot_evelyn_matthei.jpg'><br>
-          <h6 class='bold uc'>Evelyn Matthei Fornet</h6>
-        </div>
-        <div class='col-sm-4 tcenter candidato'>
-          <img class='img-circle' width='100' src='{{ site.baseurl }}/img/fot_michelle_bachelet.jpg'><br>
-          <h6 class='bold uc'>Michelle Bachelet Jeria</h6>
-        </div>
-        <div class='col-sm-4 tcenter candidato'>
-          <img class='img-circle' width='100' src='{{ site.baseurl }}/img/fot_marco_enriquez-ominami.jpg'><br>
-          <h6 class='bold uc'>Marco Enríquez-Ominami Gumucio</h6>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="row">
-        <div class='col-sm-4 tcenter candidato'>
-          <img class='img-circle' width='100' src='{{ site.baseurl }}/img/fot_alfredo_sfeir.jpg'><br>
-          <h6 class='bold uc'>Alfredo Sfeir Younis</h6>
-        </div>
-        <div class='col-sm-4 tcenter candidato'>
-          <img class='img-circle' width='100' src='{{ site.baseurl }}/img/fot_roxana_miranda.jpg'><br>
-          <h6 class='bold uc'>Roxana Miranda Meneses</h6>
-        </div>
-        <div class='col-sm-4 tcenter candidato'>
-          <img class='img-circle' width='100' src='{{ site.baseurl }}/img/fot_marcel_claude.jpg'><br>
-          <h6 class='bold uc'>Marcel Claude Reyes</h6>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="row">
-        <div class='col-sm-4 tcenter candidato'>
-          <img class='img-circle' width='100' src='{{ site.baseurl }}/img/fot_ricardo_israel.jpg'><br>
-          <h6 class='bold uc'>Ricardo Israel Zipper</h6>
-        </div>
-        <div class='col-sm-4 tcenter candidato'>
-          <img class='img-circle' width='100' src='{{ site.baseurl }}/img/fot_tomas_jocelyn-holt.jpg'><br>
-          <h6 class='bold uc'>Tomás Jocelyn-Holt Letelier</h6>
-        </div>
-        <div class='col-sm-4 tcenter candidato'>
-          <img class='img-circle' width='100' src='{{ site.baseurl }}/img/fot_franco_parisi.jpg'><br>
-          <h6 class='bold uc'>Franco Aldo Parisi Fernández</h6>
-        </div>
-      </div>
-
-      <hr>
-
-    </div>
   </div>
+ 
 </div>
 
 {% include social.html %}
