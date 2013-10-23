@@ -19,42 +19,40 @@ title: Candidatómetro
         <div class='item active'>
           <img src='{{ site.baseurl }}/img/slide_01.png' alt='los candidatos'>
           <div class='carousel-caption'>
-            <p>Estamos observando a los candidatos presidenciales, lo que dicen y qué dicen de ellos en Twitter.</p>
+            <p>Estamos observando a los candidatos presidenciales, <em>lo que dicen</em> y <em>qué dicen de ellos</em> en Twitter.</p>
           </div>
         </div>
         <div class='item'>
-          <img src='{{ site.baseurl }}/img/slide_02.png' alt='la percepción ciudadana de los candidatos'>
+          <img src='{{ site.baseurl }}/img/slide_02.jpg' alt='la percepción ciudadana de los candidatos'>
           <div class='carousel-caption'>
-            <p>Estudiamos y comparamos sus agendas</p>
+            <p>Estudiamos y contrastamos sus agendas, queremos compararlos entre ellos y con el discurso del resto de nosotros</p>
           </div>
         </div>
         <div class='item'>
-          <img src='{{ site.baseurl }}/img/slide_03.png' alt='análisis de las agendas discursivas'>
+          <img src='{{ site.baseurl }}/img/slide_03.jpg' alt='análisis de las agendas discursivas'>
           <div class='carousel-caption'>
-            <p>Y medimos el pulso de las opiniones</p>
+            <p>Estamos midiendo el pulso y popularidad de sus nombres, comprendiendo el tono de cada mención.</p>
           </div>
         </div>
       </div>
 
       <!-- Controls -->
       <a class='left carousel-control' href='#carrusel' data-slide='prev'>
-        <span class='icon-prev'></span>
+        <i class='icon-chevron-left'></i>
       </a>
       <a class='right carousel-control' href='#carrusel' data-slide='next'>
-        <span class='icon-next'></span>
+        <i class='icon-chevron-right'></i>
       </a>
     </div>
 
   </div>
   <div class='col-md-4'>
-    <p class='thin'>Estamos observando a los candidatos presidenciales, <em>lo que dicen</em> y <em>qué dicen de ellos</em> en Twitter.</p>
-    <p class='thin'>Este proyecto se ha desarrollado con la tecnología de configuración, extracción, filtrado y análisis de datos de <a href='http://www.citisent.com' class='cs-logo'><img src='{{ site.baseurl }}/assets/citisent-logo-sq.svg'>CitiSent</a> para explorar las siguientes preguntas:</p>
+    <p class='light big'>Este proyecto se ha desarrollado con la tecnología de configuración, extracción, filtrado y análisis de datos de <a href='http://www.citisent.com' class='cs-logo'><img src='{{ site.baseurl }}/assets/citisent-logo-sq.svg'>CitiSent</a> para explorar las siguientes preguntas:</p>
     <ul class='preguntas'>
       <li class='big'><a class='btn btn-lg btn-primary btn-pregunta' href='{{ site.baseurl }}/pages/percepcion-ciudadana'>¿Cómo son percibidos los candidatos?</a></li>
       <li class='big'><a class='btn btn-lg btn-primary btn-pregunta' href='{{ site.baseurl }}/pages/de-que-hablan'>¿De qué hablan los candidatos?</a></li>
     </ul>
-    <p class='thin'><a href='#metodo'>Aquí</a> explicamos la metodología empleada en la configuración de los estudios. Candidatómetro es un ejemplo de cómo configurar estudios sociales en Citisent. </p>
-    <p class='thin'>Te invitamos a conocer CitiSent en <a href='http://www.citisent.com' >www.citisent.com</a></p>
+    <p class='light big'>Candidatómetro es un ejemplo de cómo configurar estudios sociales en Citisent. Te invitamos a conocelo <a href='http://www.citisent.com' >www.citisent.com</a></p>
   </div> 
 </div>
 
