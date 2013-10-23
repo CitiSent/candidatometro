@@ -25,7 +25,7 @@ title: ¿Cómo son percibidos los candidatos?
 <div class='row'>
     <div class='col-sm-12 tright'>
         <a class='next-question' href='{{ site.baseurl }}/pages/de-que-hablan'>
-            <span class='question'>¿de qué hablan los?</span> <i class='icon-arrow-right'></i>
+            <span class='question'>¿de qué hablan los candidatos?</span> <i class='icon-arrow-right'></i>
         </a>
     </div>
 </div>
