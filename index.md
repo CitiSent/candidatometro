@@ -47,52 +47,16 @@ title: Candidatómetro
 
   </div>
   <div class='col-md-4'>
-    <p class='light big'>Este proyecto se ha desarrollado con la tecnología de configuración, extracción, filtrado y análisis de datos de <a href='http://www.citisent.com' class='cs-logo'><img src='{{ site.baseurl }}/assets/citisent-logo-sq.svg'>CitiSent</a> para explorar las siguientes preguntas:</p>
+    <p class='light big air-top'>Este proyecto se ha desarrollado con la tecnología de configuración, extracción, filtrado y análisis de datos de <a href='http://www.citisent.com' class='cs-logo'><img src='{{ site.baseurl }}/assets/citisent-logo-sq.svg'>CitiSent</a> para explorar las siguientes preguntas:</p>
     <ul class='preguntas'>
-      <li class='big'><a class='btn btn-lg btn-primary btn-pregunta' href='{{ site.baseurl }}/pages/percepcion-ciudadana'>¿Cómo son percibidos los candidatos?</a></li>
-      <li class='big'><a class='btn btn-lg btn-primary btn-pregunta' href='{{ site.baseurl }}/pages/de-que-hablan'>¿De qué hablan los candidatos?</a></li>
+      <li><a class='btn btn-lg btn-primary btn-pregunta' href='{{ site.baseurl }}/pages/percepcion-ciudadana'>¿Cómo son percibidos los candidatos?</a></li>
+      <li><a class='btn btn-lg btn-primary btn-pregunta' href='{{ site.baseurl }}/pages/de-que-hablan'>¿De qué hablan los candidatos?</a></li>
     </ul>
     <p class='light big'>Candidatómetro es un ejemplo de cómo configurar estudios sociales en Citisent. Te invitamos a conocelo <a href='http://www.citisent.com' >www.citisent.com</a></p>
   </div> 
 </div>
 
 {% include social.html %}
-
-<hr id='metodo'>
-<h2 class='air-top orange thin'>Metodología General</h2>
-
-<div class='row'>
-  <div class='col-sm-6'>
-    <p>Las visualizaciones aquí presentadas son producto de una serie de <i class='cs-icon-study'></i> <strong>Estudios</strong> realizados con <strong>CitiSent</strong>. Estos estudios son configurados a partir de una definición de:</p>
-
-    <div class='row'>
-      <div class='components'>
-        <div class='col-sm-3 tcenter'>
-          <div class='well'><i class='cs-icon-topic'></i><br><strong>temas</strong></div>
-        </div>
-        <div class='col-sm-1 tcenter'>
-          <span class='operator'><i class='icon-plus'></i></span>
-        </div>
-        <div class='col-sm-3 tcenter'>
-          <div class='well'><i class='cs-icon-source'></i><br><strong>fuentes</strong></div>
-        </div>
-        <div class='col-sm-1 tcenter'>
-          <span class='operator'><i class='icon-plus'></i></span>
-        </div>
-        <div class='col-sm-3 tcenter'>
-          <div class='well'><i class='cs-icon-place'></i><br><strong>lugares</strong></div>
-        </div>
-      </div>
-    </div>
-
-    <p class='air-top'>Esta definición corresponde a los parámetros básicos para realizar consultas en un servicio Web. En el caso de este candidatómetro consultamos exclusivamente en Twitter.</p>
-  </div>
-  <div class='col-sm-6'>
-    <p>Los resultados gráficos reflejados en las preguntas del presente candidatómetro corresponden a visualizaciones realizadas a partir de 1 o más estudios. En cada caso exponemos las metodología utilizada a fin de explicitar el razonamiento detrás de cada formulación.</p>
-    <p>Como ya está dicho, cada estudio puede estar compuesto puede estar compuesto de temas, fuentes y/o lugares. Todos los elementos recolectados bajo estos criterios son procesados definiendo su <strong>polaridad</strong>, esto es un proceso de clasificación de los <em>twits</em> en base a su contenido positivo, negativo o neutral.</p>
-    <p>Cada estudio explica en detalle la metodología empleada.</p>
-  </div>
-</div>
 
 <!-- Libraries -->
 <script src="{{ site.baseurl }}/js/lib/d3.v3.min.js" charset="utf-8"></script>

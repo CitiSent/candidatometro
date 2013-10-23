@@ -31,7 +31,6 @@ title: ¿Cómo son percibidos los candidatos?
 </div>
 
 {% include social.html %}
-{% include metodo-percepcion.html %}
 
 <!-- Libraries -->
 <script src="{{ site.baseurl }}/js/lib/d3.v3.min.js" charset="utf-8"></script>
