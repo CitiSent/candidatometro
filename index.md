@@ -47,10 +47,10 @@ title: Candidatómetro
 
   </div>
   <div class='col-md-4'>
-    <p class='light big'>Este proyecto se ha desarrollado con la tecnología de configuración, extracción, filtrado y análisis de datos de <a href='http://www.citisent.com' class='cs-logo'><img src='{{ site.baseurl }}/assets/citisent-logo-sq.svg'>CitiSent</a> para explorar las siguientes preguntas:</p>
+    <p class='light big air-top'>Este proyecto se ha desarrollado con la tecnología de configuración, extracción, filtrado y análisis de datos de <a href='http://www.citisent.com' class='cs-logo'><img src='{{ site.baseurl }}/assets/citisent-logo-sq.svg'>CitiSent</a> para explorar las siguientes preguntas:</p>
     <ul class='preguntas'>
-      <li class='big'><a class='btn btn-lg btn-primary btn-pregunta' href='{{ site.baseurl }}/pages/percepcion-ciudadana'>¿Cómo son percibidos los candidatos?</a></li>
-      <li class='big'><a class='btn btn-lg btn-primary btn-pregunta' href='{{ site.baseurl }}/pages/de-que-hablan'>¿De qué hablan los candidatos?</a></li>
+      <li><a class='btn btn-lg btn-primary btn-pregunta' href='{{ site.baseurl }}/pages/percepcion-ciudadana'>¿Cómo son percibidos los candidatos?</a></li>
+      <li><a class='btn btn-lg btn-primary btn-pregunta' href='{{ site.baseurl }}/pages/de-que-hablan'>¿De qué hablan los candidatos?</a></li>
     </ul>
     <p class='light big'>Candidatómetro es un ejemplo de cómo configurar estudios sociales en Citisent. Te invitamos a conocelo <a href='http://www.citisent.com' >www.citisent.com</a></p>
   </div> 
