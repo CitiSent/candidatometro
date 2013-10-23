@@ -73,7 +73,7 @@
 @import '../../citisent/public/less-bootstrap/badges.less';
 @import '../../citisent/public/less-bootstrap/progress-bars.less';
 // @import '../../citisent/public/less-bootstrap/accordion.less';
-// @import '../../citisent/public/less-bootstrap/carousel.less';
+@import '../../citisent/public/less-bootstrap/carousel.less';
 @import '../../citisent/public/less-bootstrap/jumbotron.less';
 
 // CitiSent Custom Elements //---------------------------------------------*
@@ -246,10 +246,10 @@ h1.title{
 
 		&:last-child{
 			.graph .graph-cell .svg-container svg circle{
-				color: fade(darken(@cyan, 15), 20);
-			    fill: fade(darken(@cyan, 15), 20);
-			    stroke: darken(@cyan, 30);
-			    stroke-opacity: 0.15;
+				color: fade(@green, 80);
+			    fill: fade(@green, 80);
+			    stroke: darken(@green, 20);
+			    stroke-opacity: 0.5;
 			}
 		}
 		.graph{
