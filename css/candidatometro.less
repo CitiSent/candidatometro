@@ -304,9 +304,7 @@ h1.title{
 	
 	i{color: @link-color;}
 	.question{
-		color: transparent;
-		font-family: SourceSansProLight;
-		margin-right: 10px;
+		display: none;
 	}
 	
 	border: 1px solid transparent;
@@ -319,11 +317,18 @@ h1.title{
 			color: @link-color;
 		}
 		.question{
+			display: inline;
+			font-family: SourceSansProLight;
+			margin-right: 10px;
 			color: @gray;
 		}
+
+		&:before{content: ''}
 	}
-	&:after{
+	&:before{
+		ont-family: SourceSansProLight;
 		content: 'siguiente';
+		margin-right: 10px;
 	}
 }
 
