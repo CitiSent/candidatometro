@@ -73,7 +73,7 @@
 @import '../../citisent/public/less-bootstrap/badges.less';
 @import '../../citisent/public/less-bootstrap/progress-bars.less';
 // @import '../../citisent/public/less-bootstrap/accordion.less';
-// @import '../../citisent/public/less-bootstrap/carousel.less';
+@import '../../citisent/public/less-bootstrap/carousel.less';
 @import '../../citisent/public/less-bootstrap/jumbotron.less';
 
 // CitiSent Custom Elements //---------------------------------------------*
@@ -117,9 +117,14 @@
 	}
 }
 
+p.big{
+	font-size: 130%;
+}
+
 ul.preguntas{
-	font-size: 14px;
-	margin-left: 0;
+	font-size: 12px;
+	padding-left: 0;
+	
 	li{
 		margin: 10px 0;
 		list-style-type: none;
@@ -127,7 +132,7 @@ ul.preguntas{
 		a.btn-pregunta{
 			.border-radius(25px);
 			font-family: SourceSansProSemibold;
-			padding: 9px 17px;
+			padding: 5px 9px;
 		}
 	}
 }
@@ -198,7 +203,7 @@ h1.title{
 		.topic-label{
 			.tright;
 			height: @row-height;
-			font-family: SourceSansProLight;
+			font-family: SourceSansProRegular;
 			letter-spacing: -0.08ex;
 			line-height: 100%;
 			padding: @row-height/3 0;
@@ -246,10 +251,10 @@ h1.title{
 
 		&:last-child{
 			.graph .graph-cell .svg-container svg circle{
-				color: fade(darken(@cyan, 15), 20);
-			    fill: fade(darken(@cyan, 15), 20);
-			    stroke: darken(@cyan, 30);
-			    stroke-opacity: 0.15;
+				color: fade(@green, 80);
+			    fill: fade(@green, 80);
+			    stroke: darken(@green, 20);
+			    stroke-opacity: 0.5;
 			}
 		}
 		.graph{
@@ -304,9 +309,7 @@ h1.title{
 	
 	i{color: @link-color;}
 	.question{
-		color: transparent;
-		font-family: SourceSansProLight;
-		margin-right: 10px;
+		display: none;
 	}
 	
 	border: 1px solid transparent;
@@ -319,8 +322,19 @@ h1.title{
 			color: @link-color;
 		}
 		.question{
+			display: inline;
+			font-family: SourceSansProLight;
+			margin-right: 10px;
 			color: @gray;
 		}
+
+		&:before{content: ''}
+	}
+	&:before{
+		ont-family: SourceSansProLight;
+		content: 'siguiente';
+		margin-right: 10px;
+		color: fade(@gray, 80);
 	}
 }
 
@@ -371,12 +385,11 @@ ul.small{
 	h1.huge{
 		font-size: 300%;
 	}
-	p.big{
-		font-size: 130%;
-	}
+
 	ul.preguntas{
-		padding: 0;
+
 		li{
+			padding: 0;
 			a.btn-lg{font-size: 16px}
 		}
 	}

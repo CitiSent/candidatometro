@@ -25,13 +25,12 @@ title: ¿Cómo son percibidos los candidatos?
 <div class='row'>
     <div class='col-sm-12 tright'>
         <a class='next-question' href='{{ site.baseurl }}/pages/de-que-hablan'>
-            <span class='question'>¿de qué hablan los?</span> <i class='icon-arrow-right'></i>
+            <span class='question'>¿de qué hablan los candidatos?</span> <i class='icon-arrow-right'></i>
         </a>
     </div>
 </div>
 
 {% include social.html %}
-{% include metodo-percepcion.html %}
 
 <!-- Libraries -->
 <script src="{{ site.baseurl }}/js/lib/d3.v3.min.js" charset="utf-8"></script>
