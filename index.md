@@ -25,7 +25,7 @@ title: Candidatómetro
         <div class='item'>
           <img src='{{ site.baseurl }}/img/slide_02.jpg' alt='la percepción ciudadana de los candidatos'>
           <div class='carousel-caption'>
-            <p>Estudiamos y contrastamos sus agendas, queremos compararlos entre ellos y con el discurso del resto de nosotros</p>
+            <p>Estudiamos y contrastamos sus agendas, los compararmos entre ellos y con el discurso del resto de nosotros</p>
           </div>
         </div>
         <div class='item'>
