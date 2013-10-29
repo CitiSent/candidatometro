@@ -1,7 +1,6 @@
 
 var Candidatometro = Candidatometro || {};
 
-
 // Charts
 // ------
 
