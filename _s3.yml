@@ -1,0 +1,11 @@
+safe: false
+source: .
+destination: _site
+lsi: false
+markdown: rdiscount
+pygments: true
+permalink: pretty
+baseurl: "http://s3.amazon.com/candidatometro"
+
+project:
+    name: Candidatómetro
