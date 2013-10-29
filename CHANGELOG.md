@@ -4,9 +4,13 @@
 
 ## 1.0
 
+### 1.0.3
+
+* Fix the s3 url endpoint.
+
 ### 1.0.2
 
-* Fix the s3 url
+* Fix the s3 url.
 
 ### 1.0.1
 
