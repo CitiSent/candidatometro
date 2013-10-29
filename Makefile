@@ -16,5 +16,8 @@ js: build-js clean-js
 build-s3: js
 	jekyll build --config _s3.yml
 
+server:
+	jekyll server --watch --baseurl=
+
 clean:
 	rm -rf _site
