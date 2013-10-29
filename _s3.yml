@@ -5,7 +5,7 @@ lsi: false
 markdown: rdiscount
 pygments: true
 permalink: pretty
-baseurl: "https://s3.amazon.com/candidatometro"
+baseurl: "http://candidatometro.s3-website-us-east-1.amazonaws.com"
 
 project:
     name: Candidatómetro
