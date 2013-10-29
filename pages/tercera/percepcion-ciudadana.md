@@ -12,11 +12,14 @@ title: ¿Cómo son percibidos los candidatos?
 </div>
 
 <!-- Libraries -->
-<script src="{{ site.baseurl }}/js/lib/d3.v3.min.js" charset="utf-8"></script>
+<script src="{{ site.baseurl }}/js/datavis.js" charset="utf-8"></script>
+
+
+<!-- <script src="{{ site.baseurl }}/js/lib/d3.v3.min.js" charset="utf-8"></script>
 <script src="{{ site.baseurl }}/js/lib/underscore.js" charset="utf-8"></script>
 <script src="{{ site.baseurl }}/js/lib/backbone.js" charset="utf-8"></script>
 <script src="{{ site.baseurl }}/js/candidatometro.js"></script>
-
+ -->
 <script>
 
     var jsonUrl = '{{ site.baseurl }}/data/citisent_json/json_study_74.json';

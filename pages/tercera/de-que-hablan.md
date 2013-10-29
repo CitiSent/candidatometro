@@ -28,10 +28,7 @@ title: ¿De qué hablan los candidatos?
 </div>
 
 <!-- Libraries -->
-<script src="{{ site.baseurl }}/js/lib/d3.v3.min.js" charset="utf-8"></script>
-<script src="{{ site.baseurl }}/js/lib/underscore.js" charset="utf-8"></script>
-<script src="{{ site.baseurl }}/js/lib/backbone.js" charset="utf-8"></script>
-<script src="{{ site.baseurl }}/js/candidatometro.js"></script>
+<script src="{{ site.baseurl }}/js/datavis.js" charset="utf-8"></script>
 <script>
 
     var data = [
