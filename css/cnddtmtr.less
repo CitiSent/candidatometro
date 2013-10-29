@@ -1,0 +1,495 @@
+/*!
+ * Candidatómetro
+ * Proyecto desarrollado por CitiSent
+ * basado en Bootstrap 3.0
+ * rediseño por @hspencer
+ */
+
+ // Paths
+@FontAwesomePath:		'../assets/fontawesome/';  // remember to comment this line in the original file after update
+@SourceSansPath:		'../assets/SourceSansPro';
+@CitiSentIconsPath:		'../assets/CitiSentIcons';
+@assetsPath:			'../assets/';
+@citisentPath:			'../../citisent/public';
+
+// Fonts
+@import '../../citisent/public/less-fontawesome/font-awesome.less';
+@import '../../citisent/public/less-citisent/source-sans-pro.less'; //-----------------------------------------*
+// @import '../../citisent/public/less-citisent/citisent-icons.less'; //------------------------------------------*
+
+// Core variables and mixins
+@import '../../citisent/public/less-citisent/variables.less'; //-----------------------------------------------*
+@import '../../citisent/public/less-bootstrap/mixins.less';
+@import '../../citisent/public/less-citisent/mixins.less'; //--------------------------------------------------*
+
+// Reset
+@import '../../citisent/public/less-bootstrap/normalize.less';
+@import '../../citisent/public/less-bootstrap/print.less';
+
+// Core CSS
+@import '../../citisent/public/less-bootstrap/scaffolding.less';
+@import '../../citisent/public/less-bootstrap/type.less';
+@import '../../citisent/public/less-citisent/type.less'; //----------------------------------------------------*
+@import '../../citisent/public/less-bootstrap/code.less';
+@import '../../citisent/public/less-bootstrap/grid.less';
+
+@import '../../citisent/public/less-bootstrap/tables.less';
+// @import '../../citisent/public/less-citisent/tables.less'; //-----------------------------------------------*
+// @import '../../citisent/public/less-bootstrap/forms.less';
+// @import '../../citisent/public/less-citisent/forms.less'; //---------------------------------------------------*
+// @import '../../citisent/public/less-bootstrap/buttons.less';
+// @import '../../citisent/public/less-citisent/buttons.less'; //-------------------------------------------------*
+
+// Components: common
+// @import '../../citisent/public/less-bootstrap/component-animations.less';
+// @import '../../citisent/public/less-bootstrap/input-groups.less';
+// @import '../../citisent/public/less-bootstrap/dropdowns.less';
+// @import '../../citisent/public/less-bootstrap/list-group.less';
+// @import '../../citisent/public/less-bootstrap/panels.less';
+// @import '../../citisent/public/less-bootstrap/wells.less';
+// @import '../../citisent/public/less-bootstrap/close.less';
+
+// Components: Nav
+// @import '../../citisent/public/less-bootstrap/navs.less';
+// @import '../../citisent/public/less-bootstrap/navbar.less';
+// @import '../../citisent/public/less-citisent/navbar.less'; //--------------------------------------------------*
+// @import '../../citisent/public/less-bootstrap/button-groups.less';
+// @import '../../citisent/public/less-bootstrap/breadcrumbs.less';
+// @import '../../citisent/public/less-bootstrap/pagination.less';
+// @import '../../citisent/public/less-citisent/pagination.less'; //----------------------------------------------*
+// @import '../../citisent/public/less-bootstrap/pager.less';
+
+// Components: Popovers
+// @import '../../citisent/public/less-bootstrap/modals.less';
+// @import '../../citisent/public/less-citisent/modals.less'; //--------------------------------------------------*
+// @import '../../citisent/public/less-bootstrap/tooltip.less';
+// @import '../../citisent/public/less-bootstrap/popovers.less';
+
+// Components: Misc
+
+// @import '../../citisent/public/less-bootstrap/alerts.less';
+@import '../../citisent/public/less-bootstrap/thumbnails.less';
+// @import '../../citisent/public/less-bootstrap/media.less';
+// @import '../../citisent/public/less-bootstrap/labels.less';
+// @import '../../citisent/public/less-bootstrap/badges.less';
+// @import '../../citisent/public/less-bootstrap/progress-bars.less';
+// @import '../../citisent/public/less-bootstrap/accordion.less';
+// @import '../../citisent/public/less-citisent/carousel.less';
+// @import '../../citisent/public/less-bootstrap/jumbotron.less';
+
+// CitiSent Custom Elements //---------------------------------------------*
+
+// @import '../../citisent/public/less-citisent/account.less';
+// @import '../../citisent/public/less-citisent/tags.less';
+// @import '../../citisent/public/less-citisent/pages.less';
+// @import '../../citisent/public/less-citisent/embeds.less';
+// @import '../../citisent/public/less-citisent/blackboard.less';
+// @import '../../citisent/public/less-citisent/topics.less';
+// @import '../../citisent/public/less-citisent/sources.less';
+// @import '../../citisent/public/less-citisent/studies.less';
+// @import '../../citisent/public/less-citisent/gamification.less';
+// @import '../../citisent/public/less-citisent/visualizations.less';
+// @import '../../citisent/public/less-citisent/utilities.less';
+// @import '../../citisent/public/less-citisent/affix.less';
+
+// Responsive Stuff
+@import '../../citisent/public/less-bootstrap/responsive-utilities.less';
+
+
+// Candidatómetro
+
+@cyan: #2BB6F1;
+
+.logo{
+	img{
+		height:26px;
+  		margin:-9px 5px 0 0;
+	}
+}
+
+.cs-logo{
+	font-family: SourceSansProBold;
+	color: @black;
+	white-space: nowrap;
+	img{
+		display: inline-block;;
+		.size(28px, 28px);
+		margin-top: -5px;
+		margin-right: 5px;
+	}
+}
+
+p.big{
+	font-size: 130%;
+}
+
+ul.preguntas{
+	font-size: 12px;
+	padding-left: 0;
+
+	li{
+		margin: 10px 0;
+		list-style-type: none;
+
+		a.btn-pregunta{
+			.border-radius(25px);
+			font-family: SourceSansProRegular;
+			color: @white;
+			padding: 3px 12px;
+		}
+	}
+}
+
+
+
+h1.title{
+	.blue;
+	@sp: 4px;
+	text-shadow: @sp 0 @sp/2 @light-blue, @sp*2 0 @sp @white;
+}
+
+.row-social{
+	margin: 10px 0;
+	padding: 10px 0;
+}
+
+.tabla-de-candidatos{
+	&[class*='col-']{
+		margin-top: -10px;
+		margin-bottom: -10px;
+	}
+	.row{
+		background-color: @white;
+		margin-top: 0;
+
+		.candidato{
+			padding-top: 12px;
+
+			h6{
+				font-family: SourceSansProRegular;
+				text-transform: uppercase;
+				font-size: 14px;
+				color: @blue;
+			}
+		}
+	}
+	hr{
+		height: 3px;
+		background-color: @light-blue;
+		.box-shadow(200px 0 0 @blue);
+		margin: 0 -15px;
+	}
+}
+
+.tabla-comparativa{
+
+	h6{
+		display: block;
+		line-height: 95%;
+		font-size: 10px;
+		font-family: SourceSansProSemibold;
+		text-transform: uppercase;
+		background-color: transparent;
+		color: @blue;
+		margin: 0;
+		padding: 4px 0 10px 0;
+
+		&.tc-tot{
+			font-size: 12px;
+		}
+	}
+
+	@row-height: 50px;
+
+	.labels{
+		padding: 130px 0 0 0;
+		.topic-label{
+			.tright;
+			height: @row-height;
+			font-family: SourceSansProRegular;
+			letter-spacing: -0.08ex;
+			line-height: 100%;
+			padding: @row-height/3 0;
+		}
+	}
+
+	.row-candidato{
+		padding: 10px 0;
+		.col-sm-1{
+			padding: 0 !important;
+		}
+		.avatar{
+			text-align: center;
+
+			img{
+				display: block;
+				width: 70px;
+				height: 70px;
+				&.img-responsive{
+					margin: 0 auto !important;
+				}
+			}
+		}
+		.graph{
+			height: 100px;
+		}
+	}
+
+
+
+	.col-md-1{
+		padding: 0;
+
+		.avatar{
+			display: block;
+			text-align: center;
+			height: 130px;
+			padding: 3px 3px 0 3px;
+
+			img{
+				display: block;
+
+			}
+		}
+
+		&:last-child{
+			.graph .graph-cell .svg-container svg circle{
+				color: fade(@green, 80);
+			    fill: fade(@green, 80);
+			    stroke: darken(@green, 20);
+			    stroke-opacity: 0.5;
+			}
+		}
+		.graph{
+			margin: 0;
+			padding: 0;
+			.graph-cell{
+				height: @row-height;
+				text-align: center;
+				position: relative;
+				//overflow: hidden;
+
+				.topic-label{
+					display: inline-block;
+					font-size: 12px;
+					color: @gray;
+					font-weight: normal;
+				    left: 15px;
+				    line-height: 90%;
+				    position: absolute;
+				    text-align: right;
+				    text-transform: uppercase;
+				    top: 20px;
+				    width: 36%;
+				}
+
+				.svg-container{
+					display: inline-block;
+					height: @row-height;
+					z-index: 201;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+
+		}
+	}
+}
+
+#metodo{
+	margin-bottom: 60px;
+}
+
+.next-question{
+	*{transition: all 0.2s ease 0s}
+	display: inline-block;
+	width: auto;
+	margin-top: 23px;
+	font-size: 20px;
+	color: @gray-light;
+	.border-radius(18px);
+	padding: 5px 10px;
+
+	i{color: @link-color;}
+	.question{
+		display: none;
+	}
+
+	border: 1px solid transparent;
+	background-color: transparent;
+
+	&:hover{
+		transition: all 0.2s ease 0s;
+		background-color: @white;
+		i{
+			color: @link-color;
+		}
+		.question{
+			display: inline;
+			font-family: SourceSansProLight;
+			margin-right: 10px;
+			color: @gray;
+		}
+
+		&:before{content: ''}
+	}
+	&:before{
+		ont-family: SourceSansProLight;
+		content: 'siguiente';
+		margin-right: 10px;
+		color: fade(@gray, 80);
+	}
+}
+
+.components{
+	.well{
+		border: 5px solid fade(@black, 10);
+	    .border-radius(8px);;
+	    padding: 16px;
+	}
+	.operator{
+		display: block;
+		font-size: 42px;
+		color: fade(@black, 10);
+		margin: 14px 0 0 -8px;
+	}
+}
+
+
+ul.small{
+	font-size: 12px;
+	line-height: 16px;
+
+}
+
+// Responsive
+// -------------------------------------------------
+
+// Extra small screen / phone
+
+@media(max-width: @screen-xs-max){
+	.headers{
+		.topico{
+			span{
+				display: none;
+			}
+		}
+	}
+	// .navbar-collapse {
+	// 	.hide;
+	// }
+
+	.tc-info{
+		padding: 40px 0 0 15px !important;
+		p{
+			text-align: left;
+		}
+	}
+	h1.huge{
+		font-size: 300%;
+	}
+
+	ul.preguntas{
+
+		li{
+			padding: 0;
+			a.btn-lg{font-size: 16px}
+		}
+	}
+
+	.tabla-de-candidatos{
+		.col-md-6{
+			.row{
+				.col-sm-4{
+					width: 33%;
+					float: left;
+					&.candidato{
+						padding: 15px 0;
+					}
+					img{
+						.size(60px, 60px);
+					}
+					h6{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: @screen-sm-max){
+
+	.tabla-comparativa{
+
+		.col-md-1{
+			text-align: center !important;
+
+		 	.avatar{
+		 		text-align: center !important;
+				margin-top: 50px;
+				height: 160px;
+				.cf;
+
+				img{
+					text-align: center;
+					.size(100px, 100px);
+
+					&.img-responsive{
+						margin: 13px auto !important;
+					}
+				}
+
+				h6{
+					font-size: 16px;
+					margin: 0;
+				}
+
+			}
+
+			:last-child{
+				.graph .graph-cell .svg-container svg .bubble{
+				    color: @orange;
+				    fill: @orange;
+				    stroke: darken(@orange, 30);
+				    stroke-opacity: 0.8;
+				}
+			}
+		}
+	}
+
+	.tabla-comparativa .row-candidato{
+		padding: 30px 0 !important;
+		margin: 0 !important;
+		border-bottom: 2px solid @blue;
+		&:first-child{
+			border-top: 2px solid @blue;
+		}
+		.col-sm-11,
+		.col-sm-1{
+			padding: 0 !important;
+		}
+	}
+}
+
+// Visualizaciones
+@import 'charts.less';
+
+
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+	.tabla-comparativa .row-candidato .avatar img.img-responsive{
+		width: 50px !important;
+		height: 50px !important;
+	}
+
+}
+
+// Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+
+}
+
+// Large screen / wide desktop
+@media (min-width: @screen-lg){
+}
