@@ -13,7 +13,7 @@
 @citisentPath:			'../../citisent/public';
 
 // Fonts
-@import '../../citisent/public/less-fontawesome/font-awesome.less';
+// @import '../../citisent/public/less-fontawesome/font-awesome.less';
 @import '../../citisent/public/less-citisent/source-sans-pro.less'; //-----------------------------------------*
 // @import '../../citisent/public/less-citisent/citisent-icons.less'; //------------------------------------------*
 
@@ -83,13 +83,13 @@
 // @import '../../citisent/public/less-citisent/tags.less';
 // @import '../../citisent/public/less-citisent/pages.less';
 // @import '../../citisent/public/less-citisent/embeds.less';
-// @import '../../citisent/public/less-citisent/blackboard.less';
+@import '../../citisent/public/less-citisent/blackboard.less';
 // @import '../../citisent/public/less-citisent/topics.less';
 // @import '../../citisent/public/less-citisent/sources.less';
 // @import '../../citisent/public/less-citisent/studies.less';
 // @import '../../citisent/public/less-citisent/gamification.less';
 // @import '../../citisent/public/less-citisent/visualizations.less';
-// @import '../../citisent/public/less-citisent/utilities.less';
+@import '../../citisent/public/less-citisent/utilities.less';
 // @import '../../citisent/public/less-citisent/affix.less';
 
 // Responsive Stuff
@@ -99,90 +99,12 @@
 // Candidatómetro
 
 @cyan: #2BB6F1;
-
-.logo{
-	img{
-		height:26px;
-  		margin:-9px 5px 0 0;
-	}
+.organic{
+	margin-top: 0;
 }
 
-.cs-logo{
-	font-family: SourceSansProBold;
-	color: @black;
-	white-space: nowrap;
-	img{
-		display: inline-block;;
-		.size(28px, 28px);
-		margin-top: -5px;
-		margin-right: 5px;
-	}
-}
-
-p.big{
-	font-size: 130%;
-}
-
-ul.preguntas{
-	font-size: 12px;
-	padding-left: 0;
-
-	li{
-		margin: 10px 0;
-		list-style-type: none;
-
-		a.btn-pregunta{
-			.border-radius(25px);
-			font-family: SourceSansProRegular;
-			color: @white;
-			padding: 3px 12px;
-		}
-	}
-}
-
-
-
-h1.title{
-	.blue;
-	@sp: 4px;
-	text-shadow: @sp 0 @sp/2 @light-blue, @sp*2 0 @sp @white;
-}
-
-.row-social{
-	margin: 10px 0;
-	padding: 10px 0;
-}
-
-.tabla-de-candidatos{
-	&[class*='col-']{
-		margin-top: -10px;
-		margin-bottom: -10px;
-	}
-	.row{
-		background-color: @white;
-		margin-top: 0;
-
-		.candidato{
-			padding-top: 12px;
-
-			h6{
-				font-family: SourceSansProRegular;
-				text-transform: uppercase;
-				font-size: 14px;
-				color: @blue;
-			}
-		}
-	}
-	hr{
-		height: 3px;
-		background-color: @light-blue;
-		.box-shadow(200px 0 0 @blue);
-		margin: 0 -15px;
-	}
-}
 
 .tabla-comparativa{
-
 	h6{
 		display: block;
 		line-height: 95%;
@@ -296,70 +218,37 @@ h1.title{
 	}
 }
 
-#metodo{
-	margin-bottom: 60px;
-}
-
-.next-question{
-	*{transition: all 0.2s ease 0s}
-	display: inline-block;
-	width: auto;
-	margin-top: 23px;
-	font-size: 20px;
-	color: @gray-light;
-	.border-radius(18px);
-	padding: 5px 10px;
-
-	i{color: @link-color;}
-	.question{
-		display: none;
-	}
-
-	border: 1px solid transparent;
-	background-color: transparent;
-
+.cs-link{
+	/*
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	*/
+	padding: 3px 10px;
+	font-size: 10px;
 	&:hover{
-		transition: all 0.2s ease 0s;
-		background-color: @white;
-		i{
-			color: @link-color;
+		// background-color: fade(@cyan, 10);
+	}
+	
+	p{
+		text-align: right;
+		color: darken(@gray-light, 11);
+		padding: 0;
+		margin: 0;
+		a{
+			color: @blue;
+			font-family: SourceSansProBold;
+			&.cs-logo{
+				color: @gray-dark;
+				img{
+					.size(14px, 14px);
+					display: inline-block;
+					margin-top: -2px;
+				}
+			}
 		}
-		.question{
-			display: inline;
-			font-family: SourceSansProLight;
-			margin-right: 10px;
-			color: @gray;
-		}
-
-		&:before{content: ''}
 	}
-	&:before{
-		ont-family: SourceSansProLight;
-		content: 'siguiente';
-		margin-right: 10px;
-		color: fade(@gray, 80);
-	}
-}
-
-.components{
-	.well{
-		border: 5px solid fade(@black, 10);
-	    .border-radius(8px);;
-	    padding: 16px;
-	}
-	.operator{
-		display: block;
-		font-size: 42px;
-		color: fade(@black, 10);
-		margin: 14px 0 0 -8px;
-	}
-}
-
-
-ul.small{
-	font-size: 12px;
-	line-height: 16px;
-
 }
 
 // Responsive
@@ -474,7 +363,7 @@ ul.small{
 
 // Visualizaciones
 @import 'charts.less';
-
+.bc-info{display: none}
 
 // Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
