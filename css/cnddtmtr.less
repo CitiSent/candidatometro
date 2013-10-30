@@ -101,8 +101,14 @@
 @cyan: #2BB6F1;
 .organic{
 	margin-top: 0;
+	min-height: 0;
 }
 
+// para evitar scroll en iframe
+.container{
+	padding-left: 0;
+	padding-right: 0;
+}
 
 .tabla-comparativa{
 	h6{
@@ -209,8 +215,12 @@
 					display: inline-block;
 					height: @row-height;
 					z-index: 201;
-					margin-left: auto;
-					margin-right: auto;
+					// margin-left: auto;
+					// margin-right: auto;
+					svg{
+						margin: 0 !important;
+						padding: 0 !important;
+					}
 				}
 			}
 
@@ -321,7 +331,16 @@
 	}
 }
 
+
+
 @media(max-width: @screen-sm-max){
+
+	.container{
+		width: 90%;
+	}
+	.row{
+		margin-right: 0;
+	}
 
 	.tabla-comparativa{
 
@@ -362,12 +381,8 @@
 	}
 
 	.tabla-comparativa .row-candidato{
-		padding: 30px 0 !important;
+		padding: 10px 0 !important;
 		margin: 0 !important;
-		border-bottom: 2px solid @blue;
-		&:first-child{
-			border-top: 2px solid @blue;
-		}
 		.col-sm-11,
 		.col-sm-1{
 			padding: 0 !important;
