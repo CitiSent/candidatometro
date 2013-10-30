@@ -6,7 +6,7 @@
  */
 
  // Paths
-@FontAwesomePath:		'../assets/fontawesome/';  // remember to comment this line in the original file after update
+@FontAwesomePath:		'../assets/fontawesome';  // remember to comment this line in the original file after update
 @SourceSansPath:		'../assets/SourceSansPro';
 @CitiSentIconsPath:		'../assets/CitiSentIcons';
 @assetsPath:			'../assets/';
@@ -66,6 +66,7 @@
 // @import '../../citisent/public/less-bootstrap/popovers.less';
 
 // Components: Misc
+
 @import '../../citisent/public/less-bootstrap/alerts.less';
 @import '../../citisent/public/less-bootstrap/thumbnails.less';
 @import '../../citisent/public/less-bootstrap/media.less';
@@ -73,7 +74,7 @@
 @import '../../citisent/public/less-bootstrap/badges.less';
 @import '../../citisent/public/less-bootstrap/progress-bars.less';
 @import '../../citisent/public/less-bootstrap/accordion.less';
-@import '../../citisent/public/less-bootstrap/carousel.less';
+@import '../../citisent/public/less-citisent/carousel.less';
 @import '../../citisent/public/less-bootstrap/jumbotron.less';
 
 // CitiSent Custom Elements //---------------------------------------------*
@@ -108,6 +109,7 @@
 .cs-logo{
 	font-family: SourceSansProBold;
 	color: @black;
+	white-space: nowrap;
 	img{
 		display: inline-block;;
 		.size(28px, 28px);
@@ -130,8 +132,9 @@ ul.preguntas{
 
 		a.btn-pregunta{
 			.border-radius(25px);
-			font-family: SourceSansProSemibold;
-			padding: 5px 9px;
+			font-family: SourceSansProRegular;
+			color: @white;
+			padding: 3px 12px;
 		}
 	}
 }
