@@ -3,37 +3,37 @@
 
 candidatos:
 
-   - name: citisent_json/json_study_74.json
+   - name: citisent_json/json_study_candidatometro_74.json
      json: 'http://lab.citisent.com/studies_json/json_study_candidatometro_74.json'
 
 agenda:
 
-   - name: citisent_json/json_study_65.json
+   - name: citisent_json/json_study_candidatometro_65.json
      json: 'http://lab.citisent.com/studies_json/json_study_candidatometro_65.json'
 
-   - name: citisent_json/json_study_66.json
+   - name: citisent_json/json_study_candidatometro_66.json
      json: 'http://lab.citisent.com/studies_json/json_study_candidatometro_66.json'
 
-   - name: citisent_json/json_study_67.json
+   - name: citisent_json/json_study_candidatometro_67.json
      json: 'http://lab.citisent.com/studies_json/json_study_candidatometro_67.json'
 
-   - name: citisent_json/json_study_68.json
+   - name: citisent_json/json_study_candidatometro_68.json
      json: 'http://lab.citisent.com/studies_json/json_study_candidatometro_68.json'
 
-   - name: citisent_json/json_study_69.json
+   - name: citisent_json/json_study_candidatometro_69.json
      json: 'http://lab.citisent.com/studies_json/json_study_candidatometro_69.json'
 
-   - name: citisent_json/json_study_70.json
+   - name: citisent_json/json_study_candidatometro_70.json
      json: 'http://lab.citisent.com/studies_json/json_study_candidatometro_70.json'
 
-   - name: citisent_json/json_study_71.json
+   - name: citisent_json/json_study_candidatometro_71.json
      json: 'http://lab.citisent.com/studies_json/json_study_candidatometro_71.json'
 
-   - name: citisent_json/json_study_72.json
+   - name: citisent_json/json_study_candidatometro_72.json
      json: 'http://lab.citisent.com/studies_json/json_study_candidatometro_72.json'
 
-   - name: citisent_json/json_study_73.json
+   - name: citisent_json/json_study_candidatometro_73.json
      json: 'http://lab.citisent.com/studies_json/json_study_candidatometro_73.json'
 
-   - name: citisent_json/json_study_75.json
+   - name: citisent_json/json_study_candidatometro_75.json
      json: 'http://lab.citisent.com/studies_json/json_study_candidatometro_75.json'
