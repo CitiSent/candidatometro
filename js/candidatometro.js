@@ -482,7 +482,7 @@ Candidatometro.Dataset = function() {
             data = jsonData;
             data.children.forEach(function(child) {
                 addChildren(child);
-                items.set(child.name, child.values);
+                items.set(child.topic, child.values);
             });
 
             // Notifies that the data is ready

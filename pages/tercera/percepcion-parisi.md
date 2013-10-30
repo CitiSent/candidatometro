@@ -12,10 +12,10 @@ title: ¿Cómo son percibidos los candidatos?
 </div>
 
 <!-- Libraries -->
-<script src="{{ site.baseurl }}/js/datavis.js" charset="utf-8"></script>
+<script src="{{ site.baseurl }}/js/datavis.min.js" charset="utf-8"></script>
 <script>
 
-    var jsonUrl = '{{ site.baseurl }}/data/citisent_json/json_study_74.json';
+    var jsonUrl = '{{ site.baseurl }}/data/citisent_json/json_study_candidatometro_74.json';
 
     var dset = Candidatometro.Dataset()
         .json(jsonUrl);
