@@ -3,6 +3,9 @@ install:
 	gem install jekyll
 	npm install grunt-cli grunt-contrib-uglify grunt-contrib-concat
 
+update-data:
+	cd data && python update.py && cd ..
+
 clean-js:
 	rm js/datavis.js
 	rm js/site.js
