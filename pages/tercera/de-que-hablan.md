@@ -28,7 +28,7 @@ title: ¿De qué hablan los candidatos?
 </div>
 
 <!-- Libraries -->
-<script src="{{ site.baseurl }}/js/datavis.js" charset="utf-8"></script>
+<script src="{{ site.baseurl }}/js/datavis.min.js" charset="utf-8"></script>
 <script>
 
     var data = [
