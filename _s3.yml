@@ -6,6 +6,7 @@ markdown: rdiscount
 pygments: true
 permalink: pretty
 baseurl: "http://candidatometro.s3-website-us-east-1.amazonaws.com"
+exclude: ['node_modules']
 
 project:
     name: Candidatómetro
