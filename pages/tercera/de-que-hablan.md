@@ -1,20 +1,9 @@
 ---
-layout: base
+layout: embed
 title: ¿De qué hablan los candidatos?
 ---
 
 <!-- Next Question -->
-<div class='row'>
-    <div class='col-sm-6'>
-        <h1 class='thin orange'>{{ page.title }}</h1>
-    </div>
-    <div class='col-sm-6 tright'>
-        <a class='next-question' href='{{ site.baseurl }}/pages/percepcion-ciudadana'>
-            <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='icon-arrow-right'></i>
-        </a>
-    </div>
-</div>
-
 
 <div class='row row-topics'>
     <div class='tabla-comparativa' id='charts'>
@@ -38,17 +27,8 @@ title: ¿De qué hablan los candidatos?
     </div>
 </div>
 
-<div class='row'>
-    <div class='col-sm-12 tright'>
-        <a class='next-question' href='{{ site.baseurl }}/pages/percepcion-ciudadana'>
-            <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='icon-arrow-right'></i>
-        </a>
-    </div>
-</div>
-
-{% include social.html %}
-
-<script src="{{ site.baseurl }}/js/datavis.min.js"></script>
+<!-- Libraries -->
+<script src="{{ site.baseurl }}/js/datavis.min.js" charset="utf-8"></script>
 <script>
 
     var data = [
