@@ -5,8 +5,8 @@ layout: empty
 <h1>Prueba de Embeds</h1>
 
 <div class="contenedor">
-	<h2>Contenedor al 100% x 165px</h2>
-	<iframe src="{{ site.baseurl }}/pages/tercera/percepcion-bachelet/" width="100%" height="165" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" > </iframe>
+	<h2>Contenedor al 100% x 167px</h2>
+	<iframe src="{{ site.baseurl }}/pages/tercera/percepcion-bachelet/" width="100%" height="167" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" > </iframe>
 </div>
 
 <div class="contenedor" style="width: 960px">
@@ -28,4 +28,7 @@ layout: empty
 	<h2>Contenedor de 320px x 450px</h2>
 	<iframe src="{{ site.baseurl }}/pages/tercera/percepcion-israel/" width="100%" height="450" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" > </iframe>
 </div>
-
+<div class="contenedor">
+	<h2>Contenedor al 100% x 552px</h2>
+	<iframe src="{{ site.baseurl }}/pages/tercera/de-que-hablan/" width="100%" height="552" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" > </iframe>
+</div>
