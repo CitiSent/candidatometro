@@ -31,9 +31,8 @@ title: Metodología
     <p class='air-top'>Esta definición corresponde a los parámetros básicos para realizar consultas en un servicio Web. En el caso de este candidatómetro consultamos exclusivamente en Twitter.</p>
   </div>
   <div class='col-sm-6'>
-    <p>Los resultados gráficos reflejados en las preguntas del presente candidatómetro corresponden a visualizaciones realizadas a partir de 1 o más estudios. En cada caso exponemos las metodología utilizada a fin de explicitar el razonamiento detrás de cada formulación.</p>
-    <p>Como ya está dicho, cada estudio puede estar compuesto puede estar compuesto de temas, fuentes y/o lugares. Todos los elementos recolectados bajo estos criterios son procesados definiendo su <strong>polaridad</strong>, esto es un proceso de clasificación de los <em>twits</em> en base a su contenido positivo, negativo o neutral.</p>
-    <p>Cada estudio explica en detalle la metodología empleada.</p>
+    <p>Los resultados gráficos de las preguntas formuladas están construídos a partir de 1 o más estudios.</p>
+    <p>Como ya está dicho, cada estudio puede estar compuesto de temas, fuentes y/o lugares. Todos los elementos recolectados bajo estos criterios son procesados definiendo su <strong>polaridad</strong>, esto es un proceso de clasificación de los <em>twitts</em> en base a su contenido positivo, negativo o neutral.</p>
   </div>
 </div>
 
