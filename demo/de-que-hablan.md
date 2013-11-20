@@ -8,7 +8,7 @@ title: ¿De qué hablan los candidatos?
   </div>
   <div class='col-sm-6 tright'>
     <a class='next-question' href='{{ site.baseurl }}/que-opina-la-gente'>
-      <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='icon-arrow-right'></i>
+      <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='fa fa-arrow-right'></i>
     </a>
   </div>
 </div>
@@ -435,7 +435,7 @@ title: ¿De qué hablan los candidatos?
 <div class='row'>
   <div class='col-sm-12 tright'>
     <a class='next-question' href='{{ site.baseurl }}/que-opina-la-gente'>
-      <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='icon-arrow-right'></i>
+      <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='fa fa-arrow-right'></i>
     </a>
   </div>
 </div>

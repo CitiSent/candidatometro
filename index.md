@@ -38,10 +38,10 @@ title: Candidatómetro
 
       <!-- Controls -->
       <a class='left carousel-control' href='#carrusel' data-slide='prev'>
-        <i class='icon-chevron-left'></i>
+        <i class='fa fa-chevron-left'></i>
       </a>
       <a class='right carousel-control' href='#carrusel' data-slide='next'>
-        <i class='icon-chevron-right'></i>
+        <i class='fa fa-chevron-right'></i>
       </a>
     </div>
 

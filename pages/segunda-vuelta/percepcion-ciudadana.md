@@ -1,6 +1,6 @@
 ---
 layout: base
-title: ¿Cómo son percibidos los candidatos?
+title: ¿Cómo son percibidos las candidatas?
 ---
 
 <div class='row'>
