@@ -1,14 +1,18 @@
 ---
 layout: base
-title: ¿Cómo son percibidos las candidatas?
+title: ¿Cómo son percibidas las candidatas?
 ---
 
 <div class='row'>
     <div class='col-sm-7'>
-        <h1 class='thin orange'>{{ page.title }}</h1>
+        <h1 class='thin orange'>{{ page.title }}
+            <a class="btn-embed" data-toggle="modal" data-target="#embed-modal" title='Embeber esta visualización'>
+                <i class='fa fa-share-square'></i>
+            </a>
+        </h1>
     </div>
     <div class='col-sm-5 tright'>
-        <a class='next-question' href='{{ site.baseurl }}/pages/de-que-hablan'>
+        <a class='next-question' href='{{ site.baseurl }}/pages/segunda-vuelta/de-que-hablan'>
             <span class='question'>¿de qué hablan los candidatos?</span> <i class='fa fa-arrow-right'></i>
         </a>
     </div>
@@ -24,7 +28,7 @@ title: ¿Cómo son percibidos las candidatas?
 
 <div class='row'>
     <div class='col-sm-12 tright'>
-        <a class='next-question' href='{{ site.baseurl }}/pages/de-que-hablan'>
+        <a class='next-question' href='{{ site.baseurl }}/pages/segunda-vuelta/de-que-hablan'>
             <span class='question'>¿de qué hablan los candidatos?</span> <i class='fa fa-arrow-right'></i>
         </a>
     </div>

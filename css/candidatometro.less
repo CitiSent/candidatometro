@@ -73,8 +73,8 @@
 @import '../../citisent/public/less-bootstrap/labels.less';
 @import '../../citisent/public/less-bootstrap/badges.less';
 @import '../../citisent/public/less-bootstrap/progress-bars.less';
-@import 'carousel.less';
-@import '../../citisent/public/less-citisent/carousel.less';
+@import '../../citisent/public/less-bootstrap/carousel.less';
+@import '../../citisent/public/less-bootstrap/modals.less';
 @import '../../citisent/public/less-bootstrap/jumbotron.less';
 
 // CitiSent Custom Elements //---------------------------------------------*
@@ -91,6 +91,7 @@
 @import '../../citisent/public/less-citisent/visualizations.less';
 @import '../../citisent/public/less-citisent/utilities.less';
 @import '../../citisent/public/less-citisent/affix.less';
+
 
 // Responsive Stuff
 @import '../../citisent/public/less-bootstrap/responsive-utilities.less';
@@ -147,6 +148,16 @@ h1.title{
 	text-shadow: @sp 0 @sp/2 @light-blue, @sp*2 0 @sp @white;
 }
 
+h1{
+	a{
+		font-size: 20px;
+		color: @cyan;
+		&:hover{
+			color: @blue;
+		}
+
+	}
+}
 .row-social{
 	margin: 10px 0;
 	padding: 10px 0;
@@ -473,7 +484,7 @@ ul.small{
 
 // Visualizaciones
 @import 'charts.less';
-
+@import 'carousel.less';
 
 // Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
