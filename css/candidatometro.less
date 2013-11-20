@@ -140,7 +140,12 @@ ul.preguntas{
 	}
 }
 
-
+.dropdown-menu{
+	li.dropdown-header{
+		text-transform: uppercase;
+		color: @orange;
+	}
+}
 
 h1.title{
 	.blue;
@@ -149,15 +154,27 @@ h1.title{
 }
 
 h1{
+	line-height: 10%;
+
 	a{
 		font-size: 20px;
-		color: @cyan;
-		&:hover{
-			color: @blue;
-		}
-
 	}
 }
+
+.subtitle{
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 3px 10px;
+	font-family: SourceSansProSemibold;
+	color: @white;
+	font-size: 14px;
+	.border-radius(4px);
+	background-color: @gray;
+
+	&.v1{background-color: #15518f}
+	&.v2{background-color: @orange}
+}
+
 .row-social{
 	margin: 10px 0;
 	padding: 10px 0;
@@ -315,7 +332,7 @@ h1{
 	display: inline-block;
 	width: auto;
 	margin-top: 23px;
-	font-size: 20px;
+	font-size: 15px;
 	color: @gray-light;
 	.border-radius(18px);
 	padding: 5px 10px;

@@ -1,9 +1,9 @@
 ---
 layout: base
-title: Candidatómetro 2ª vuelta
+title: Candidatómetro
 ---
 
-<h1 class='huge thin title'>{{ page.title }}</h1>
+<h1 class='huge thin title'>{{ page.title }} <span class='orange'>2ª vuelta</span></h1>
 <div class='row'>
     <div class='col-md-8'>
     <div id='carrusel' class='carousel slide'>
