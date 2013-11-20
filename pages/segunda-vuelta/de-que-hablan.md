@@ -3,6 +3,9 @@ layout: base
 title: ¿De qué hablan las candidatas?
 ---
 
+{% assign embed-url="/pages/segunda-vuelta/embeds/de-que-hablan" %}
+{% include modal.html %}
+
 <!-- Next Question -->
 <div class='row'>
     <div class='col-sm-6'>

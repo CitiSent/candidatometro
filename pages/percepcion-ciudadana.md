@@ -3,7 +3,7 @@ layout: base
 title: ¿Cómo son percibidos los candidatos?
 ---
 
-{% assign embed-url="http://www.alpedo.com" %}
+{% assign embed-url="/pages/embeds/percepcion-ciudadana" %}
 {% include modal.html %}
 
 <div class='row'>
