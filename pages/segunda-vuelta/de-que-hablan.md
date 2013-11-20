@@ -1,9 +1,9 @@
 ---
 layout: base
-title: ¿De qué hablan los candidatos?
+title: ¿De qué hablan las candidatas?
 ---
 
-{% assign embed-url="/pages/embeds/de-que-hablan" %}
+{% assign embed-url="/pages/segunda-vuelta/embeds/de-que-hablan" %}
 {% include modal.html %}
 
 <!-- Next Question -->
@@ -16,8 +16,8 @@ title: ¿De qué hablan los candidatos?
         </h1>
     </div>
     <div class='col-sm-6 tright'>
-        <a class='next-question' href='{{ site.baseurl }}/pages/percepcion-ciudadana'>
-            <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='fa fa-arrow-right'></i>
+        <a class='next-question' href='{{ site.baseurl }}/pages/segunda-vuelta/percepcion-ciudadana'>
+            <span class='question'>¿qué opina la gente de las candidatas?</span> <i class='fa fa-arrow-right'></i>
         </a>
     </div>
 </div>
@@ -47,7 +47,7 @@ title: ¿De qué hablan los candidatos?
 
 <div class='row'>
     <div class='col-sm-12 tright'>
-        <a class='next-question' href='{{ site.baseurl }}/pages/percepcion-ciudadana'>
+        <a class='next-question' href='{{ site.baseurl }}/pages/segunda-vuelta/percepcion-ciudadana'>
             <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='fa fa-arrow-right'></i>
         </a>
     </div>

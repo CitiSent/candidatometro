@@ -14,13 +14,13 @@ title: Metodología
           <div class='well'><i class='cs-icon-topic'></i><br><strong>temas</strong></div>
         </div>
         <div class='col-sm-1 tcenter'>
-          <span class='operator'><i class='icon-plus'></i></span>
+          <span class='operator'><i class='fa fa-plus'></i></span>
         </div>
         <div class='col-sm-3 tcenter'>
           <div class='well'><i class='cs-icon-source'></i><br><strong>fuentes</strong></div>
         </div>
         <div class='col-sm-1 tcenter'>
-          <span class='operator'><i class='icon-plus'></i></span>
+          <span class='operator'><i class='fa fa-plus'></i></span>
         </div>
         <div class='col-sm-3 tcenter'>
           <div class='well'><i class='cs-icon-place'></i><br><strong>lugares</strong></div>

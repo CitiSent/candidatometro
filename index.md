@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Candidatómetro
+title: Candidatómetro 2ª vuelta
 ---
 
 <h1 class='huge thin title'>{{ page.title }}</h1>
@@ -38,10 +38,10 @@ title: Candidatómetro
 
       <!-- Controls -->
       <a class='left carousel-control' href='#carrusel' data-slide='prev'>
-        <i class='icon-chevron-left'></i>
+        <i class='fa fa-chevron-left'></i>
       </a>
       <a class='right carousel-control' href='#carrusel' data-slide='next'>
-        <i class='icon-chevron-right'></i>
+        <i class='fa fa-chevron-right'></i>
       </a>
     </div>
 
@@ -49,8 +49,8 @@ title: Candidatómetro
   <div class='col-md-4'>
     <p class='light big air-top'><strong>Candidatómetro</strong> es un proyecto independiente desarrollado por <a href='http://www.citisent.com' class='cs-logo'><img src='{{ site.baseurl }}/assets/citisent-logo-sq.svg'>CitiSent</a> para explorar las siguientes preguntas:</p>
     <ul class='preguntas'>
-      <li><a class='btn btn-lg btn-primary btn-pregunta' href='{{ site.baseurl }}/pages/percepcion-ciudadana'>¿Cómo son percibidos los candidatos?</a></li>
-      <li><a class='btn btn-lg btn-primary btn-pregunta' href='{{ site.baseurl }}/pages/de-que-hablan'>¿De qué hablan los candidatos?</a></li>
+      <li><a class='btn btn-lg btn-primary btn-pregunta' href='{{ site.baseurl }}/pages/segunda-vuelta/percepcion-ciudadana'>¿Cómo son percibidas las candidatas?</a></li>
+      <li><a class='btn btn-lg btn-primary btn-pregunta' href='{{ site.baseurl }}/pages/segunda-vuelta/de-que-hablan'>¿De qué hablan las candidatas?</a></li>
     </ul>
     <p class='light big'>Este proyecto es un ejemplo de cómo configurar estudios sociales en Citisent con su tecnología extracción, filtrado y análisis de datos. Conoce más en <a href='http://www.citisent.com' >www.citisent.com</a></p>
   </div> 

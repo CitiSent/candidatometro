@@ -1,25 +1,7 @@
 ---
-layout: base
+layout: embed
 title: ¿Cómo son percibidos los candidatos?
 ---
-
-{% assign embed-url="/pages/embeds/percepcion-ciudadana" %}
-{% include modal.html %}
-
-<div class='row'>
-    <div class='col-sm-7'>
-        <h1 class='thin orange'>{{ page.title }} 
-            <a class="btn-embed" data-toggle="modal" data-target="#embed-modal" title='Embeber esta visualización'>
-                <i class='fa fa-share-square'></i>
-            </a>
-        </h1>
-    </div>
-    <div class='col-sm-5 tright'>
-        <a class='next-question' href='{{ site.baseurl }}/pages/de-que-hablan'>
-            <span class='question'>¿de qué hablan los candidatos?</span> <i class='fa fa-arrow-right'></i>
-        </a>
-    </div>
-</div>
 
 <div class='row'>
     <div class='col-md-12 air-top'>
@@ -29,18 +11,8 @@ title: ¿Cómo son percibidos los candidatos?
     </div>
 </div>
 
-<div class='row'>
-    <div class='col-sm-12 tright'>
-        <a class='next-question' href='{{ site.baseurl }}/pages/de-que-hablan'>
-            <span class='question'>¿de qué hablan los candidatos?</span> <i class='fa fa-arrow-right'></i>
-        </a>
-    </div>
-</div>
-
-{% include social.html %}
-
 <!-- Libraries -->
-<script src="{{ site.baseurl }}/js/datavis.min.js"></script>
+<script src="{{ site.baseurl }}/js/datavis.min.js" charset="utf-8"></script>
 <script>
 
     var jsonUrl = '{{ site.baseurl }}/data/citisent_json/json_study_candidatometro_74.json';
