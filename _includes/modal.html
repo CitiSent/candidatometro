@@ -3,14 +3,14 @@
     <div class='modal-content'>
       <div class='modal-header'>
         <!-- <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button> -->
-        <h4 class='modal-title uc orange'>Embebe esta visualización</h4>
+        <h4 class='modal-title uc orange'>Publica esta visualización</h4>
       </div>
       <div class='modal-body'>
         <p>Te puedes llevar esta visualización y publicarla donde tú quieras. Si el estudio está activo <strong>se seguirá actualizando</strong> con datos frescos. Sólo copia el siguiente código HTML y pégalo en tu blog.</p>
         <p class='code'>
-          &lt;iframe src="{{ site.baseurl }}{{ embed-url }}" width="100%" height="430" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0"&gt; &lt;/iframe&gt;
+          &lt;iframe src="{{ site.baseurl }}{{ page.embed-url }}" width="100%" height="{{ page.embed-height }}" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0"&gt; &lt;/iframe&gt;
         </p>
-        <p class='air-top small'><strong>Nota</strong>: Puedes modificar el alto y el ancho según necesites. Las visualizaciones se adaptan a su contenedor.</p>
+        <p class='air-top '><strong>Nota</strong>: Puedes modificar el alto y el ancho según lo necesites. Las visualizaciones se adaptan a su contenedor.</p>
       </div>
       <div class='modal-footer'>
         <button type='button' class='btn btn-primary' data-dismiss='modal'>¡Hecho!</button>
