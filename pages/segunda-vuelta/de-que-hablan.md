@@ -29,7 +29,7 @@ embed-height: 552
     <div class='tabla-comparativa' id='charts'>
 
         <!-- Topic Labels on Desktop -->
-        <div class='col-md-2'>
+        <div class='col-md-2 col-md-offset-3'>
             <div class='hidden-xs hidden-sm labels'>
                 <div class='topic-label'>Educación</div>
                 <div class='topic-label'>Salud</div>

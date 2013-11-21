@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: embed
 title: ¿Cómo son percibidos los candidatos?
 ---
 
@@ -73,7 +73,7 @@ title: ¿Cómo son percibidos los candidatos?
 
         // Graph
         var divGraph = rowCandidato.append('div')
-            .attr('class', 'col-sm-9 graph')
+            .attr('class', 'col-sm-8 graph')
             .call(barchart);
 
         var divTotals = rowCandidato.append('div')
