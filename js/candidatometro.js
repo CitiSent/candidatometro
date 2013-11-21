@@ -49,7 +49,7 @@ Candidatometro.Totals = function() {
                 .attr('class', 'row');
 
             pRow.append('div')
-                .attr('class', 'col-sm-4 tright')
+                .attr('class', 'col-sm-5 tright')
                 .append('p')
                 .text(function(d) { return d.name; });
 
