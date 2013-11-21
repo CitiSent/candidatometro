@@ -1,24 +1,24 @@
 ---
 layout: base
-title: ¿De qué hablan los candidatos?
+title: ¿De qué hablan las candidatas?
 ---
 
-{% assign embed-url="/pages/embeds/de-que-hablan" %}
+{% assign embed-url="/pages/segunda-vuelta/embeds/de-que-hablan" %}
 {% include modal.html %}
 
 <!-- Next Question -->
 <div class='row'>
-    <div class='col-sm-8'>
+    <div class='col-sm-6'>
         <h1 class='thin'>{{ page.title }}
             <a class="btn-embed" data-toggle="modal" data-target="#embed-modal" title='Embeber esta visualización'>
                 <i class='fa fa-share-square'></i>
             </a>
         </h1>
-        <div class='subtitle v1'>Primera Vuelta</div>
+        <div class='subtitle v2'>Segunda Vuelta</div>
     </div>
-    <div class='col-sm-4 tright'>
-        <a class='next-question' href='{{ site.baseurl }}/pages/percepcion-ciudadana'>
-            <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='fa fa-arrow-right'></i>
+    <div class='col-sm-6 tright'>
+        <a class='next-question' href='{{ site.baseurl }}/pages/segunda-vuelta/percepcion-ciudadana'>
+            <span class='question'>¿qué opina la gente de las candidatas?</span> <i class='fa fa-arrow-right'></i>
         </a>
     </div>
 </div>
@@ -48,7 +48,7 @@ title: ¿De qué hablan los candidatos?
 
 <div class='row'>
     <div class='col-sm-12 tright'>
-        <a class='next-question' href='{{ site.baseurl }}/pages/percepcion-ciudadana'>
+        <a class='next-question' href='{{ site.baseurl }}/pages/segunda-vuelta/percepcion-ciudadana'>
             <span class='question'>¿qué opina la gente de los candidatos?</span> <i class='fa fa-arrow-right'></i>
         </a>
     </div>

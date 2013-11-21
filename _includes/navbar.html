@@ -3,9 +3,7 @@
     <div class='navbar-header'>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class='sr-only'>Controlar Navegación</span>
-        <span class='icon-bar'></span>
-        <span class='icon-bar'></span>
-        <span class='icon-bar'></span>
+        <span class='fa fa-bars'></span>
       </button>
       <a href='{{ site.baseurl }}/' class='navbar-brand cf'><span class='logo'><img src="{{ site.baseurl }}/img/icons/favicon.png">Candidatómetro</span></a>
     </div>
@@ -17,18 +15,31 @@
           <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
           Estudios <b class='caret'></b></a>
           <ul class='dropdown-menu'>
+            <li class='dropdown-header'>Primera Vuelta</li>
             <li>
-              <a href='{{ site.baseurl }}/pages/percepcion-ciudadana' title='Agenda'><strong>¿Cómo son percibidos los candidatos?</strong><br><small>Percepción ciudadana</small></a>
+              <a href='{{ site.baseurl }}/pages/percepcion-ciudadana' title='Agenda'>Percepción ciudadana de los candidatos</a>
             </li>
             <li>
-              <a href='{{ site.baseurl }}/pages/de-que-hablan' title='Percepción'><strong>¿De qué hablan los candidatos?</strong><br><small>Comparación de agendas políticas</small></a>
+              <a href='{{ site.baseurl }}/pages/de-que-hablan' title='Percepción'>Comparación de agendas políticas</a>
+            </li>
+            <li class='divider'></li>
+            <li class='dropdown-header'>Segunta Vuelta</li>
+            <li>
+              <a href='{{ site.baseurl }}/pages/segunda-vuelta/percepcion-ciudadana' title='Agenda'>
+                <strong>¿Cómo son percibidas las candidatas?</strong><br>
+                <small>Percepción ciudadana</small></a>
+            </li>
+            <li>
+              <a href='{{ site.baseurl }}/pages/segunda-vuelta/de-que-hablan' title='Percepción'>
+                <strong>¿De qué hablan las candidatas?</strong><br>
+                <small>Comparación de agendas políticas</small></a>
             </li>
           </ul>
         </li>
       </ul>
       <ul class='nav navbar-nav navbar-right'>
         <li>
-          <a href='{{ site.baseurl }}/pages/metodologia' title='Metodología' ><i class='icon-cogs'></i> Metodología</a>
+          <a href='{{ site.baseurl }}/pages/metodologia' title='Metodología' ><i class='fa fa-cogs'></i> Metodología</a>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
