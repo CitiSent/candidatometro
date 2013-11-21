@@ -8,7 +8,7 @@ title: ¿Cómo son percibidos los candidatos?
 
 <div class='row'>
     <div class='col-sm-7'>
-        <h1 class='thin'>{{ page.title }} 
+        <h1 class='thin'>{{ page.title }}
             <a class="btn-embed" data-toggle="modal" data-target="#embed-modal" title='Embeber esta visualización'>
                 <i class='fa fa-share-square'></i>
             </a>
@@ -55,7 +55,7 @@ title: ¿Cómo son percibidos los candidatos?
     a.listenTo(dset, 'dataset:ready', function() {
 
         var from = new Date('2013-10-01'),
-            to = new Date('2013-12-01');
+            to = new Date('2013-11-17');
 
         var data = [
             { name: 'franco parisi',          img: '{{ site.baseurl }}/img/fot_franco_parisi.jpg' },
