@@ -69,7 +69,7 @@ title: ¿Cómo son percibidas las candidatas?
             .call(barchart);
 
         var divTotals = rowCandidato.append('div')
-            .attr('class', 'col-sm-2 tc-info');
+            .attr('class', 'col-sm-1 col-sm-offset-1 tc-info');
 
         divTotals.call(totals);
 

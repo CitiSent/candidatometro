@@ -292,10 +292,11 @@ h1{
 		.graph{
 			margin: 0;
 			padding: 0;
+
 			.graph-cell{
 				height: @row-height;
 				text-align: center;
-				position: relative;
+				//position: relative;
 				//overflow: hidden;
 
 				.topic-label{
@@ -515,7 +516,12 @@ ul.small{
 
 // Medium screen / desktop
 @media (min-width: @screen-md) and (max-width: @screen-md-max){
-
+	.row-candidato{
+		.col-sm-8{
+			clear: both;
+			width: 530px;
+		}
+	}
 }
 
 // Large screen / wide desktop
