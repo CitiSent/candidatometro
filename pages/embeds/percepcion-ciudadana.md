@@ -1,10 +1,10 @@
 ---
-layout: embed
+layout: base
 title: ¿Cómo son percibidos los candidatos?
 ---
 
 <div class='row'>
-    <div class='col-md-12 air-top'>
+    <div class='col-md-12'>
         <div class='tabla-comparativa' id='charts'>
             <!-- Charts Here -->
         </div>
@@ -12,7 +12,7 @@ title: ¿Cómo son percibidos los candidatos?
 </div>
 
 <!-- Libraries -->
-<script src="{{ site.baseurl }}/js/datavis.min.js" charset="utf-8"></script>
+<script src="{{ site.baseurl }}/js/datavis.min.js"></script>
 <script>
 
     var jsonUrl = '{{ site.baseurl }}/data/citisent_json/json_study_candidatometro_74.json';
@@ -26,11 +26,19 @@ title: ¿Cómo son percibidos los candidatos?
     a.listenTo(dset, 'dataset:ready', function() {
 
         var from = new Date('2013-10-01'),
-            to = new Date('2013-12-15');
+            to = new Date('2013-11-17');
 
         var data = [
-            { name: 'Michelle Bachelet', img: '{{ site.baseurl }}/img/fot_michelle_bachelet.jpg' },
-            { name: 'Evelyn Matthei',    img: '{{ site.baseurl }}/img/fot_evelyn_matthei.jpg' }
+            { name: 'franco parisi',          img: '{{ site.baseurl }}/img/fot_franco_parisi.jpg' },
+            { name: 'Marcel Claude',          img: '{{ site.baseurl }}/img/fot_marcel_claude.jpg' },
+            { name: 'Ricardo Israel',         img: '{{ site.baseurl }}/img/fot_ricardo_israel.jpg' },
+            { name: 'Marco Enríquez-Ominami', img: '{{ site.baseurl }}/img/fot_marco_enriquez-ominami.jpg' },
+            { name: 'Roxana Miranda',         img: '{{ site.baseurl }}/img/fot_roxana_miranda.jpg' },
+            { name: 'Michelle Bachelet',      img: '{{ site.baseurl }}/img/fot_michelle_bachelet.jpg' },
+            { name: 'Evelyn Matthei',         img: '{{ site.baseurl }}/img/fot_evelyn_matthei.jpg' },
+            { name: 'Alfredo Sfeir',          img: '{{ site.baseurl }}/img/fot_alfredo_sfeir.jpg' },
+            { name: 'Tomás Jocelyn-Holt',     img: '{{ site.baseurl }}/img/fot_tomas_jocelyn-holt.jpg' },
+
         ];
 
         data.forEach(function(d) {

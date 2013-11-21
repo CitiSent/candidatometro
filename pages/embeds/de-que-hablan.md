@@ -1,5 +1,5 @@
 ---
-layout: embed
+layout: base
 title: ¿De qué hablan los candidatos?
 ---
 
@@ -25,11 +25,35 @@ title: ¿De qué hablan los candidatos?
     </div>
 </div>
 
-<!-- Libraries -->
-<script src="{{ site.baseurl }}/js/datavis.min.js" charset="utf-8"></script>
+<script src="{{ site.baseurl }}/js/datavis.min.js"></script>
 <script>
 
     var data = [
+        {
+            name: 'franco parisi',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_candidatometro_67.json',
+            img: '{{ site.baseurl }}/img/fot_franco_parisi.jpg'
+        },
+        {
+            name: 'Marcel Claude',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_candidatometro_70.json',
+            img: '{{ site.baseurl }}/img/fot_marcel_claude.jpg'
+        },
+        {
+            name: 'Ricardo Israel',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_candidatometro_72.json',
+            img: '{{ site.baseurl }}/img/fot_ricardo_israel.jpg'
+        },
+        {
+            name: 'Marco Enríquez-Ominami',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_candidatometro_68.json',
+            img: '{{ site.baseurl }}/img/fot_marco_enriquez-ominami.jpg'
+        },
+        {
+            name: 'Roxana Miranda',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_candidatometro_71.json',
+            img: '{{ site.baseurl }}/img/fot_roxana_miranda.jpg'
+        },
         {
             name: 'Michelle Bachelet',
             url: '{{ site.baseurl }}/data/citisent_json/json_study_candidatometro_65.json',
@@ -39,6 +63,16 @@ title: ¿De qué hablan los candidatos?
             name: 'Evelyn Matthei',
             url: '{{ site.baseurl }}/data/citisent_json/json_study_candidatometro_66.json',
             img: '{{ site.baseurl }}/img/fot_evelyn_matthei.jpg'
+        },
+        {
+            name: 'Alfredo Sfeir',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_candidatometro_69.json',
+            img: '{{ site.baseurl }}/img/fot_alfredo_sfeir.jpg'
+        },
+        {
+            name: 'Tomás Jocelyn-Holt',
+            url: '{{ site.baseurl }}/data/citisent_json/json_study_candidatometro_73.json',
+            img: '{{ site.baseurl }}/img/fot_tomas_jocelyn-holt.jpg'
         },
         {
             name: 'Ciudadanía',
