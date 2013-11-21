@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: embed
 title: ¿De qué hablan los candidatos?
 ---
 
