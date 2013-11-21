@@ -1,45 +1,15 @@
 ---
-layout: base
-title: ¿Cómo son percibidos los candidatos?
-embed-url: /pages/embeds/percepcion-ciudadana
-embed-height: 1105
+layout: embed
+title: ¿Cómo son percibidas las candidatas?
 ---
 
-{% include modal.html %}
-
 <div class='row'>
-    <div class='col-sm-8'>
-        <h1 class='thin'>{{ page.title }} 
-            <a class="btn btn-xs btn-black btn-embed" data-toggle="modal" data-target="#embed-modal" title='Llévate esta visualización a tu página'>
-                Publicar <i class='fa fa-share-square'></i>
-            </a>
-        </h1>
-         <div class='subtitle v1'>Primera Vuelta</div>
-    </div>
-    <div class='col-sm-4 tright'>
-        <a class='next-question' href='{{ site.baseurl }}/pages/de-que-hablan'>
-            <span class='question'>¿de qué hablan los candidatos?</span> <i class='fa fa-arrow-right'></i>
-        </a>
-    </div>
-</div>
-
-<div class='row'>
-    <div class='col-md-12 air-top'>
+    <div class='col-md-12'>
         <div class='tabla-comparativa' id='charts'>
             <!-- Charts Here -->
         </div>
     </div>
 </div>
-
-<div class='row'>
-    <div class='col-sm-12 tright'>
-        <a class='next-question' href='{{ site.baseurl }}/pages/de-que-hablan'>
-            <span class='question'>¿de qué hablan los candidatos?</span> <i class='fa fa-arrow-right'></i>
-        </a>
-    </div>
-</div>
-
-{% include social.html %}
 
 <!-- Libraries -->
 <script src="{{ site.baseurl }}/js/datavis.min.js"></script>

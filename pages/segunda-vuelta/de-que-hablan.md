@@ -1,22 +1,23 @@
 ---
 layout: base
 title: ¿De qué hablan las candidatas?
+embed-url: /pages/segunda-vuelta/embeds/de-que-hablan
+embed-height: 552
 ---
 
-{% assign embed-url="/pages/segunda-vuelta/embeds/de-que-hablan" %}
 {% include modal.html %}
 
 <!-- Next Question -->
 <div class='row'>
-    <div class='col-sm-6'>
+    <div class='col-sm-8'>
         <h1 class='thin'>{{ page.title }}
-            <a class="btn-embed" data-toggle="modal" data-target="#embed-modal" title='Embeber esta visualización'>
-                <i class='fa fa-share-square'></i>
+            <a class="btn btn-xs btn-black btn-embed" data-toggle="modal" data-target="#embed-modal" title='Llévate esta visualización a tu página'>
+                Publicar <i class='fa fa-share-square'></i>
             </a>
         </h1>
         <div class='subtitle v2'>Segunda Vuelta</div>
     </div>
-    <div class='col-sm-6 tright'>
+    <div class='col-sm-4 tright'>
         <a class='next-question' href='{{ site.baseurl }}/pages/segunda-vuelta/percepcion-ciudadana'>
             <span class='question'>¿qué opina la gente de las candidatas?</span> <i class='fa fa-arrow-right'></i>
         </a>

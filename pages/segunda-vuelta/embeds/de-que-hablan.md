@@ -1,7 +1,8 @@
 ---
 layout: embed
-title: ¿De qué hablan los candidatos?
+title: ¿De qué hablan las candidatas?
 ---
+
 
 <div class='row row-topics'>
     <div class='tabla-comparativa' id='charts'>
@@ -25,8 +26,7 @@ title: ¿De qué hablan los candidatos?
     </div>
 </div>
 
-<!-- Libraries -->
-<script src="{{ site.baseurl }}/js/datavis.min.js" charset="utf-8"></script>
+<script src="{{ site.baseurl }}/js/datavis.min.js"></script>
 <script>
 
     var data = [

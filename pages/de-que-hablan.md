@@ -1,17 +1,18 @@
 ---
 layout: base
 title: ¿De qué hablan los candidatos?
+embed-url: /pages/embeds/de-que-hablan
+embed-height: 552
 ---
 
-{% assign embed-url="/pages/embeds/de-que-hablan" %}
 {% include modal.html %}
 
 <!-- Next Question -->
 <div class='row'>
     <div class='col-sm-8'>
         <h1 class='thin'>{{ page.title }}
-            <a class="btn-embed" data-toggle="modal" data-target="#embed-modal" title='Embeber esta visualización'>
-                <i class='fa fa-share-square'></i>
+            <a class="btn btn-xs btn-black btn-embed" data-toggle="modal" data-target="#embed-modal" title='Llévate esta visualización a tu página'>
+                Publicar <i class='fa fa-share-square'></i>
             </a>
         </h1>
         <div class='subtitle v1'>Primera Vuelta</div>
