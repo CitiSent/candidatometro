@@ -37,7 +37,9 @@ module.exports = function(grunt) {
                         'js/dropdown.js',
                         'js/collapse.js',
                         'js/carousel.js',
-                        'js/transition.js'
+                        'js/transition.js',
+                        'js/modal.js',
+                        'js/modal-ck.js'
                     ]
                 }
             }

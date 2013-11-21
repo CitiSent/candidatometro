@@ -184,7 +184,7 @@ Candidatometro.BarChart = function() {
     'use strict';
 
     // Initial Layout
-    var margin = {top: 2, right: 10, bottom: 18, left: 30},
+    var margin = {top: 2, right: 20, bottom: 18, left: 30},
         height = 80;
 
     var timeDomain = null;
@@ -250,7 +250,8 @@ Candidatometro.BarChart = function() {
             // Scales
             // ------
 
-            var barW = chart.int(width / chart.timeDomain().length);
+            // Bar width
+            var barW = Math.floor(width / chart.timeDomain().length);
 
             // X Scale
             var xScale = d3.time.scale()

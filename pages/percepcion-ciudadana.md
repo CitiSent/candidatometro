@@ -8,10 +8,17 @@ embed-height: 1105
 {% include modal.html %}
 
 <div class='row'>
+<<<<<<< HEAD
     <div class='col-sm-8'>
         <h1 class='thin'>{{ page.title }} 
             <a class="btn btn-xs btn-black btn-embed" data-toggle="modal" data-target="#embed-modal" title='Llévate esta visualización a tu página'>
                 Publicar <i class='fa fa-share-square'></i>
+=======
+    <div class='col-sm-7'>
+        <h1 class='thin'>{{ page.title }}
+            <a class="btn-embed" data-toggle="modal" data-target="#embed-modal" title='Embeber esta visualización'>
+                <i class='fa fa-share-square'></i>
+>>>>>>> develop
             </a>
         </h1>
          <div class='subtitle v1'>Primera Vuelta</div>
@@ -56,7 +63,7 @@ embed-height: 1105
     a.listenTo(dset, 'dataset:ready', function() {
 
         var from = new Date('2013-10-01'),
-            to = new Date('2013-12-01');
+            to = new Date('2013-11-17');
 
         var data = [
             { name: 'franco parisi',          img: '{{ site.baseurl }}/img/fot_franco_parisi.jpg' },
